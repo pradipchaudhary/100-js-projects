@@ -21,19 +21,37 @@ html {
 	gap: 20px;
 	text-align: center;
 }
+
+/* === Setting === */
 .settings {
 	position: absolute;
 	bottom: 20px;
 	right: 30px;
 	display: flex;
-	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 .settings #settingIcon {
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
 }
-
 .settings .hide {
 	display: none;
+}
+
+.settings .setting_content .inner_content {
+	display: flex;
+}
+
+.setting_content .inner_content input,
+.setting_content .inner_content button {
+	padding: 4px 8px;
+}
+
+.setting_content .inner_content button {
+	border: 1px solid #202124;
+	background: #202124;
+	color: #f7f7f7;
 }
