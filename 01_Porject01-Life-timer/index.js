@@ -1,6 +1,9 @@
 let isOpen = true;
+let dateOfBirth;
 const settingIcon = document.getElementById("settingIcon");
 const settingContent = document.getElementById("settingContent");
+const dobButton = document.getElementById("dobButton");
+const dobValue = document.getElementById("dobValue");
 
 const settingToggle = () => {
 	if (isOpen) {
@@ -12,6 +15,10 @@ const settingToggle = () => {
 	console.log(isOpen);
 };
 
-settingIcon.addEventListener("click", function () {
-	settingToggle();
-});
+const setDobHandler = () => {
+	dateOfBirth = dobValue.value;
+	console.log(dateOfBirth);
+};
+
+settingIcon.addEventListener("click", settingToggle);
+dobButton.addEventListener("click", setDobHandler);

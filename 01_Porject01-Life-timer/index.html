@@ -9,29 +9,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Kindly Enter Your Date of Birth !</h1>
+    <main>
+        <!-- front container -->
+        <!-- <div class="main_container">
+            <h1>Kindly Enter Your Date of Birth !</h1>
+        </div> -->
+        <!-- Time Container -->
         <div class="time_container">
-            <div class="inner_item">
-                <h2>00</h2>
-                <h4>Days</h4>
-            </div>
-            <div class="inner_item">
-                <h2>00</h2>
-                <h4>Hour</h4>
-            </div>
-        </div>
-        <div class="settings">
-            <img id="settingIcon" src="setting_icon.png" alt="">
-            <div id="settingContent" class="setting_content hide">
-                <div class="inner_content">
-                    <input type="date">
-                    <button>Add DOB</button>
+            <h1>Hello </h1>
+            <div class="inner_container">
+                <div class="inner_item">
+                    <h2>00</h2>
+                    <h4>Years</h4>
+                </div>
+                <div class="inner_item">
+                    <h2>00</h2>
+                    <h4>Days</h4>
+                </div>
+                <div class="inner_item">
+                    <h2>00</h2>
+                    <h4>Hour</h4>
+                </div>
+                <div class="inner_item">
+                    <h2>00</h2>
+                    <h4>Minutes</h4>
+                </div>
+                <div class="inner_item">
+                    <h2>00</h2>
+                    <h4>Second</h4>
                 </div>
             </div>
         </div>
 
-    </div>
+        <!-- Settings -->
+        <div class="settings">
+            <img id="settingIcon" src="setting_icon.png" alt="">
+            <div id="settingContent" class="setting_content hide">
+                <div class="inner_content">
+                    <input id="dobValue" type="date">
+                    <button id="dobButton">Add DOB</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
     <!-- Script Include -->
     <script src="index.js"></script>
 </body>
