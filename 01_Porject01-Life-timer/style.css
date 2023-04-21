@@ -11,7 +11,7 @@ html {
 
 /* === Default === */
 .hide {
-	display: none;
+	display: none !important;
 }
 /* === Main Container === */
 .main_container {
@@ -24,6 +24,7 @@ html {
 }
 
 /* === Time Container === */
+
 .time_container {
 	width: 100%;
 	height: 100vh;
