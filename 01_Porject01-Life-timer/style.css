@@ -20,7 +20,10 @@ html {
 }
 h1 {
 	font-size: 2.6rem;
-	font-weight: 500;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px #ccc;
+	letter-spacing: 2px;
+	color: #fcfcfc;
 }
 /* === Main Container === */
 .main_container {
@@ -41,7 +44,11 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 30px;
+	gap: 10px;
+}
+.time_container .heartbeat {
+	width: 250px;
+	margin-top: 50px;
 }
 .time_container .inner_container {
 	display: flex;
@@ -50,33 +57,42 @@ h1 {
 }
 .time_container .inner_container .inner_item {
 	text-align: center;
-	border: 1px solid #ccc;
-	padding: 5px 20px;
+	/* border: 1px solid #ccc; */
+	padding: 5px 10px;
 	box-shadow: 0 0 1px rga(0, 0, 0, 0.1);
 }
 
 .time_container .inner_container .inner_item h2 {
-	font-size: 3rem;
+	font-size: 2.7rem;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px #ccc;
+	letter-spacing: 3px;
 }
 .time_container .inner_container .inner_item h4 {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	text-transform: uppercase;
 	font-weight: 300;
-	margin-top: 8px;
+	margin-top: 10px;
+	letter-spacing: 1.5px;
+	color: #c1c6d4;
 }
 /* === Setting === */
 .settings {
 	position: fixed;
-	bottom: 20px;
-	right: 30px;
+	bottom: 60px;
+	right: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
+	background: #f0fbff;
+	padding: 8px 10px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
 }
 .settings #settingIcon {
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	cursor: pointer;
 }
 .settings .hide {
