@@ -87,13 +87,14 @@ h1 {
 	gap: 10px;
 	background: #f0fbff;
 	padding: 8px 10px;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
+	border-top-left-radius: 55px;
+	border-bottom-left-radius: 55px;
 }
 .settings #settingIcon {
 	width: 25px;
 	height: 25px;
 	cursor: pointer;
+	animation: img-spin 2s linear infinite;
 }
 .settings .hide {
 	display: none;
@@ -106,10 +107,30 @@ h1 {
 .setting_content .inner_content input,
 .setting_content .inner_content button {
 	padding: 4px 8px;
+	outline: none;
 }
 
+.setting_content .inner_content input:hover,
+.setting_content .inner_content input:focus,
+.setting_content .inner_content button:focus,
+.setting_content .inner_content button:hover {
+	outline: none;
+}
+.setting_content .inner_content input {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
 .setting_content .inner_content button {
 	border: 1px solid #202124;
 	background: #202124;
 	color: #f7f7f7;
+}
+
+@keyframes img-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
