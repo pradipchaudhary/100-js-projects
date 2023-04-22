@@ -15,27 +15,31 @@
             <h1>Kindly Enter Your Date of Birth !</h1>
         </div>
         <!-- Time Container -->
-        <div id="afterDobEle" class="time_container">
-            <h1>Hello </h1>
+        <div id="afterDobEle" class="time_container hide">
+            <h1>How Much Life Journey Covered,Till Now </h1>
             <div class="inner_container">
                 <div class="inner_item">
-                    <h2>00</h2>
+                    <h2 id="year">00</h2>
                     <h4>Years</h4>
                 </div>
                 <div class="inner_item">
-                    <h2>00</h2>
-                    <h4>Days</h4>
+                    <h2 id="month">00</h2>
+                    <h4>Month</h4>
                 </div>
                 <div class="inner_item">
-                    <h2>00</h2>
+                    <h2 id="day">00</h2>
+                    <h4>Day</h4>
+                </div>
+                <div class="inner_item">
+                    <h2 id="hour">00</h2>
                     <h4>Hour</h4>
                 </div>
                 <div class="inner_item">
-                    <h2>00</h2>
-                    <h4>Minutes</h4>
+                    <h2 id="minute">00</h2>
+                    <h4>Minute</h4>
                 </div>
                 <div class="inner_item">
-                    <h2>00</h2>
+                    <h2 id="second">00</h2>
                     <h4>Second</h4>
                 </div>
             </div>
@@ -46,7 +50,7 @@
             <img id="settingIcon" src="setting_icon.png" alt="">
             <div id="settingContent" class="setting_content hide">
                 <div class="inner_content">
-                    <input id="dobValue" type="date">
+                    <input id="dobValue" type="date" value="">
                     <button id="dobButton">Add DOB</button>
                 </div>
             </div>
