@@ -89,6 +89,7 @@ h1 {
 	padding: 8px 10px;
 	border-top-left-radius: 55px;
 	border-bottom-left-radius: 55px;
+	transition: all 0.6s ease-in-out;
 }
 .settings #settingIcon {
 	width: 25px;
