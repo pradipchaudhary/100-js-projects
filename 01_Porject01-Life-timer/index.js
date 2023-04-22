@@ -29,15 +29,31 @@ const settingToggle = () => {
 	console.log(isOpen);
 };
 
+// Make two digits number
+const makeTwoDigitsNumber = (number) => {
+	return number > 9 ? number : `0${number}`;
+};
+
 // Update Ages
 const updateAge = () => {
 	const currentDate = new Date();
 	const dateDifferent = currentDate - dateOfBirth;
 	// Year, month, day, hour , minute, second
 	const year = Math.floor(dateDifferent / (1000 * 60 * 60 * 24 * 365));
+	const month = Math.floor((dateDifferent / (1000 * 60 * 60 * 24 * 365)) % 12);
+	const day = Math.floor(dateDifferent / (1000 * 60 * 60 * 24)) % 30;
+	const hour = Math.floor(dateDifferent / (1000 * 60 * 60)) % 24;
+	const minute = Math.floor(dateDifferent / (1000 * 60)) % 60;
+	const second = Math.floor(dateDifferent / 1000) % 60;
 
 	// set date in dom
-	yearEl.innerHTML = year;
+	yearEl.innerHTML = makeTwoDigitsNumber(year);
+	monthEl.innerHTML = makeTwoDigitsNumber(month);
+	dayEl.innerHTML = makeTwoDigitsNumber(day);
+	hourEl.innerHTML = makeTwoDigitsNumber(hour);
+	minuteEl.innerHTML = makeTwoDigitsNumber(minute);
+	secondEl.innerHTML = makeTwoDigitsNumber(second);
+
 	console.log("Year Value : ", year);
 };
 
@@ -45,10 +61,29 @@ const setDobHandler = () => {
 	const stringDate = dobInputValue.value;
 	dateOfBirth = stringDate ? new Date(stringDate) : null;
 
+	//get local storage values
+	// const year = localStorage.getItem("year");
+	// const month = localStorage.getItem("month");
+	// const day = localStorage.getItem("day");
+
+	// console.log("Value by local storage: ");
+	// console.log(year, month, day);
+
+	// if (year && month && day) {
+	// 	dateOfBirth = new Date(year, month, day);
+	// }
+
 	if (dateOfBirth) {
+		// Set time in localStorage
+		// localStorage.setItem("year", dateOfBirth.getFullYear());
+		// localStorage.setItem("month", dateOfBirth.getMonth());
+		// localStorage.setItem("day", dateOfBirth.getDate());
+		// console.log(dateOfBirth.getFullYear());
 		initEle.classList.add("hide");
 		afterDobEle.classList.remove("hide");
-		updateAge();
+		setInterval(() => {
+			updateAge();
+		}, 1000);
 	} else {
 		initEle.classList.remove("hide");
 		afterDobEle.classList.add("hide");
