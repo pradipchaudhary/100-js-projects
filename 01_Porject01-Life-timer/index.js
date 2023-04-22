@@ -4,9 +4,6 @@ const settingIcon = document.getElementById("settingIcon");
 const settingContent = document.getElementById("settingContent");
 const dobButton = document.getElementById("dobButton");
 const dobInputValue = document.getElementById("dobValue");
-const dobV = dobInputValue.value;
-console.log("DOB Value is : ", dobV);
-
 const initEle = document.getElementById("initEle");
 const afterDobEle = document.getElementById("afterDobEle");
 
@@ -53,8 +50,6 @@ const updateAge = () => {
 	hourEl.innerHTML = makeTwoDigitsNumber(hour);
 	minuteEl.innerHTML = makeTwoDigitsNumber(minute);
 	secondEl.innerHTML = makeTwoDigitsNumber(second);
-
-	console.log("Year Value : ", year);
 };
 
 const setDobHandler = () => {
@@ -62,23 +57,21 @@ const setDobHandler = () => {
 	dateOfBirth = stringDate ? new Date(stringDate) : null;
 
 	//get local storage values
-	// const year = localStorage.getItem("year");
-	// const month = localStorage.getItem("month");
-	// const day = localStorage.getItem("day");
+	const year = localStorage.getItem("year");
+	const month = localStorage.getItem("month");
+	const day = localStorage.getItem("day");
 
 	// console.log("Value by local storage: ");
-	// console.log(year, month, day);
-
-	// if (year && month && day) {
-	// 	dateOfBirth = new Date(year, month, day);
-	// }
+	if (year && month && day) {
+		dateOfBirth = new Date(year, month, day);
+	}
 
 	if (dateOfBirth) {
 		// Set time in localStorage
-		// localStorage.setItem("year", dateOfBirth.getFullYear());
-		// localStorage.setItem("month", dateOfBirth.getMonth());
-		// localStorage.setItem("day", dateOfBirth.getDate());
-		// console.log(dateOfBirth.getFullYear());
+		localStorage.setItem("year", dateOfBirth.getFullYear());
+		localStorage.setItem("month", dateOfBirth.getMonth());
+		localStorage.setItem("day", dateOfBirth.getDate());
+
 		initEle.classList.add("hide");
 		afterDobEle.classList.remove("hide");
 		setInterval(() => {
@@ -90,7 +83,7 @@ const setDobHandler = () => {
 	}
 };
 
-// setDobHandler();
+setDobHandler();
 
 settingIcon.addEventListener("click", settingToggle);
 dobButton.addEventListener("click", setDobHandler);
