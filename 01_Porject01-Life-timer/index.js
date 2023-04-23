@@ -88,9 +88,12 @@ const setDobHandler = () => {
 		localStorage.setItem("day", dateOfBirth.getDate());
 	}
 	contentToggler();
-	setInterval(() => updateAge(), 1000);
 };
 
+// Update age
+setInterval(() => {
+	updateAge();
+}, 1000);
 // setDobHandler();
 localStorageGetter();
 contentToggler();
