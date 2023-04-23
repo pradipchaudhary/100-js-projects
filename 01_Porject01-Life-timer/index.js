@@ -58,7 +58,6 @@ const localStorageGetter = () => {
 	const month = localStorage.getItem("month");
 	const day = localStorage.getItem("day");
 
-	// console.log("Value by local storage: ");
 	if (year && month && day) {
 		dateOfBirth = new Date(year, month, day);
 	}
@@ -80,7 +79,6 @@ const setDobHandler = () => {
 	const stringDate = dobInputValue.value;
 	dateOfBirth = stringDate ? new Date(stringDate) : null;
 
-	console.log("Date of Birth: " + dateOfBirth);
 	if (dateOfBirth) {
 		// Set time in localStorage
 		localStorage.setItem("year", dateOfBirth.getFullYear());
@@ -94,7 +92,8 @@ const setDobHandler = () => {
 setInterval(() => {
 	updateAge();
 }, 1000);
-// setDobHandler();
+
+// Function called
 localStorageGetter();
 contentToggler();
 
