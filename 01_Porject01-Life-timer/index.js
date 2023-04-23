@@ -66,6 +66,7 @@ const localStorageGetter = () => {
 };
 
 const contentToggler = () => {
+	updateAge();
 	if (dateOfBirth) {
 		initEle.classList.add("hide");
 		afterDobEle.classList.remove("hide");
