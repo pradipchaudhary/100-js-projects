@@ -52,10 +52,7 @@ const updateAge = () => {
 	secondEl.innerHTML = makeTwoDigitsNumber(second);
 };
 
-const setDobHandler = () => {
-	const stringDate = dobInputValue.value;
-	dateOfBirth = stringDate ? new Date(stringDate) : null;
-
+const localStorageGetter = () => {
 	//get local storage values
 	const year = localStorage.getItem("year");
 	const month = localStorage.getItem("month");
@@ -65,25 +62,37 @@ const setDobHandler = () => {
 	if (year && month && day) {
 		dateOfBirth = new Date(year, month, day);
 	}
+	updateAge();
+};
 
+const contentToggler = () => {
 	if (dateOfBirth) {
-		// Set time in localStorage
-		localStorage.setItem("year", dateOfBirth.getFullYear());
-		localStorage.setItem("month", dateOfBirth.getMonth());
-		localStorage.setItem("day", dateOfBirth.getDate());
-
 		initEle.classList.add("hide");
 		afterDobEle.classList.remove("hide");
-		setInterval(() => {
-			updateAge();
-		}, 1000);
 	} else {
 		initEle.classList.remove("hide");
 		afterDobEle.classList.add("hide");
 	}
 };
 
-setDobHandler();
+const setDobHandler = () => {
+	const stringDate = dobInputValue.value;
+	dateOfBirth = stringDate ? new Date(stringDate) : null;
+
+	console.log("Date of Birth: " + dateOfBirth);
+	if (dateOfBirth) {
+		// Set time in localStorage
+		localStorage.setItem("year", dateOfBirth.getFullYear());
+		localStorage.setItem("month", dateOfBirth.getMonth());
+		localStorage.setItem("day", dateOfBirth.getDate());
+	}
+	contentToggler();
+	setInterval(() => updateAge(), 1000);
+};
+
+// setDobHandler();
+localStorageGetter();
+contentToggler();
 
 settingIcon.addEventListener("click", settingToggle);
 dobButton.addEventListener("click", setDobHandler);
