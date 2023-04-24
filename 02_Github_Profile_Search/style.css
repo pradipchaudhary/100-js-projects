@@ -60,7 +60,7 @@ header .search_box .search_button {
 
 /* === Profile Box CSS === */
 
-.profile_box {
+.inner_profile {
 	padding: 25px;
 	margin-top: 60px;
 	border: 1px solid var(--border);
