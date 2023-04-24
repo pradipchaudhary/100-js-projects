@@ -1,26 +1,37 @@
 /* === Google Fonts include */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+:root {
+	--white: #fff;
+	--primary: #1f6feb;
+	--black: #0d1117;
+	--border: #30363d;
+	--gray: #c9d1d9;
+	--gray-text: #8b949e;
+	--roboto: "Roboto", sans-serif;
+	--oswald: "Oswald", sans-serif;
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body {
-	color: #c9d1d9;
-	background: #0d1117;
-	font-family: "Roboto", sans-serif;
+	color: var(--gray);
+	background: var(--black);
+
+	font-family: var(--roboto);
 }
 
 .container {
 	width: 80%;
 	margin: auto;
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
 	padding: 30px;
-	border: 1px solid #30363d;
 }
 
 /* === Header === */
@@ -36,13 +47,92 @@ header .search_box .search_button {
 	font-size: 16px;
 }
 header .search_box .search_input {
-	color: #c9d1d9;
-	border: 1px solid #30363d;
-	background: #0d1117;
+	color: var(--gray-text);
+	border: 1px solid var(--border);
+	background: var(--black);
 }
 header .search_box .search_button {
-	background: #1f6feb;
-	color: #fff;
-	border: 1px solid #1f6feb;
-	outline: #1f6feb;
+	background: var(--primary);
+	color: var(--gray);
+	border: 1px solid var(--primary);
+	outline: var(--primary);
+}
+
+/* === Profile Box CSS === */
+
+.profile_box {
+	padding: 25px;
+	margin-top: 60px;
+	border: 1px solid var(--border);
+	font-family: var(--roboto);
+	border-radius: 6px;
+}
+.profile_box .profile_header {
+	display: flex;
+	justify-content: space-between;
+}
+.profile_box .profile_header .header_info {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+.profile_box .profile_header .profile_image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profile_box .profile_header .profile_image img {
+	width: 100%;
+	height: 100%;
+}
+.profile_box .profile_header .profile_info {
+	margin-left: 10px;
+}
+.profile_box .profile_header .profile_info .username {
+	color: var(--gray-text);
+	margin-top: 5px;
+}
+
+.profile_box .profile_header .profile_link {
+	flex-basis: end;
+}
+.profile_box .profile_header .profile_link a {
+	text-decoration: none;
+	color: var(--gray-text);
+	padding: 5px 16px;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	font-size: 0.8rem;
+}
+
+/* Profile main */
+.profile_box main {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+.profile_box main h1 {
+	border-bottom: 1px solid var(--border);
+	padding-bottom: 6px;
+	margin-bottom: 10px;
+	color: var(--gray);
+}
+.profile_box main .bio {
+	color: var(--gray-text);
+	margin-bottom: 30px;
+}
+.profile_box main .more_profile_info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile_box .more_profile_info div {
+	font-family: var(--oswald);
+}
+
+.profile_box .more_profile_info div h4 {
+	color: var(--gray-text);
+	margin-top: 6px;
 }
