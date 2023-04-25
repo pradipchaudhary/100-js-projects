@@ -56,8 +56,20 @@ input[type="number"]:focus {
 	justify-content: center;
 }
 
+.form_container .calculator_form input {
+	min-width: 46%;
+}
 .form_container .calculator_form button {
 	padding: 6px;
 	min-width: 100px;
 	margin-top: 20px;
+	border: 1px solid var(--gray);
+}
+
+/* Result Message  */
+#result {
+	margin: 20px 10px 0px 10px;
+	line-height: 26px;
+	color: var(--gray-text);
+	text-align: center;
 }

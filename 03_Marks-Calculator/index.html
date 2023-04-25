@@ -11,13 +11,14 @@
     <div class="container">
         <div class="form_container">
             <h1 class="title">Marks Calculator</h1>
-            <form id="calculatorForm" class="calculator_form" onsubmit="calculateMarks(e)">
-                <input type="number" name="english" placeholder="English">
-                <input type="number" name="nepali" placeholder="Nepali">
-                <input type="number" name="math" placeholder="Math">
-                <input type="number" name="science" placeholder="Science">
-                <button type="submit">Marks</button>
+            <form onsubmit="markCalculator(event)" id="calculatorForm" class="calculator_form">
+                <input type="number" id="english" name="english" placeholder="English" required min="0" max="100">
+                <input type="number" id="nepali" name="nepali" placeholder="Nepali" required min="0" max="100">
+                <input type="number" id="math" name="math" placeholder="Math" required min="0" max="100">
+                <input type="number" id="science" name="science" placeholder="Science" required min="0" max="100" >
+                <button type="submit" class="submit_btn">submit</button>
             </form>
+            <div id="result"></div>
         </div>
     </div>
     <script src="app.js"></script>
