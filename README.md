@@ -2,5 +2,6 @@
 
 JavaScript Project list
 
-- Life-timer
+- Life Timer
 - Github Profile Search
+- Marks Calculator
