@@ -78,6 +78,7 @@ header .search_box .search_button {
 	border: 1px solid var(--border);
 	font-family: var(--roboto);
 	border-radius: 6px;
+	min-width: 700px;
 }
 .profile_box .profile_header {
 	display: flex;

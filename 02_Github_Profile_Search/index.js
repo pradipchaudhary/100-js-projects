@@ -58,6 +58,7 @@ const fetchProfile = async () => {
 		} else {
 			loading.innerHTML = data.message;
 			loading.style.color = "red";
+			loading.style.marginTop = "60px";
 			profileBox.innerHTML = "";
 		}
 	} catch (error) {
