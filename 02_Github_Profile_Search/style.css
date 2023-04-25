@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-	width: 80%;
 	margin: auto;
 	margin-top: 30px;
 	display: flex;
@@ -32,9 +31,20 @@ body {
 	align-items: center;
 	gap: 20px;
 	padding: 30px;
+	min-width: 300px;
+	max-width: 800px;
+	/* border: 1px solid red; */
 }
 
 /* === Header === */
+header {
+	width: 100%;
+	text-align: center;
+}
+header h1 {
+	font-family: var(--oswald);
+	margin-bottom: 35px;
+}
 header .search_box {
 	margin-top: 20px;
 	display: flex;
@@ -50,12 +60,14 @@ header .search_box .search_input {
 	color: var(--gray-text);
 	border: 1px solid var(--border);
 	background: var(--black);
+	min-width: 50%;
 }
 header .search_box .search_button {
 	background: var(--primary);
 	color: var(--gray);
 	border: 1px solid var(--primary);
 	outline: var(--primary);
+	cursor: pointer;
 }
 
 /* === Profile Box CSS === */
