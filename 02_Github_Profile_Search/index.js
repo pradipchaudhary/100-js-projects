@@ -45,22 +45,23 @@ const profileGenerator = (profile) => {
 const fetchProfile = async () => {
 	const username = searchInputEl.value;
 
-	loading.innerText = "Loading...";
 	try {
+		loading.innerText = "Loading...";
+		loading.style.color = "#efefef";
 		const res = await fetch(`${url}/${username}`);
 		const data = await res.json();
 		console.log(data);
 
 		if (data.name) {
 			profileBox.innerHTML = profileGenerator(data);
+			loading.innerText = "";
 		} else {
-			loading.innerHTML = "Username not found !";
+			loading.innerHTML = data.message;
 			loading.style.color = "red";
 			profileBox.innerHTML = "";
 		}
 	} catch (error) {
 		console.log({ error });
-		loading.innerText = "";
 	}
 };
 
