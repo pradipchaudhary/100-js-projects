@@ -1,0 +1,63 @@
+/* === Google Fonts include */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+:root {
+	--white: #fff;
+	--primary: #1f6feb;
+	--black: #0d1117;
+	--border: #30363d;
+	--gray: #c9d1d9;
+	--gray-text: #8b949e;
+	--roboto: "Roboto", sans-serif;
+	--oswald: "Oswald", sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--border);
+	background: var(--gray);
+	font-family: var(--roboto);
+}
+
+input[type="number"] {
+	padding: 6px;
+	outline: none;
+	border: 1px solid var(--gray);
+}
+input[type="number"]:focus {
+	outline: none;
+	border: 1px solid var(--primary);
+}
+
+/* Form Container */
+.form_container {
+	padding: 20px;
+	padding-bottom: 35px;
+	border-radius: 6px;
+	background: var(--white);
+	border: 1px solid var(--gray);
+	max-width: 500px;
+}
+.form_container .title {
+	color: var(--primary);
+	text-align: center;
+	margin-bottom: 30px;
+}
+.form_container .calculator_form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.form_container .calculator_form button {
+	padding: 6px;
+	min-width: 100px;
+	margin-top: 20px;
+}
