@@ -56,7 +56,10 @@
 	border: 1px solid var(--gray);
 	border-radius: 5px;
 }
-
+.inner_container form input[type="text"]:focus {
+	outline: none;
+	border: 1px solid var(--primary);
+}
 .inner_container form button {
 	padding: 8px 18px;
 	font-size: 18px;
