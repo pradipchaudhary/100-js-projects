@@ -7,10 +7,22 @@
 // If answer will be correct than score will be incremented
 // If answer will be wrong than score will be decremented
 
-const randomNumber = () => {
-	console.log("hello world!");
+const question = document.getElementById("question");
+
+const randomNumber = (min, max) => {
+	return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
 randomNumber();
 
-// return Math.floor(Math.random() * (max - min + 1) + min);
+const generateQuestion = () => {
+	const randomNumber1 = randomNumber(1, 9);
+	const randomNumber2 = randomNumber(2, 9);
+	// console.log("randomNumber : ", randomNumber1, randomNumber2);
+
+	const question = `Q. What is ${randomNumber1} multiply by ${randomNumber2} ?`;
+	const answer = randomNumber1 * randomNumber2;
+	return { question, answer };
+};
+
+console.log(generateQuestion());
