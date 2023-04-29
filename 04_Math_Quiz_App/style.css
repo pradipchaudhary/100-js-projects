@@ -52,7 +52,7 @@
 .inner_container form input[type="number"] {
 	padding: 8px 18px;
 	font-size: 20px;
-	color: var(--gray);
+	color: var(--border);
 	border: 1px solid var(--gray);
 	border-radius: 5px;
 }

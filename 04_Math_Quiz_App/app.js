@@ -10,6 +10,7 @@
 const questionEl = document.getElementById("question");
 const scoreEl = document.getElementById("score");
 const answerEl = document.getElementById("answer");
+const wrongAnswerEl = document.getElementById("wrongAnswer");
 let storedAnswer;
 let score = 0;
 
@@ -44,12 +45,14 @@ const checkAnswer = (e) => {
 
 	if (storedAnswer == userAnswer) {
 		score = score + 1;
+		wrongAnswerEl.innerText = "";
 	} else {
 		score = score - 1;
+		wrongAnswerEl.innerText = "Wrong answer. Please try again !";
+		wrongAnswerEl.style.color = "red";
 	}
 
 	scoreEl.innerText = score;
 	showQuestion();
-	console.log(userAnswer);
 	answerEl.value = "";
 };
