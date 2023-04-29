@@ -49,14 +49,14 @@
 	gap: 10px;
 	margin-top: 20px;
 }
-.inner_container form input[type="text"] {
+.inner_container form input[type="number"] {
 	padding: 8px 18px;
 	font-size: 20px;
 	color: var(--gray);
 	border: 1px solid var(--gray);
 	border-radius: 5px;
 }
-.inner_container form input[type="text"]:focus {
+.inner_container form input[type="number"]:focus {
 	outline: none;
 	border: 1px solid var(--primary);
 }

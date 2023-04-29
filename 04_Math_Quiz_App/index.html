@@ -10,11 +10,11 @@
 <body>
     <div class="container_wrapper">
         <div class="inner_container">
-            <h1>Score -> <span> 0 </span></h1>
+            <h1>Score -> <span id="score"> 0 </span></h1>
             <div id="question">Q. What is 8 multiply by 10 ?</div>
-            <form id="answerForm">
-                <input type="text" id="answer" placeholder="Answer here...">
-                <button type="submit">Submit</button>
+            <form onsubmit="checkAnswer(event)">
+                <input type="number" id="answer" placeholder="Enter the answer" required>
+                <button>Submit</button>
             </form>
         </div>
     </div>

@@ -7,7 +7,11 @@
 // If answer will be correct than score will be incremented
 // If answer will be wrong than score will be decremented
 
-const question = document.getElementById("question");
+const questionEl = document.getElementById("question");
+const scoreEl = document.getElementById("score");
+const answerEl = document.getElementById("answer");
+let storedAnswer;
+let score = 0;
 
 const randomNumber = (min, max) => {
 	return Math.floor(Math.random() * (max - min + 1) + min);
@@ -25,4 +29,27 @@ const generateQuestion = () => {
 	return { question, answer };
 };
 
-console.log(generateQuestion());
+const showQuestion = () => {
+	const { question, answer } = generateQuestion();
+	questionEl.innerText = question;
+	storedAnswer = answer;
+};
+
+showQuestion();
+
+const checkAnswer = (e) => {
+	e.preventDefault();
+
+	let userAnswer = parseInt(answerEl.value);
+
+	if (storedAnswer == userAnswer) {
+		score = score + 1;
+	} else {
+		score = score - 1;
+	}
+
+	scoreEl.innerText = score;
+	showQuestion();
+	console.log(userAnswer);
+	answerEl.value = "";
+};
