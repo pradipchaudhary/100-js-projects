@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
-	--primary: #efefef;
+	--primary: #fffb00;
 }
 * {
 	margin: 0;
@@ -25,6 +25,9 @@ body {
 	background-color: #55ffdf;
 	background: url(bg.jpg) no-repeat center center;
 	background-size: cover;
+	/* Add the blur effect */
+	backdrop-filter: blur(10px);
+	--webkit-backdrop-filter: blur(10px);
 }
 
 .github svg {
@@ -54,6 +57,40 @@ header h1 > span {
 	color: #000000;
 	background-color: #fffb00;
 	font-size: 1rem;
+}
+
+/* === Project Lists ===*/
+ul {
+	list-style-type: none;
+	margin-bottom: 5rem;
+	margin-top: 1.5rem;
+}
+ul li {
+	width: 90vmin;
+	background-color: var(--primary);
+	box-shadow: 0px 6px 45px 5px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	padding: 0 1rem;
+}
+ul li a {
+	text-decoration: none;
+}
+.project-name {
+	font-weight: bold;
+	color: #1c1c1c;
+	font-size: 1.2rem;
+	text-align: start;
+	width: 100%;
+	margin: 0 5%;
+}
+.project-number {
+	font-weight: bold;
+}
+.container-links {
+	color: #1c1c1c;
 }
 
 /* === Footer CSS === */
