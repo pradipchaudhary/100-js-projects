@@ -9,6 +9,73 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
+
+html {
 	font-family: "Roboto", sans-serif;
+	font-size: 16px; /* 1rem - 16px */
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+	background-color: #55ffdf;
+	background: url(bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.github svg {
+	fill: rgb(255, 255, 5);
+	color: rgb(0, 0, 0);
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+/* === Header Section === */
+header {
+	padding: 1rem 0;
+	opacity: 0.9;
+	width: 50rem;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-top: 1.6rem;
+	background-color: rgba(0, 255, 183, 0.371);
+	backdrop-filter: blur(3px);
+	--webkit-backdrop-filter: blur(3px);
+}
+.title {
+	font-size: 2.4rem;
+	text-align: center;
+}
+header h1 > span {
+	color: #000000;
+	background-color: #fffb00;
+	font-size: 1rem;
+}
+
+/* === Footer CSS === */
+footer {
+	font-size: 1.2rem;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: #202020;
+	color: #fff;
+	padding: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer > span {
+	color: #ff0000;
+}
+footer > a {
+	color: #fff;
+}
+footer > object {
+	width: 26px;
 }
