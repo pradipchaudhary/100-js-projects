@@ -53,6 +53,7 @@ const checkAnswer = (e) => {
 	}
 
 	scoreEl.innerText = score;
+	e.target.reset();
 	showQuestion();
-	answerEl.value = "";
+	// answerEl.value = "";
 };
