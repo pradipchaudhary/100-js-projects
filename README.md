@@ -1,6 +1,4 @@
-# javascript-projects
-
-JavaScript Project list 🔥
+# javascript-projects 🔥
 
 - Life Timer
 - Github Profile Search
