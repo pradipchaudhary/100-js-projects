@@ -23,11 +23,12 @@ body {
 	justify-content: center;
 	background-color: #000000;
 	background-color: #55ffdf;
-	background: url(bg.jpg) no-repeat center center;
+	background: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+		no-repeat center center;
 	background-size: cover;
 	/* Add the blur effect */
-	backdrop-filter: blur(10px);
-	--webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(3px);
+	--webkit-backdrop-filter: blur(3px);
 }
 
 .github svg {
@@ -91,6 +92,9 @@ ul li a {
 }
 .container-links {
 	color: #1c1c1c;
+}
+.container-links:hover {
+	color: #191919;
 }
 
 /* === Footer CSS === */
