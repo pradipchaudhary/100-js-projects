@@ -1,12 +1,3 @@
-// Create a Math question
-// Math question will have a random generated
-// Question Type Multiplicatin question  with random number range 1-10
-// Answer will be the product of the random number range and the random number range
-// User will have to answer question
-// On submit  answer answer will be compared with random generated answer
-// If answer will be correct than score will be incremented
-// If answer will be wrong than score will be decremented
-
 const questionEl = document.getElementById("question");
 const scoreEl = document.getElementById("score");
 const answerEl = document.getElementById("answer");
@@ -23,7 +14,6 @@ randomNumber();
 const generateQuestion = () => {
 	const randomNumber1 = randomNumber(1, 9);
 	const randomNumber2 = randomNumber(2, 9);
-	// console.log("randomNumber : ", randomNumber1, randomNumber2);
 
 	const question = `Q. What is ${randomNumber1} multiply by ${randomNumber2} ?`;
 	const answer = randomNumber1 * randomNumber2;
