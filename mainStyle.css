@@ -23,12 +23,12 @@ body {
 	justify-content: center;
 	background-color: #000000;
 	background-color: #55ffdf;
-	background: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+	background: url(https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png)
 		no-repeat center center;
 	background-size: cover;
 	/* Add the blur effect */
-	backdrop-filter: blur(3px);
-	--webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(8px);
+	--webkit-backdrop-filter: blur(8px);
 }
 
 .github svg {
@@ -42,16 +42,17 @@ body {
 header {
 	padding: 1rem 0;
 	opacity: 0.9;
-	width: 50rem;
+	width: 40rem;
 	margin: 0 auto;
 	border-radius: 5px;
 	margin-top: 1.6rem;
+	margin-bottom: 1.6rem;
 	background-color: rgba(0, 255, 183, 0.371);
 	backdrop-filter: blur(3px);
 	--webkit-backdrop-filter: blur(3px);
 }
 .title {
-	font-size: 2.4rem;
+	font-size: 2rem;
 	text-align: center;
 }
 header h1 > span {
@@ -67,7 +68,7 @@ ul {
 	margin-top: 1.5rem;
 }
 ul li {
-	width: 90vmin;
+	width: 73vmin;
 	background-color: var(--primary);
 	box-shadow: 0px 6px 45px 5px rgba(0, 0, 0, 0.2);
 	display: flex;

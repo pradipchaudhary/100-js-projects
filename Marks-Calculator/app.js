@@ -21,7 +21,6 @@ const markCalculator = (event) => {
 	result.innerText = `You have got ${totalMarks} marks out of ${maxMarks} and your percentage is ${percentage}%`;
 };
 
-
 // convert string to number
 // const stringToNumber = +number;
 // console.log(stringToNumber);
