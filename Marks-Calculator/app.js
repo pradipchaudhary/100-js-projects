@@ -21,11 +21,8 @@ const markCalculator = (event) => {
 	result.innerText = `You have got ${totalMarks} marks out of ${maxMarks} and your percentage is ${percentage}%`;
 };
 
-const number = "22";
-console.log(number);
-console.log("Type: ", typeof number);
 
 // convert string to number
-const stringToNumber = +number;
-console.log(stringToNumber);
-console.log("type: ", typeof stringToNumber);
+// const stringToNumber = +number;
+// console.log(stringToNumber);
+// console.log("type: ", typeof stringToNumber);
