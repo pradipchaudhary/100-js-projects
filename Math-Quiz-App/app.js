@@ -73,7 +73,7 @@ const checkAnswer = (e) => {
 	if (storedAnswer == userAnswer) {
 		score++;
 		Toastify({
-			text: `You are Win and your score is ${score}`,
+			text: `You are Wright and your score is ${score}`,
 			duration: 3000,
 			destination: "https://github.com/apvarun/toastify-js",
 			newWindow: true,
