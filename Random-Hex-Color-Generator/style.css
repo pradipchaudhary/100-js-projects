@@ -37,6 +37,7 @@ body {
 	padding: 5px 10px;
 	color: #383838;
 	letter-spacing: 0px;
+	cursor: pointer;
 	font-size: 1.2rem;
 }
 .app .btn {

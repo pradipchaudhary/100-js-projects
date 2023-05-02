@@ -9,18 +9,31 @@ const btn = document.querySelector("#btn");
 
 color.innerHTML = defaultColor;
 
+// Get random number
+function getRandomNumber() {
+	return Math.floor(Math.random() * hex.length);
+}
+
 btn.addEventListener("click", function () {
 	let haxColor = "#";
 
 	for (let i = 0; i < 6; i++) {
 		haxColor += hex[getRandomNumber()];
-		console.log(i);
 	}
 	color.textContent = haxColor;
 	document.body.style.backgroundColor = haxColor;
 });
 
-// Get random number
-function getRandomNumber() {
-	return Math.floor(Math.random() * hex.length);
-}
+// Copy to clipboard
+const copyToClipBoard = () => {
+	navigator.clipboard
+		.writeText(color.innerText)
+		.then(() => {
+			alert("Copy to clipboard ");
+		})
+		.catch(() => {
+			alert("Couldn't copy to clipboard ");
+		});
+};
+
+color.addEventListener("click", copyToClipBoard);

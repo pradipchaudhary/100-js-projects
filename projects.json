@@ -18,5 +18,10 @@
 		"index": "04",
 		"name": "Math-Quiz-App",
 		"code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Math-Quiz-App"
+	},
+	{
+		"index": "05",
+		"name": "Random-Hex-Color-Generator",
+		"code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Hex-Color-Generator"
 	}
 ]
