@@ -58,3 +58,13 @@ body {
 	color: #efefef;
 	cursor: pointer;
 }
+.container .qrCode {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+.container .qrCode img {
+	width: 120px;
+	border: 1px solid #ccc;
+	padding: 6px;
+}
