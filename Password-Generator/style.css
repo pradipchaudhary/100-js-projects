@@ -1,0 +1,15 @@
+/* Google Fonts Include */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+	--primary: #47185c;
+	--primary-dark: #14001d;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: "Roboto", sans-serif;
+}
