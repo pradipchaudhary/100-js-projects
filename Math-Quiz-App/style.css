@@ -33,6 +33,7 @@ Author_URI : http://pradipchaudhary.com.np/
 	padding: 35px;
 	border: 1px solid var(--gray);
 	border-radius: 6px;
+	background: #1f6feb17;
 }
 .inner_container h1 {
 	text-align: center;
