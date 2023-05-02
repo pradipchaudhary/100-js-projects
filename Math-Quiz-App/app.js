@@ -5,12 +5,14 @@ const wrongAnswerEl = document.getElementById("wrongAnswer");
 let storedAnswer;
 let score = localStorage.getItem("score");
 
+// Random number generator min max score
 const randomNumber = (min, max) => {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
 randomNumber();
 
+// Generate Four Types of Question ( *, +, /, -)
 const generateQuestion = () => {
 	const randomNumber1 = randomNumber(1, 9);
 	const randomNumber2 = randomNumber(2, 9);
@@ -70,11 +72,37 @@ const checkAnswer = (e) => {
 
 	if (storedAnswer == userAnswer) {
 		score++;
+		Toastify({
+			text: `You are Win and your score is ${score}`,
+			duration: 3000,
+			destination: "https://github.com/apvarun/toastify-js",
+			newWindow: true,
+			close: true,
+			gravity: "top", // `top` or `bottom`
+			position: "right", // `left`, `center` or `right`
+			stopOnFocus: true, // Prevents dismissing of toast on hover
+			style: {
+				background: "linear-gradient(to right, #00b09b, #96c93d)",
+			},
+			onClick: function () {}, // Callback after click
+		}).showToast();
 		wrongAnswerEl.innerText = "";
 	} else {
 		score--;
-		wrongAnswerEl.innerText = "Wrong answer. Please try again !";
-		wrongAnswerEl.style.color = "red";
+		Toastify({
+			text: `You are wrong and your score is ${score}`,
+			duration: 3000,
+			destination: "https://github.com/apvarun/toastify-js",
+			newWindow: true,
+			close: true,
+			gravity: "top", // `top` or `bottom`
+			position: "right", // `left`, `center` or `right`
+			stopOnFocus: true, // Prevents dismissing of toast on hover
+			style: {
+				background: "linear-gradient(to right, #ff0000, #ff0000)",
+			},
+			onClick: function () {}, // Callback after click
+		}).showToast();
 	}
 
 	scoreEl.innerText = score;
