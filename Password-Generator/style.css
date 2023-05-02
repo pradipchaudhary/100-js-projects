@@ -38,9 +38,16 @@ body {
 .inner_container #password {
 	width: 100%;
 	height: 38px;
-	color: red;
+	color: #0075ff;
 	background: var(--primary-x-light);
 	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
 }
 /* === Range === */
 .inner_container .range_container {
@@ -68,7 +75,7 @@ body {
 .button_container {
 	width: 100%;
 }
-.button_container #GenerateButton {
+.button_container #generateButton {
 	background: var(--primary-light);
 	border: none;
 	padding: 1.2rem 0;
@@ -78,7 +85,7 @@ body {
 	width: 100%;
 	font-weight: 500;
 }
-.button_container #GenerateButton:active {
+.button_container #generateButton:active {
 	background: var(--primary);
 	color: white;
 	transition: 0.3s ease-in-out;
