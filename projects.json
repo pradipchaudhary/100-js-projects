@@ -23,5 +23,10 @@
 		"index": "05",
 		"name": "Random-Hex-Color-Generator",
 		"code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Hex-Color-Generator"
+	},
+	{
+		"index": "06",
+		"name": "QR-Code-Generator",
+		"code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/QR-Code-Generator"
 	}
 ]
