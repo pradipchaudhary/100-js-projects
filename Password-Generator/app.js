@@ -53,10 +53,38 @@ passwordEl.addEventListener("click", (e) => {
 		navigator.clipboard
 			.writeText(passwordEl.innerText)
 			.then(() => {
-				alert("Copied to clipboard");
+				Toastify({
+					text: "Copied to clipboard.",
+					duration: 3000,
+					destination: "https://github.com/apvarun/toastify-js",
+					newWindow: true,
+					close: true,
+					gravity: "top", // `top` or `bottom`
+					position: "right", // `left`, `center` or `right`
+					stopOnFocus: true, // Prevents dismissing of toast on hover
+					style: {
+						background: "linear-gradient(to right, #ffba0a, #ffde89)",
+					},
+					onClick: function () {}, // Callback after click
+				}).showToast();
+				// alert("Copied to clipboard");
 			})
 			.catch((err) => {
-				alert("could not copy");
+				Toastify({
+					text: "could not copy",
+					duration: 3000,
+					destination: "https://github.com/apvarun/toastify-js",
+					newWindow: true,
+					close: true,
+					gravity: "top", // `top` or `bottom`
+					position: "right", // `left`, `center` or `right`
+					stopOnFocus: true, // Prevents dismissing of toast on hover
+					style: {
+						background: "linear-gradient(to right, #FF0000, #FF0000)",
+					},
+					onClick: function () {}, // Callback after click
+				}).showToast();
+				// alert("could not copy");
 			});
 	}
 });
