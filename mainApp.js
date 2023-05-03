@@ -27,6 +27,6 @@ const updateUI = (projects) => {
 const projectNameFormatter = (name) => {
 	return name
 		.split("-")
-		.map((word) => word[0].toUpperCase() + word.slice(1))
+		.map((word) => word[0] + word.slice(1))
 		.join(" ");
 };
