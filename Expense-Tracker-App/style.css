@@ -76,7 +76,7 @@ h3 {
 	background-color: white;
 	color: black;
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 }
 .transaction .left {
 	padding: 7px;
