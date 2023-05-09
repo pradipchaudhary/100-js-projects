@@ -3,3 +3,69 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	font-family: "lato", Arial, sans-serif;
+}
+body {
+	background: #d1dbe3;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper h1 {
+	text-align: center;
+	margin: 15px;
+}
+.clockContainer {
+	width: 23rem;
+	height: 23rem;
+	border: 6px solid #383737;
+	border-radius: 50%;
+	background: #efefef;
+	box-shadow: 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
+		inset 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
+		0 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0 1.2em 1.2em rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+/* === Clock hand CSS === */
+.clockContainer .hand {
+	width: 10px;
+	height: 200px;
+	/* background: black; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: top;
+	transform: translate(-50%, -50%);
+	border-radius: 1rem;
+	z-index: 10;
+}
+.clockContainer .hour {
+	width: 1rem;
+	height: 8rem;
+	background: green;
+}
+.clockContainer .minute {
+	width: 0.5rem;
+	height: 11rem;
+	background: brown;
+}
+.clockContainer .second {
+	width: 0.1rem;
+	height: 15rem;
+	background: blue;
+}
+.clockContainer::after {
+	content: "";
+	position: relative;
+	background: slateblue;
+	z-index: 11;
+	width: 2rem;
+	height: 2rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
