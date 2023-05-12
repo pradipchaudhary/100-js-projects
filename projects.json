@@ -53,5 +53,10 @@
 		"index": "11",
 		"name": "Memory-Game",
 		"code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Memory-Game"
+	},
+	{
+		"index": "12",
+		"name": "Random-Joks-Generator",
+		"code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Joks-Generator"
 	}
 ]
