@@ -1,5 +1,38 @@
 body {
 	margin: 0;
-	background: green;
-	color: wheat;
+	background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+	font-family: monospace;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 25px 30px;
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	color: darkgreen;
+}
+.container .header {
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+.btn {
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-color: rgba(255, 255, 255, 0.6);
+	color: darkgreen;
+	text-transform: uppercase;
+	font-weight: 600;
+	min-width: 260px;
+	margin: 10px 0px;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
