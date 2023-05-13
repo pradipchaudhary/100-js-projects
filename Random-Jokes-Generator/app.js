@@ -1,4 +1,28 @@
-const initApp = () => {
-	console.log("init app");
+// DOM Element
+const btnEl = document.getElementById("btn");
+const jokeEl = document.getElementById("joke");
+const apiUrl = `https://api.api-ninjas.com/v1/dadjokes?limit=${1}`;
+const apiKey = "MNemEr9THSVTCxISru9Snw==VJeeHWGzXAbYm3tw";
+
+const options = {
+	method: "GET",
+	headers: {
+		"X-Api-Key": apiKey,
+	},
 };
-initApp();
+
+const getJoke = async () => {
+	try {
+		jokeEl.innerText = "Loading...";
+		const response = await fetch(apiUrl, options);
+		const data = await response.json();
+		const joke = data[0].joke;
+		jokeEl.innerText = joke;
+	} catch (error) {
+		console.log(error.message);
+	}
+};
+
+btnEl.addEventListener("click", getJoke);
+
+
