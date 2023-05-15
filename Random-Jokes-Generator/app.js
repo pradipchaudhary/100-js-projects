@@ -19,9 +19,11 @@ const getJoke = async () => {
 		const joke = data[0].joke;
 		jokeEl.innerText = joke;
 	} catch (error) {
-		console.log(error.message);
+		jokeEl.innerText = "An error happened, try again later.";
+		console.log(error);
 	}
 };
+getJoke()
 
 btnEl.addEventListener("click", getJoke);
 
