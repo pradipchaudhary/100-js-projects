@@ -3,7 +3,9 @@
 
 :root {
 	--primary: #fffb00;
+	--js-color: #ffdf00;
 }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,15 +14,19 @@
 
 html {
 	font-family: "Roboto", sans-serif;
-	font-size: 16px; /* 1rem - 16px */
+	font-size: 16px;
+	/* 1rem - 16px */
 }
 
 body {
+	color: #1b1f23;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	/* background: #F6F8FA; */
+
 	background-color: #000000;
 	background-color: #55ffdf;
 	background: url(https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png)
@@ -38,6 +44,7 @@ body {
 	top: 0;
 	right: 0;
 }
+
 /* === Header Section === */
 header {
 	padding: 1rem 0;
@@ -47,14 +54,17 @@ header {
 	border-radius: 5px;
 	margin-top: 1.6rem;
 	margin-bottom: 1.6rem;
+	/* color: var(--js-color); */
 	background-color: rgba(0, 255, 183, 0.371);
 	backdrop-filter: blur(3px);
 	--webkit-backdrop-filter: blur(3px);
 }
+
 .title {
 	font-size: 2rem;
 	text-align: center;
 }
+
 header h1 > span {
 	color: #000000;
 	background-color: #fffb00;
@@ -67,6 +77,7 @@ ul {
 	margin-bottom: 5rem;
 	margin-top: 1.5rem;
 }
+
 ul li {
 	width: 73vmin;
 	background-color: var(--primary);
@@ -77,9 +88,11 @@ ul li {
 	height: 3rem;
 	padding: 0 1rem;
 }
+
 ul li a {
 	text-decoration: none;
 }
+
 .project-name {
 	font-weight: bold;
 	color: #1c1c1c;
@@ -88,12 +101,15 @@ ul li a {
 	width: 100%;
 	margin: 0 5%;
 }
+
 .project-number {
 	font-weight: bold;
 }
+
 .container-links {
 	color: #1c1c1c;
 }
+
 .container-links:hover {
 	color: #191919;
 }
@@ -112,12 +128,15 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
 footer > span {
 	color: #ff0000;
 }
+
 footer > a {
 	color: #fff;
 }
+
 footer > object {
 	width: 26px;
 }

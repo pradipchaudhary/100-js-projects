@@ -8,6 +8,7 @@ const initState = {
 	expenses: 0,
 	net: 0,
 	transaction: [
+		//? Example data
 		// {
 		// 	id: 001,
 		// 	text: "Demo transaction",
