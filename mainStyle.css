@@ -54,7 +54,6 @@ header {
 	border-radius: 5px;
 	margin-top: 1.6rem;
 	margin-bottom: 1.6rem;
-	/* color: var(--js-color); */
 	background-color: rgba(0, 255, 183, 0.371);
 	backdrop-filter: blur(3px);
 	--webkit-backdrop-filter: blur(3px);
