@@ -6,6 +6,8 @@ const second = document.querySelector(".second");
 // Functions
 const initClock = () => {
 	console.log("ini Clock ⏲️");
+	const time = new Date();
+	console.log(time)
 };
 
 // Event handlers
