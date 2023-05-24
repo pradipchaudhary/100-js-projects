@@ -5,7 +5,7 @@ const profileBox = document.getElementById("profileBox");
 const loading = document.getElementById("loading");
 
 const profileGenerator = (profile) => {
-	return `<div class="inner_profile">
+  return `<div class="inner_profile">
         <div class="profile_header">
             <div class="header_info">
                 <div class="profile_image">
@@ -33,7 +33,7 @@ const profileGenerator = (profile) => {
                     <h4>${profile.following}</h4>
                 </div>
                 <div>
-                    <h3>Prpositories</h3>
+                    <h3>Repositories</h3>
                     <h4>${profile.public_repos}</h4>
                 </div>
             </div>
@@ -43,27 +43,29 @@ const profileGenerator = (profile) => {
 
 // Fetch user Profile from GitHub
 const fetchProfile = async () => {
-	const username = searchInputEl.value;
+  const username = searchInputEl.value;
 
-	try {
-		loading.innerText = "Loading...";
-		loading.style.color = "#efefef";
-		const res = await fetch(`${url}/${username}`);
-		const data = await res.json();
-		console.log(data);
+  try {
+    loading.innerText = "Loading...";
+    loading.style.color = "#efefef";
+    const res = await fetch(`${url}/${username}`);
+    const data = await res.json();
+    console.log(data);
 
-		if (data.name) {
-			profileBox.innerHTML = profileGenerator(data);
-			loading.innerText = "";
-		} else {
-			loading.innerHTML = data.message;
-			loading.style.color = "red";
-			loading.style.marginTop = "60px";
-			profileBox.innerHTML = "";
-		}
-	} catch (error) {
-		console.log({ error });
-	}
+    if (data.name) {
+      profileBox.innerHTML = profileGenerator(data);
+      loading.innerText = "";
+    } else {
+      loading.innerHTML = data.message;
+      loading.style.color = "red";
+      loading.style.marginTop = "60px";
+      profileBox.innerHTML = "";
+    }
+  } catch (error) {
+    console.log({ error });
+  }
 };
 
 searchButtonEl.addEventListener("click", fetchProfile);
+
+// END
