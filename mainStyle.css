@@ -2,140 +2,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
-	--primary: #fffb00;
-	--js-color: #ffdf00;
+    --primary: #fffb00;
+    --js-color: #ffdf00;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-	font-family: "Roboto", sans-serif;
-	font-size: 16px;
-	/* 1rem - 16px */
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    /* 1rem - 16px */
 }
 
 body {
-	color: #1b1f23;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	/* background: #F6F8FA; */
+    color: #1b1f23;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #F6F8FA; */
 
-	background-color: #000000;
-	background-color: #55ffdf;
-	background: url(https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png)
-		no-repeat center center;
-	background-size: cover;
-	/* Add the blur effect */
-	backdrop-filter: blur(8px);
-	--webkit-backdrop-filter: blur(8px);
+    background-color: #000000;
+    background-color: #55ffdf;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/a/a4/JavaScript_code.png)
+        no-repeat center center;
+    background-size: cover;
+    /* Add the blur effect */
+    backdrop-filter: blur(8px);
+    --webkit-backdrop-filter: blur(8px);
 }
 
 .github svg {
-	fill: rgb(255, 255, 5);
-	color: rgb(0, 0, 0);
-	position: fixed;
-	top: 0;
-	right: 0;
+    fill: rgb(255, 255, 5);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 /* === Header Section === */
 header {
-	padding: 1rem 0;
-	opacity: 0.9;
-	width: 40rem;
-	margin: 0 auto;
-	border-radius: 5px;
-	margin-top: 1.6rem;
-	margin-bottom: 1.6rem;
-	background-color: rgba(0, 255, 183, 0.371);
-	backdrop-filter: blur(3px);
-	--webkit-backdrop-filter: blur(3px);
+    padding: 1rem 0;
+    opacity: 0.9;
+    width: 40rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    background-color: rgba(0, 255, 183, 0.371);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(3px);
 }
 
 .title {
-	font-size: 2rem;
-	text-align: center;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
 }
 
 header h1 > span {
-	color: #000000;
-	background-color: #fffb00;
-	font-size: 1rem;
+    color: #000000;
+    background-color: #fffb00;
+    font-size: 1rem;
 }
 
 /* === Project Lists ===*/
 ul {
-	list-style-type: none;
-	margin-bottom: 5rem;
-	margin-top: 1.5rem;
+    list-style-type: none;
+    margin-bottom: 5rem;
+    margin-top: 1.5rem;
 }
 
 ul li {
-	width: 73vmin;
-	background-color: var(--primary);
-	box-shadow: 0px 6px 45px 5px rgba(0, 0, 0, 0.2);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 3rem;
-	padding: 0 1rem;
+    width: 73vmin;
+    background-color: var(--primary);
+    box-shadow: 0px 6px 45px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 1rem;
 }
 
 ul li a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .project-name {
-	font-weight: bold;
-	color: #1c1c1c;
-	font-size: 1.2rem;
-	text-align: start;
-	width: 100%;
-	margin: 0 5%;
+    font-weight: bold;
+    color: #1c1c1c;
+    font-size: 1.2rem;
+    text-align: start;
+    width: 100%;
+    margin: 0 5%;
 }
 
 .project-number {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .container-links {
-	color: #1c1c1c;
+    color: #1c1c1c;
 }
 
 .container-links:hover {
-	color: #191919;
+    color: #191919;
 }
 
 /* === Footer CSS === */
 footer {
-	font-size: 1.2rem;
-	width: 100%;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	background-color: #202020;
-	color: #fff;
-	padding: 0.8rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #20202000;
+    color: #fff;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer > span {
-	color: #ff0000;
+    color: #ff0000;
 }
 
 footer > a {
-	color: #fff;
+    color: #fff;
 }
 
 footer > object {
-	width: 26px;
+    width: 26px;
 }
