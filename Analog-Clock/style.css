@@ -20,13 +20,14 @@ body {
 .wrapper h1 {
     text-align: center;
     margin: 15px;
+    margin-bottom: 50px;
 }
 .clockContainer {
     width: 23rem;
     height: 23rem;
-    border: 6px dashed #383737;
+    border: 3px dashed #0000001a;
     border-radius: 50%;
-    background: #efefef;
+    background: #d1dbe3;
     box-shadow: 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
         inset 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
         0 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0 1.2em 1.2em rgba(0, 0, 0, 0.3);
@@ -48,27 +49,27 @@ body {
     border-top-right-radius: 1rem;
 }
 .clockContainer .hour {
-    width: 1rem;
-    height: 8rem;
+    width: 0.6rem;
+    height: 6rem;
     background: green;
 }
 .clockContainer .minute {
     width: 0.5rem;
-    height: 11rem;
+    height: 8rem;
     background: brown;
 }
 .clockContainer .second {
     width: 0.1rem;
-    height: 15rem;
+    height: 10rem;
     background: blue;
 }
 .clockContainer::after {
     content: "";
-    position: relative;
-    background: slateblue;
+    position: absolute;
+    background-color: #1f1e1d;
     z-index: 11;
-    width: 2rem;
-    height: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
