@@ -28,9 +28,9 @@ body {
     border: 3px dashed #0000001a;
     border-radius: 50%;
     background: #d1dbe3;
-    box-shadow: 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
+    /* box-shadow: 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
         inset 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
-        0 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0 1.2em 1.2em rgba(0, 0, 0, 0.3);
+        0 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0 1.2em 1.2em rgba(0, 0, 0, 0.3); */
     position: relative;
 }
 
