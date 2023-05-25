@@ -1,3 +1,7 @@
+:root {
+    --rotateAngle: 0;
+    --undoAngle: 0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +24,7 @@ body {
 .clockContainer {
     width: 23rem;
     height: 23rem;
-    border: 6px solid #383737;
+    border: 6px dashed #383737;
     border-radius: 50%;
     background: #efefef;
     box-shadow: 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
@@ -31,16 +35,17 @@ body {
 
 /* === Clock hand CSS === */
 .clockContainer .hand {
+    background-color: black;
     width: 10px;
-    height: 200px;
-    /* background: black; */
+    height: 40px;
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
-    transform-origin: top;
-    transform: translate(-50%, -50%);
-    border-radius: 1rem;
-    z-index: 10;
+    /*transform: translateX(-50%); translate the object backwards 50% of its width*/
+    transform-origin: bottom;
+    z-index: 10; /*so that hand always comes on the top of numbers*/
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 .clockContainer .hour {
     width: 1rem;
@@ -70,7 +75,6 @@ body {
     border-radius: 50%;
 }
 .clockContainer .number {
-    --rotateAngle: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -111,4 +115,42 @@ body {
 }
 .clockContainer .number-11 {
     --rotateAngle: 330deg;
+}
+
+.clockContainer .number .undo {
+    transform: rotate(var(--undoAngle));
+}
+
+.clockContainer .number-1 .undo {
+    --undoAngle: -30deg;
+}
+.clockContainer .number-2 .undo {
+    --undoAngle: -60deg;
+}
+.clockContainer .number-3 .undo {
+    --undoAngle: -90deg;
+}
+.clockContainer .number-4 .undo {
+    --undoAngle: -120deg;
+}
+.clockContainer .number-5 .undo {
+    --undoAngle: -150deg;
+}
+.clockContainer .number-6 .undo {
+    --undoAngle: -180deg;
+}
+.clockContainer .number-7 .undo {
+    --undoAngle: -210deg;
+}
+.clockContainer .number-8 .undo {
+    --undoAngle: -240deg;
+}
+.clockContainer .number-9 .undo {
+    --undoAngle: -270deg;
+}
+.clockContainer .number-10 .undo {
+    --undoAngle: -300deg;
+}
+.clockContainer .number-11 .undo {
+    --undoAngle: -330deg;
 }
