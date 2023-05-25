@@ -4,12 +4,47 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Box-Shadow-Generator</title>
+        <title>Box Shadows generator</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container">
-            <h1>Box-Shadow-Generator</h1>
+        <div class="boxShadowContainer">
+            <div class="boxShadowDisplay">
+                <div class="boxShadow">Box Shadows</div>
+            </div>
+            <div class="boxShadowGenerator">
+                <div class="generator">
+                    <div class="input-group">
+                        <label for="offset-x">Offset X </label>
+                        <input type="range" min="100" max="100" value="2" />
+                    </div>
+                    <div class="input-group">
+                        <label for="offset-y">Offset Y</label>
+                        <input type="range" min="-100" max="100" value="2" />
+                    </div>
+                    <div class="input-group">
+                        <label for="blur -radius">Blur radius</label>
+                        <input type="range" min="0" max="100" value="2" />
+                    </div>
+                    <div class="input-group">
+                        <label for="spread-radius">Spread Radius</label>
+                        <input type="range" min="-100" max="100" value="2" />
+                    </div>
+                    <div class="input-group">
+                        <label for="color">Color</label>
+                        <input type="color" value="#000000" />
+                    </div>
+                    <div class="input-group">
+                        <div class="code">
+                            -webkit-box-shadow: 10px 10px 5px 0px
+                            rgba(0,0,0,0.75); <br />
+                            -moz-box-shadow: 10px 10px 5px 0px
+                            rgba(0,0,0,0.75);<br />
+                            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="app.js"></script>
     </body>
