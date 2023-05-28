@@ -63,5 +63,10 @@
         "index": "13",
         "name": "Box-Shadow-Generator",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Box-Shadow-Generator"
+    },
+    {
+        "index": "14",
+        "name": "Weather-App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Weather-App"
     }
 ]
