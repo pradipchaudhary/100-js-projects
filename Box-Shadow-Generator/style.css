@@ -1,5 +1,5 @@
 /* === Google Fonts === */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&family=Roboto:wght@100;300;400;700&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -12,14 +12,24 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .boxShadowContainer {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.boxShadowContainer .title {
+    margin-bottom: 3rem;
+}
+.boxShadowContainer .innerContainer {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .boxShadowContainer .boxShadowDisplay {
     display: flex;
@@ -27,7 +37,8 @@ body {
     align-items: center;
     width: 50%;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    /* padding-right: 5rem; */
 }
 .boxShadowContainer .boxShadowDisplay .boxShadow {
     display: flex;
@@ -56,7 +67,7 @@ body {
 
 .boxShadowGenerator .generator .input-group label {
     font-size: 16px;
-    margin: 12px 0px 3px;
+    margin: 18px 0px 3px;
 }
 .boxShadowGenerator .generator .input-group label {
     display: flex;
@@ -66,7 +77,7 @@ body {
     min-width: 300px;
 } */
 .boxShadowGenerator .generator .input-group .shadowColor {
-    width: 30px;
+    width: 60px;
     height: 30px;
 }
 .boxShadowGenerator .generator .input-group .code {
