@@ -68,5 +68,10 @@
         "index": "14",
         "name": "Weather-App",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Weather-App"
+    },
+    {
+        "index": "15",
+        "name": "OTP Varification Form",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/OTP%20Verification%20Form"
     }
 ]
