@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marks Calculator || JavaScript Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="form_container">
-            <h1 class="title">Marks Calculator</h1>
-            <form onsubmit="markCalculator(event)" id="calculatorForm" class="calculator_form">
-                <input type="number" id="english" name="english" placeholder="English" required min="0" max="100">
-                <input type="number" id="nepali" name="nepali" placeholder="Nepali" required min="0" max="100">
-                <input type="number" id="math" name="math" placeholder="Math" required min="0" max="100">
-                <input type="number" id="science" name="science" placeholder="Science" required min="0" max="100" >
-                <button type="submit" class="submit_btn">submit</button>
-            </form>
-            <div id="result"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marks Calculator || JavaScript Project</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form_container">
+                <h1 class="title">Marks Calculator</h1>
+                <form
+                    onsubmit="markCalculator(event)"
+                    id="calculatorForm"
+                    class="calculator_form"
+                >
+                    <input
+                        type="number"
+                        id="english"
+                        name="english"
+                        placeholder="English"
+                        required
+                        min="0"
+                        max="100"
+                    />
+                    <input
+                        type="number"
+                        id="nepali"
+                        name="nepali"
+                        placeholder="Nepali"
+                        required
+                        min="0"
+                        max="100"
+                    />
+                    <input
+                        type="number"
+                        id="math"
+                        name="math"
+                        placeholder="Math"
+                        required
+                        min="0"
+                        max="100"
+                    />
+                    <input
+                        type="number"
+                        id="science"
+                        name="science"
+                        placeholder="Science"
+                        required
+                        min="0"
+                        max="100"
+                    />
+                    <button type="submit" class="submit_btn">submit</button>
+                </form>
+                <div id="result"></div>
+            </div>
         </div>
-    </div>
-    <script src="app.js"></script>
-</body>
+        <script src="app.js"></script>
+    </body>
 </html>
