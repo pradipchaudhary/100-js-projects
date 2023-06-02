@@ -7,11 +7,14 @@ const toggleButton = document.querySelector("#toggleButton");
 const toggleMode = () => {
     var fullPath = document.getElementById("toggleButton").src;
     // var filename = fullPath.replace(/^.*[\\\/]/, "");
+    console.log(fullPath);
     // or, try this,
-    var filename = fullPath.split("/").pop();
+    // var filename = fullPath.split("/").pop();
 
-    document.getElementById("result").value = filename;
+    // document.getElementById("result").value = filename;
 };
 
 // Call Function to toggle
-toggleMode();
+// toggleMode();
+
+toggleButton.addEventListener("click", toggleMode);
