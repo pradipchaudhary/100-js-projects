@@ -11,11 +11,16 @@ html {
     font-family: "lato", Arial, sans-serif;
 }
 body {
-    background: #d1dbe3;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
 }
 .wrapper h1 {
     text-align: center;
@@ -25,9 +30,12 @@ body {
 .clockContainer {
     width: 23rem;
     height: 23rem;
-    border: 3px dashed #0000001a;
+    color: #fff;
+    border: 5px solid #fff;
     border-radius: 50%;
-    background: #d1dbe3;
+    background: rgb(49, 47, 47);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7),
+        0px 0px 20px rgba(0, 0, 0, 0.7);
     /* box-shadow: 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
         inset 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
         0 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0 1.2em 1.2em rgba(0, 0, 0, 0.3); */
@@ -37,7 +45,7 @@ body {
 /* === Clock hand CSS === */
 .clockContainer .hand {
     background-color: black;
-    width: 10px;
+    width: 8px;
     height: 40px;
     position: absolute;
     bottom: 50%;
@@ -51,25 +59,25 @@ body {
 .clockContainer .hour {
     width: 0.6rem;
     height: 6rem;
-    background: green;
+    background: red;
 }
 .clockContainer .minute {
     width: 0.5rem;
     height: 8rem;
-    background: brown;
+    background: green;
 }
 .clockContainer .second {
-    width: 0.1rem;
-    height: 10rem;
-    background: blue;
+    width: 5px;
+    height: 8rem;
+    background: #fff;
 }
 .clockContainer::after {
     content: "";
     position: absolute;
-    background-color: #1f1e1d;
+    background-color: #ffffff;
     z-index: 11;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.1rem;
+    height: 1.1rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
