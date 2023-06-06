@@ -1,6 +1,12 @@
 //Javascript for switch clock format
 
 //Get current time in javascript
+const clock = () => {
+    const today = new Date();
+    const hour = today.getHours();
+    console.log(hour);
+};
+clock();
 
 //Set the time period(AM/PM)
 

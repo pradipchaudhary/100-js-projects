@@ -73,5 +73,10 @@
         "index": "15",
         "name": "OTP-Verification-Form",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/OTP-Verification-Form"
+    },
+    {
+        "index": "17",
+        "name": "Digital-Clock",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Digital-Clock"
     }
 ]
