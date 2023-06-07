@@ -75,8 +75,13 @@
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/OTP-Verification-Form"
     },
     {
-        "index": "17",
+        "index": "16",
         "name": "Digital-Clock",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Digital-Clock"
+    },
+    {
+        "index": "17",
+        "name": "Langulage-Translator-App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Language-Translator-App"
     }
 ]
