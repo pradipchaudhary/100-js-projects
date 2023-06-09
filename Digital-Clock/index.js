@@ -18,29 +18,45 @@ const clock = () => {
     const minutes = today.getMinutes();
     const seconds = today.getSeconds();
     const month = today.getMonth();
-    console.log(today, hour, minutes, seconds, month);
+    // console.log(today, hour, minutes, seconds, month);
     hourEl.innerHTML = hour;
     minutesEl.innerHTML = minutes;
     secondsEl.innerHTML = seconds;
     monthsEl.innerHTML = month;
-    if (hour > 12) {
-        period.innerHTML = "PM";
-    } else {
-        periodEl.innerHTML = period;
-    }
+    periodEl.innerHTML = setTimePeriod(hour);
+
+    // if (hour > 12) {
+    //     period.innerHTML = "PM";
+    // } else {
+    //     periodEl.innerHTML = period;
+    // }
 };
 clock();
 
-const updateTime = setInterval(clock, 1000);
-
 //Set the time period(AM/PM)
+function setTimePeriod(time) {
+    let ampm = "";
+    if (time > 12) {
+        console.log("Less then 12 hours");
+        ampm = "AM";
+    } else {
+        console.log("Greater then 12 hours");
+        ampm = "PM";
+    }
+    return ampm;
+}
 
+// console.log(period);
 //Set the 12-hour clock format
 
 //Add the 0 for the values lower than 10
+function addZero(time) {}
 
 //Get the date in javascript
 
 //document.querySelector(".year").innerHTML = year;
 
 //Javascript for dot menu toggle
+
+// Events call
+const updateTime = setInterval(clock, 1000);
