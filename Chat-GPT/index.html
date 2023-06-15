@@ -4,16 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Chat GPT | 100 JavaScript Projects</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="wrapper">
+            <div class="chat-container">
+                <div class="chat outgoing">
+                    <div class="chat-content">
+                        <div class="chat-details">
+                            <img src="images/user.jpg" alt="user-img" />
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Laborum quod atque deleniti?
+                                Porro inventore nobis id.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="input-box">
                 <input type="text" id="prompt" placeholder="Send a message. " />
-                <!-- <button id="callAPIButton">Call ChatGPT API</button> -->
-            </div>
-            <div class="results-box">
-                <p id="results"></p>
+                <button id="deletBtn">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
             </div>
         </div>
 
