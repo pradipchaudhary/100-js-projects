@@ -1,6 +1,14 @@
 const prompt = document.getElementById("prompt");
 const results = document.getElementById("results");
 const callAPIButton = document.getElementById("callAPIButton");
+const chatContainer = document.querySelector(".chat-container");
+
+const defaultText = `
+                    <div class="default-text">
+                        <h1>ChatGPT Clone</h1>
+                        <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
+                    </div>
+                    `;
 
 async function callGPTAPI() {
     const url = "https://openai80.p.rapidapi.com/chat/completions";
@@ -31,4 +39,5 @@ async function callGPTAPI() {
         console.error(error);
     }
 }
-callAPIButton.addEventListener("click", callGPTAPI);
+// chatContainer.innerHTML = defaultText;
+// callAPIButton.addEventListener("click", callGPTAPI);
