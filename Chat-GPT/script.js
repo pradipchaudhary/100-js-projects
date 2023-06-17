@@ -2,6 +2,7 @@ const prompt = document.getElementById("prompt");
 const results = document.getElementById("results");
 const callAPIButton = document.getElementById("callAPIButton");
 const chatContainer = document.querySelector(".chat-container");
+const sendButton = document.getElementById("sendButton");
 
 const defaultText = `
                     <div class="default-text">

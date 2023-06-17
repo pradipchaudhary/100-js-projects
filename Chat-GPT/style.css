@@ -38,13 +38,28 @@ body {
     width: 100%;
     height: 100%;
 }
-.input-box {
+.inputBox-container {
     position: fixed;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    background-image: linear-gradient(
+        180deg,
+        rgb(53 55 64 / 98%),
+        #444654 58.85%
+    );
+    border: 1px solid transparent;
+    height: 192px;
+    border: none;
+}
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 45%;
+    height: 100%;
     gap: 5px;
 }
 .input-box input {
@@ -60,7 +75,7 @@ body {
 }
 .input-box input:hover,
 .input-box input:focus {
-    border: 1px solid #343541;
+    border: 1px solid #34354188;
     outline: none;
 }
 
@@ -75,9 +90,17 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+.input-box button#sendButton {
+    position: relative;
+    top: 0;
+    left: -69px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
 .input-box button:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border: 1px solid #343541;
+    border: 1px solid #34354188;
     background: #4e4f5f;
 }
 
