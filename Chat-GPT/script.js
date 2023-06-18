@@ -40,5 +40,8 @@ async function callGPTAPI() {
         console.error(error);
     }
 }
+sendButton.addEventListener("click", function (e) {
+    console.log("Clicked " + e.target);
+});
 // chatContainer.innerHTML = defaultText;
 // callAPIButton.addEventListener("click", callGPTAPI);
