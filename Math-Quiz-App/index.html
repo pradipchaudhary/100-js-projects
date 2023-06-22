@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math quiz app | JavaScript Project</title>
-    <!-- Include CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container_wrapper">
-        <div class="inner_container">
-            <h1>Score -> <span id="score"> 0 </span></h1>
-            <div id="question">Q. What is 8 multiply by 10 ?</div>
-            <form onsubmit="checkAnswer(event)">
-                <input type="number" id="answer" placeholder="Enter the answer" required>
-                <span id="wrongAnswer"></span>
-                <button>Submit</button>
-            </form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Math quiz app | 100 JavaScript Project</title>
+        <!-- Include CSS -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container_wrapper">
+            <div class="inner_container">
+                <h1>Score -> <span id="score"> 0 </span></h1>
+                <div id="question">Q. What is 8 multiply by 10 ?</div>
+                <form onsubmit="checkAnswer(event)">
+                    <input
+                        type="number"
+                        id="answer"
+                        placeholder="Enter the answer"
+                        required
+                    />
+                    <span id="wrongAnswer"></span>
+                    <button>Submit</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <!-- Include Script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="app.js"></script>
-</body>
+        <!-- Include Script -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"
+        ></script>
+        <script src="app.js"></script>
+    </body>
 </html>
