@@ -21,51 +21,87 @@ const profileGenerator = (profile) => {
             </div>
         </div>
         <main>
-            <h1>About</h1>
             <div class="bio">${profile.bio}</div>
             <div class="more_profile_info">
                 <div>
+                    <h3>${profile.followers}</h3>
                     <h3>Followers</h3>
-                    <h4>${profile.followers}</h4>
                 </div>
                 <div>
+                    <h3>${profile.following}</h3>
                     <h3>Following</h3>
-                    <h4>${profile.following}</h4>
                 </div>
                 <div>
+                    <h3>${profile.public_repos}</h3>
                     <h3>Repositories</h3>
-                    <h4>${profile.public_repos}</h4>
                 </div>
+            </div>
+            <div id="popular_repos">
+                
             </div>
         </main>
     </div>`;
 };
 
 // Fetch user Profile from GitHub
-const fetchProfile = async () => {
+const fetchProfile = async (event) => {
     const username = searchInputEl.value;
+    if (event.key === "Enter") {
+        try {
+            loading.innerText = "Loading...";
+            loading.style.color = "#efefef";
+            const res = await fetch(`${url}/${username}`);
+            const data = await res.json();
+            console.log(data);
 
-    try {
-        loading.innerText = "Loading...";
-        loading.style.color = "#efefef";
-        const res = await fetch(`${url}/${username}`);
-        const data = await res.json();
-        console.log(data);
+            if (data.name) {
+                profileBox.innerHTML = profileGenerator(data);
+                // getRepositories(username);
+                getPopularRepositories(username)
+                    .then((repositories) => {
+                        const reposEl =
+                            document.querySelector("#popular_repos");
+                        repositories.forEach((repository, index) => {
+                            const elem = document.createElement("a");
+                            elem.classList.add("repo");
+                            elem.href = repository.html_url;
+                            elem.innerHTML = repository.name;
 
-        if (data.name) {
-            profileBox.innerHTML = profileGenerator(data);
-            loading.innerText = "";
-        } else {
-            loading.innerHTML = data.message;
-            loading.style.color = "red";
-            loading.style.marginTop = "60px";
-            profileBox.innerHTML = "";
+                            reposEl.appendChild(elem);
+                        });
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                    });
+                loading.innerText = "";
+            } else {
+                loading.innerHTML = data.message;
+                loading.style.color = "red";
+                loading.style.marginTop = "60px";
+                profileBox.innerHTML = "";
+            }
+        } catch (error) {
+            console.log({ error });
         }
-    } catch (error) {
-        console.log({ error });
     }
 };
 
-searchButtonEl.addEventListener("click", fetchProfile);
+async function getPopularRepositories(username) {
+    try {
+        const response = await fetch(
+            `${url}/${username}/repos?sort=stars&per_page=6`
+        );
+        const repositories = await response.json();
 
+        return repositories;
+    } catch (error) {
+        throw new Error(
+            `Failed to fetch popular repositories: ${error.message}`
+        );
+    }
+}
+
+// Usage
+
+searchInputEl.addEventListener("keypress", fetchProfile);
 // END
