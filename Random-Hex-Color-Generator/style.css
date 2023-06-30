@@ -3,50 +3,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
 .app {
-	min-width: 500px;
-	border: 1px solid #ffffff16;
-	padding: 50px 30px;
-	text-align: center;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
-	background: #ffffff46;
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    min-width: 500px;
+    border: 1px solid #ffffff16;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #ffffff46;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .app .container h1 {
-	font-weight: 700;
-	letter-spacing: 0px;
-	margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
 }
-.app .container #color {
-	border-radius: 1px;
-	padding: 5px 10px;
-	color: #383838;
-	letter-spacing: 0px;
-	cursor: pointer;
-	font-size: 1.2rem;
+/* .app .container #color {
+    border-radius: 1px;
+    padding: 8px 20px;
+    color: #0000009e;
+    letter-spacing: 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    max-width: 260px;
+    border: 1px solid #00000036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+}
+.app .container #color:hover {
+    background: #dbd6d629;
+} */
+
+.container .display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    background: #ffffff;
+    padding: 14px;
+    margin-left: 15%;
+    border-radius: 4px;
+}
+.container .display span {
+    width: 100%;
+    text-align: left;
+}
+.container .display img {
+    width: 16px;
+    cursor: pointer;
 }
 .app .btn {
-	padding: 8px 16px;
-	margin-top: 30px;
-	cursor: pointer;
-	font-size: 1rem;
-	border-radius: 2px;
-	border: 1px solid #ffffffb3;
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	background: #ffffffb3;
+    padding: 14px 16px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 2px;
+    border: 1px solid #ffffffb3;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #ffffffb3;
+    min-width: 300px;
 }

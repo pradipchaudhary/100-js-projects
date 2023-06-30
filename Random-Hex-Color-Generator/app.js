@@ -6,34 +6,35 @@ document.body.style.background = defaultColor;
 // Variables
 const color = document.querySelector("#color");
 const btn = document.querySelector("#btn");
+const copyBtn = document.querySelector("#copyBtn");
 
 color.innerHTML = defaultColor;
 
 // Get random number
 function getRandomNumber() {
-	return Math.floor(Math.random() * hex.length);
+    return Math.floor(Math.random() * hex.length);
 }
 
 btn.addEventListener("click", function () {
-	let haxColor = "#";
+    let haxColor = "#";
 
-	for (let i = 0; i < 6; i++) {
-		haxColor += hex[getRandomNumber()];
-	}
-	color.textContent = haxColor;
-	document.body.style.backgroundColor = haxColor;
+    for (let i = 0; i < 6; i++) {
+        haxColor += hex[getRandomNumber()];
+    }
+    color.textContent = haxColor;
+    document.body.style.backgroundColor = haxColor;
 });
 
 // Copy to clipboard
 const copyToClipBoard = () => {
-	navigator.clipboard
-		.writeText(color.innerText)
-		.then(() => {
-			alert("Copy to clipboard ");
-		})
-		.catch(() => {
-			alert("Couldn't copy to clipboard ");
-		});
+    navigator.clipboard
+        .writeText(color.innerText)
+        .then(() => {
+            alert(`${color.innerText} Copy to clipboard !  `);
+        })
+        .catch(() => {
+            alert("Couldn't copy to clipboard ");
+        });
 };
 
-color.addEventListener("click", copyToClipBoard);
+copyBtn.addEventListener("click", copyToClipBoard);

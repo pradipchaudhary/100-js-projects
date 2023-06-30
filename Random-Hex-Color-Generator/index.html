@@ -5,14 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Random Hex Color Generator | 100 JavaScript Projects</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="app">
             <div class="container">
                 <h1>Color Generator !</h1>
-                <span id="color">#</span>
-                <br />
+                <div class="display">
+                    <span id="color">#</span>
+                    <img src="images/copy.png" id="copyBtn" alt="Copy" />
+                </div>
+
                 <button id="btn" class="btn">Generate</button>
             </div>
         </div>
