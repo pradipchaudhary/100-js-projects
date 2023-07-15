@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pexels Clone Website | HTML, CSS and JavaScript</title>
+        <!-- === CSS Links -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- === Header Section === -->
+        <header class="header">
+            <div class="container">
+                <nav class="nav_brand">
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="logo, Pexels" />
+                    </div>
+                    <div class="nav_menu">
+                        <button>
+                            Explore
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <button>License</button>
+                        <button>
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="profile">
+                            <img
+                                src="assets/img/profileimg.png"
+                                alt="profile img"
+                                width="30px"
+                            />
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <button class="upload">upload</button>
+                    </div>
+                </nav>
+                <div class="center_content">
+                    <h3>
+                        The best free stock photos, royalty free images & videos
+                        shared by creators.
+                    </h3>
+                    <div class="input_search">
+                        <input
+                            id="search_input"
+                            type="text"
+                            placeholder="Search for free photos"
+                        />
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="bottom_text">
+                        <p>
+                            <span>Trending:- </span>
+                            space,sky,nature,dark,flowers
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Images Gallery -->
+        <main>
+            <div class="container">
+                <div class="home_tabs">
+                    <button>Home</button>
+                    <button>Videos</button>
+                    <button>Leaderboard</button>
+                    <button>Challenges</button>
+                </div>
+                <div class="image_title">
+                    <h4>Free Stock Photos</h4>
+                    <select
+                        name="main_filter"
+                        id="main_filter"
+                        class="main_filter"
+                    >
+                        <option value="trending">Trending</option>
+                        <option value="new">New</option>
+                        <option value="following">Following</option>
+                    </select>
+                </div>
+                <div class="image_container">
+                    <ul class="images" id="images">
+                        <!-- img 1 -->
+                        <!-- <li class="pic_list">
+                            <img
+                                src="assets/img/pexels-photo-14537420.jpeg"
+                                alt=""
+                            />
+                            <article class="details">
+                                <div class="top_details">
+                                    <button>
+                                        <i
+                                            class="fa fa-clone"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                    <button>
+                                        <i
+                                            class="fa fa-heart-o"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                </div>
+                                <div class="bottom_details">
+                                    <div class="auth_detail">
+                                        <img
+                                            src="assets/img/profileimg.png"
+                                            alt=""
+                                        />
+                                        <h6>Pradip Chaudhary</h6>
+                                    </div>
+                                    <button>
+                                        <i
+                                            class="fa fa-download"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </article>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!-- JavaScript Includes -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
