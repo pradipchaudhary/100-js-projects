@@ -88,5 +88,10 @@
         "index": "18",
         "name": "SatoshiToUSD-Converter",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/SatoshiToUSD-Converter"
+    },
+    {
+        "index": 10,
+        "name": "Pexels-Clone",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Pexels-Clone"
     }
 ]
