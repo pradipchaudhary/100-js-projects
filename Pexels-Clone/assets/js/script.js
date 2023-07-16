@@ -2,12 +2,29 @@ const images = document.querySelector("#images");
 const searchInput = document.querySelector("#search_input");
 const api_key = "kSRXBewLdjz3NMRutJJHgZnO81nUf7y9X2ezlQXoJjMOeb0zCtY9z3BH";
 const api_link = "https://api.pexels.com/v1/curated?page=1&per_page=80";
+const headerEl = document.querySelector("#header");
+
+// Random Hero Section Images
+const randomImage = (apiLink) => {
+    fetch(apiLink, { headers: { Authorization: api_key } })
+        .then((response) => response.json())
+        .then((responseData) => {
+            const images = responseData.photos;
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const randomImage = images[randomIndex];
+            const heroImage = randomImage.src.landscape;
+
+            // set header background
+            headerEl.style.background = `url(${heroImage})no-repeat center center `;
+            headerEl.style.backgroundSize = "cover";
+        });
+};
+randomImage(api_link);
 
 // Generate Picture Box for DOM
 const generateImage = (imgs) => {
     const allImages = imgs.photos;
     images.innerHTML += allImages.map((imgData) => {
-        console.log(imgData);
         return `
         <li class="pic_list">
         <img
@@ -61,7 +78,6 @@ const getImages = (apiLink) => {
 getImages(api_link);
 
 searchInput.addEventListener("keyup", (event) => {
-    console.log(event);
     if (event.target.value === "") {
         return null;
     }
@@ -73,4 +89,4 @@ searchInput.addEventListener("keyup", (event) => {
         e.target.value = "";
     }
 });
-console.log(searchInput);
+// console.log(searchInput);
