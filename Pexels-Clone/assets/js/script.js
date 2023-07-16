@@ -20,6 +20,10 @@ const randomImage = (apiLink) => {
         });
 };
 randomImage(api_link);
+// Banner image change every 5 minutes
+setInterval(function () {
+    randomImage(api_link);
+}, 300000);
 
 // Generate Picture Box for DOM
 const generateImage = (imgs) => {
