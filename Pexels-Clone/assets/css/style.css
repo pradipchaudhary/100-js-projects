@@ -44,7 +44,7 @@ body {
     width: 100%;
     height: 500px;
     position: relative;
-    background: url(../img/pixelbg.jpg) no-repeat center center;
+    /* background: url(../img/pixelbg.jpg) no-repeat center center; */
     background-size: cover;
 }
 .nav_brand {
