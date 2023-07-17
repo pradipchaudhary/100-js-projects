@@ -21,14 +21,17 @@ const randomImage = (apiLink) => {
 };
 randomImage(api_link);
 // Banner image change every 5 minutes
-setInterval(function () {
-    randomImage(api_link);
-}, 300000);
-
+const bannerChange = function () {
+    setInterval(function () {
+        randomImage(api_link);
+    }, 300000);
+};
 // Generate Picture Box for DOM
 const generateImage = (imgs) => {
     const allImages = imgs.photos;
+    console.log(allImages);
     images.innerHTML += allImages.map((imgData) => {
+        // console.log(imgData);
         return `
         <li class="pic_list">
         <img
@@ -80,6 +83,15 @@ const getImages = (apiLink) => {
 };
 
 getImages(api_link);
+
+// const generateInfiniteImage = function () {
+//     generateImage(api_link);
+//     console.log("page one page 2");
+// };
+
+// const infiniteImages = function () {
+//     setInterval(generateInfiniteImage, 5000);
+// };
 
 searchInput.addEventListener("keyup", (event) => {
     if (event.target.value === "") {
