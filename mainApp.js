@@ -14,7 +14,7 @@ const updateUI = (projects) => {
 		<a href="/${name}/index.html" target="_blank" class="project-name">
 		    ${projectNameFormatter(name)}
 		</a>
-		<a href="${code}" target="_blank" class="container-links">
+		<a href="${code}" target="_blank" class="code-link">
 		    Code
 		</a>
 		`;
