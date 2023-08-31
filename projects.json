@@ -1,97 +1,97 @@
 [
-  {
-    "index": "01",
-    "name": "Life-Timer",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Life-timer"
-  },
-  {
-    "index": "02",
-    "name": "Github-Profile-Search",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Github-Profile-Search"
-  },
-  {
-    "index": "03",
-    "name": "Marks-Calculator",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Marks-Calculator"
-  },
-  {
-    "index": "04",
-    "name": "Math-Quiz-App",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Math-Quiz-App"
-  },
-  {
-    "index": "05",
-    "name": "Random-Hex-Color-Generator",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Hex-Color-Generator"
-  },
-  {
-    "index": "06",
-    "name": "QR-Code-Generator",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/QR-Code-Generator"
-  },
-  {
-    "index": "07",
-    "name": "Dark-Mode",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Dark-Mode"
-  },
-  {
-    "index": "08",
-    "name": "Password-Generator",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Password-Generator"
-  },
-  {
-    "index": "09",
-    "name": "Expense-Tracker-App",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Expense-Tracker-App"
-  },
-  {
-    "index": "10",
-    "name": "Analog-Clock",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Analog-Clock"
-  },
-  {
-    "index": "11",
-    "name": "Memory-Game",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Memory-Game"
-  },
-  {
-    "index": "12",
-    "name": "Random-Jokes-Generator",
-    "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Joks-Generator"
-  },
-  {
-    "index": "13",
-    "name": "Box-Shadow-Generator",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Box-Shadow-Generator"
-  },
-  {
-    "index": "14",
-    "name": "Weather-App",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Weather-App"
-  },
-  {
-    "index": "15",
-    "name": "OTP-Verification-Form",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/OTP-Verification-Form"
-  },
-  {
-    "index": "16",
-    "name": "Digital-Clock",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Digital-Clock"
-  },
-  {
-    "index": "17",
-    "name": "Language-Translator-App",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Language-Translator-App"
-  },
-  {
-    "index": "18",
-    "name": "SatoshiToUSD-Converter",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/SatoshiToUSD-Converter"
-  },
-  {
-    "index": 19,
-    "name": "Pexels-Clone",
-    "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Pexels-Clone"
-  }
+    {
+        "index": "01",
+        "name": "Life-Timer",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Life-timer"
+    },
+    {
+        "index": "02",
+        "name": "Github-Profile-Search",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Github-Profile-Search"
+    },
+    {
+        "index": "03",
+        "name": "Marks-Calculator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Marks-Calculator"
+    },
+    {
+        "index": "04",
+        "name": "Math-Quiz-App",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Math-Quiz-App"
+    },
+    {
+        "index": "05",
+        "name": "Random-Hex-Color-Generator",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Hex-Color-Generator"
+    },
+    {
+        "index": "06",
+        "name": "QR-Code-Generator",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/QR-Code-Generator"
+    },
+    {
+        "index": "07",
+        "name": "Dark-Mode",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Dark-Mode"
+    },
+    {
+        "index": "08",
+        "name": "Password-Generator",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Password-Generator"
+    },
+    {
+        "index": "09",
+        "name": "Expense-Tracker-App",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Expense-Tracker-App"
+    },
+    {
+        "index": "10",
+        "name": "Analog-Clock",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Analog-Clock"
+    },
+    {
+        "index": "11",
+        "name": "Memory-Game",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Memory-Game"
+    },
+    {
+        "index": "12",
+        "name": "Random-Jokes-Generator",
+        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Joks-Generator"
+    },
+    {
+        "index": "13",
+        "name": "Box-Shadow-Generator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Box-Shadow-Generator"
+    },
+    {
+        "index": "14",
+        "name": "Weather-App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Weather-App"
+    },
+    {
+        "index": "15",
+        "name": "OTP-Verification-Form",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/OTP-Verification-Form"
+    },
+    {
+        "index": "16",
+        "name": "Digital-Clock",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Digital-Clock"
+    },
+    {
+        "index": "17",
+        "name": "Language-Translator-App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Language-Translator-App"
+    },
+    {
+        "index": "18",
+        "name": "SatoshiToUSD-Converter",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/SatoshiToUSD-Converter"
+    },
+    {
+        "index": "19",
+        "name": "Pexels-Clone",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Pexels-Clone"
+    }
 ]
