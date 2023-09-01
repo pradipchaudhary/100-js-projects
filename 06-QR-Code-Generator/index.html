@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator </title>
-    <!-- CSS Include  -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="heading">
-            <h1>QR Code Generator </h1>
-            <p>Past text and create QR code.</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QR Code Generator - 100 JavaScript Projects</title>
+        <!-- CSS Include  -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1>QR Code Generator</h1>
+                <p>Past text and create QR code.</p>
+            </div>
+            <form id="qrForm">
+                <input
+                    type="text"
+                    name="qrText"
+                    placeholder="Enter text..."
+                    required
+                />
+                <button type="submit" id="qrGeneratorBtn">
+                    Generate QR Code
+                </button>
+            </form>
+            <div class="qrCode">
+                <img src="default.png" alt="" id="qrImage" />
+            </div>
         </div>
-        <form id="qrForm">
-            <input type="text" name="qrText" placeholder="Enter text..." required>
-            <button type="submit" id="qrGeneratorBtn">Generate QR Code</button>
-        </form>
-        <div class="qrCode"></div>
-    </div>
 
-    <!-- Script Include -->
-    <script src="app.js"></script>
-</body>
+        <!-- Script Include -->
+        <script src="app.js"></script>
+    </body>
 </html>
