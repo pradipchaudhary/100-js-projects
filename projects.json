@@ -93,5 +93,10 @@
         "index": "19",
         "name": "Pexels-Clone",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Pexels-Clone"
+    },
+    {
+        "index": "20",
+        "name": "Chat-GPT",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/20-Chat-GPT"
     }
 ]
