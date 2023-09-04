@@ -11,7 +11,10 @@ function scrollPercent() {
 
     // Convert total height to percentage
     const scrollValue = Math.round((scrollPosition * 100) / totalHeight);
-    progressBarEl.innerHTML = `${scrollValue}`;
+    progressBarEl.innerHTML = `${scrollValue} <span>% </span>`;
+    // progressBarEl.innerText = `${scrollValue}`;
 }
 
 window.onscroll = scrollPercent;
+// console.log(progressEl.innerHTML);
+// console.log(progressEl.innerText);
