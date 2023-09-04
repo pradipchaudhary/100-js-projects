@@ -6,12 +6,15 @@ const inputText = document.getElementById("inputText");
 function generateQrCode(url) {
     fetch(url)
         .then((response) => {
-            console.log(response);
-            return response.text();
+            return response.blob();
         })
         .then((qrCode) => {
-            const img = document.createElement("img");
-            console.log(qrCode);
+            // const img = document.createElement("img");
+            const qrCodeEl = document.querySelector("qrCode");
+            var img = URL.createObjectURL(qrCode);
+            // Do whatever with the img
+            console.log(img);
+            // document.getElementById("qrImage").setAttribute("src", img);
         })
         .catch();
 }
