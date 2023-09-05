@@ -1,9 +1,12 @@
 # 100 JavaScript Projects
 
-A Collection of Vanilla JavaScript Projects
+> A Collection of Vanilla JavaScript Projects
 
 This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities. Below is a brief overview of each project included in this collection:
 
+[![Logo](logo.png)](https://100-javascript-projects.vercel.app/)
+
+<!--
 1. **Analog Clock**: A project that displays an analog clock and updates the time in real-time.
 
 2. **Box Shadow Generator**: An application that allows users to generate and customize box shadows using CSS.
@@ -42,13 +45,14 @@ This repository contains a collection of various Vanilla JavaScript projects. Ea
 
 19. **SatoshiToUSD Converter**: An app that converts Bitcoin Satoshi to USD based on the latest exchange rate.
 
-20. **Weather App**: An application that fetches and displays weather information based on user-provided location.
+20. **Weather App**: An application that fetches and displays weather information based on user-provided location. -->
 
 Feel free to explore each project in detail by navigating to their respective folders. Each project contains its own set of files and instructions on how to run or integrate them.
 
+<!--
 ## Contribution
 
-Contributions to this collection of Vanilla JavaScript projects are welcome. If you have a new project or an improvement to an existing one, feel free to submit a pull request. Please follow the guidelines provided in the repository for contributing.
+Contributions to this collection of Vanilla JavaScript projects are welcome. If you have a new project or an improvement to an existing one, feel free to submit a pull request. Please follow the guidelines provided in the repository for contributing. -->
 
 ## License
 
