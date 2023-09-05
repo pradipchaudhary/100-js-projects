@@ -6,7 +6,7 @@ This repository contains a collection of various Vanilla JavaScript projects. Ea
 
 <!-- [![Logo](logo.jpg)](https://100-javascript-projects.vercel.app/) -->
 
-![Screenshot](logo.jpg)(https://100-javascript-projects.vercel.app/)
+![Screenshot](banner.jpg)(https://100-javascript-projects.vercel.app/)
 
 <!--
 1. **Analog Clock**: A project that displays an analog clock and updates the time in real-time.
