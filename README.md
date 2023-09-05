@@ -4,7 +4,9 @@
 
 This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities. Below is a brief overview of each project included in this collection:
 
-[![Logo](logo.png)](https://100-javascript-projects.vercel.app/)
+<!-- [![Logo](logo.png)](https://100-javascript-projects.vercel.app/) -->
+
+![Screenshot](logo.png)
 
 <!--
 1. **Analog Clock**: A project that displays an analog clock and updates the time in real-time.
