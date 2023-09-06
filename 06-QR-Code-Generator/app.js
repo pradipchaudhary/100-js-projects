@@ -2,21 +2,21 @@ const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data
 
 // DOM elements
 const inputText = document.getElementById("inputText");
+const qrGeneratorBtn = document.querySelector("#qrGeneratorBtn");
+const qrImage = document.querySelector("#qrImage");
 
-function generateQrCode(url) {
-    fetch(url)
-        .then((response) => {
-            return response.blob();
-        })
-        .then((qrCode) => {
-            // const img = document.createElement("img");
-            const qrCodeEl = document.querySelector("qrCode");
-            var img = URL.createObjectURL(qrCode);
-            // Do whatever with the img
-            console.log(img);
-            // document.getElementById("qrImage").setAttribute("src", img);
-        })
-        .catch();
+// QR Generator
+function qrGenrator(e) {
+    e.preventDefault();
+    let qrValue = inputText.value;
+    if (!qrValue) return;
+
+    qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
+    inputText.value = "";
 }
 
-generateQrCode(qrCodeUrl);
+qrGeneratorBtn.addEventListener("click", qrGenrator);
+
+window.addEventListener("load", function () {
+    qrImage.src = qrCodeUrl;
+});
