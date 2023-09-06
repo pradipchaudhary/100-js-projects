@@ -30,7 +30,14 @@ body {
 a {
     color: #302f2f;
 }
-
+#pradip-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 /* === Github === */
 #github {
     width: 75px;
@@ -40,8 +47,8 @@ a {
     top: 0;
 }
 #github a.github svg {
-    fill: #ffdf00;
-    color: rgb(0, 0, 0);
+    fill: #202020;
+    color: #ffdf00;
     position: fixed;
     top: 0;
     right: 0;
@@ -57,12 +64,7 @@ header {
 }
 header h1.title {
     font-size: 2.5rem;
-    font-family: "Tektur", cursive;
     word-spacing: 10px;
-    /* background-image: url(logo.jpg);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 /* === Project Lists ===*/
 #projects {

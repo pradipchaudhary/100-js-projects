@@ -3,6 +3,7 @@
 > A Collection of Vanilla JavaScript Projects
 
 This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities.
+
 [![Logo](banner.jpg)](https://100-javascript-projects.vercel.app/)
 
 <!-- ![Screenshot](banner.jpg) -->
