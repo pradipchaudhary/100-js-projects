@@ -17,6 +17,7 @@ function qrGenrator(e) {
 
 qrGeneratorBtn.addEventListener("click", qrGenrator);
 
+// Default qr value on page load
 window.addEventListener("load", function () {
     qrImage.src = qrCodeUrl;
 });
