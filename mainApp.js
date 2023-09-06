@@ -17,7 +17,7 @@ const updateUI = (projects) => {
 		    ${projectNameFormatter(name)}
 		</a>
 		<a href="${code}" target="_blank" class="code-link">
-		    Code
+		    ${"<"} code ${"/>"} 
 		</a>
 		`;
         list.appendChild(itemList);

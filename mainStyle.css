@@ -24,7 +24,7 @@ a {
 body {
     width: 100%;
     height: 100vh;
-    background: #bcbcba;
+    background: #f0f0f0;
     color: #302f2f;
 }
 a {
@@ -59,7 +59,7 @@ header {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background: #bcbcba;
+    background: #f0f0f0;
     z-index: 2;
 }
 header h1.title {
@@ -86,6 +86,13 @@ ul.list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background 0.2s ease;
+}
+ul.list li:last-child {
+    border: none;
+}
+ul.list li:hover {
+    background: #e0e0e0;
 }
 
 ul.list li .project-number {
@@ -98,9 +105,12 @@ ul.list li .project-name {
     transition: color 0.2s ease;
 }
 ul.list li .code-link {
-    width: 50px;
+    width: 100px;
     text-align: center;
     transition: color 0.2s ease;
+    /* font-family: "Tektur", sans-serif; */
+    font-style: italic;
+    letter-spacing: -0.5px;
 }
 /* hover */
 ul.list li .project-name:hover,
