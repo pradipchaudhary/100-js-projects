@@ -24,12 +24,6 @@ const clock = () => {
     secondsEl.innerHTML = seconds;
     monthsEl.innerHTML = month;
     periodEl.innerHTML = setTimePeriod(hour);
-
-    // if (hour > 12) {
-    //     period.innerHTML = "PM";
-    // } else {
-    //     periodEl.innerHTML = period;
-    // }
 };
 clock();
 
