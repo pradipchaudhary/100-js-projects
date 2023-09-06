@@ -2,11 +2,10 @@
 
 > A Collection of Vanilla JavaScript Projects
 
-This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities. Below is a brief overview of each project included in this collection:
+This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities.
+[![Logo](banner.jpg)](https://100-javascript-projects.vercel.app/)
 
-<!-- [![Logo](logo.jpg)](https://100-javascript-projects.vercel.app/) -->
-
-![Screenshot](banner.jpg)(https://100-javascript-projects.vercel.app/)
+<!-- ![Screenshot](banner.jpg) -->
 
 <!--
 1. **Analog Clock**: A project that displays an analog clock and updates the time in real-time.
@@ -49,7 +48,7 @@ This repository contains a collection of various Vanilla JavaScript projects. Ea
 
 20. **Weather App**: An application that fetches and displays weather information based on user-provided location. -->
 
-Feel free to explore each project in detail by navigating to their respective folders. Each project contains its own set of files and instructions on how to run or integrate them.
+_Feel free to explore each project in detail by navigating to their respective folders. Each project contains its own set of files and instructions on how to run or integrate them._
 
 <!--
 ## Contribution
