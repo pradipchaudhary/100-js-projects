@@ -7,7 +7,6 @@ const daysEl = document.querySelector(".day-name");
 const dayNumbersEl = document.querySelector(".day-number");
 const yearsEl = document.querySelector(".years");
 const periodEl = document.querySelector(".period");
-const period = "AM";
 
 //Javascript for switch clock format
 
@@ -18,45 +17,40 @@ const clock = () => {
     const minutes = today.getMinutes();
     const seconds = today.getSeconds();
     const month = today.getMonth();
-    // console.log(today, hour, minutes, seconds, month);
-    hourEl.innerHTML = hour;
-    minutesEl.innerHTML = minutes;
-    secondsEl.innerHTML = seconds;
+    hourEl.innerHTML = addZero(period(hour));
+    minutesEl.innerHTML = addZero(minutes);
+    secondsEl.innerHTML = addZero(seconds);
     monthsEl.innerHTML = month;
     periodEl.innerHTML = setTimePeriod(hour);
-
-    // if (hour > 12) {
-    //     period.innerHTML = "PM";
-    // } else {
-    //     periodEl.innerHTML = period;
-    // }
 };
 clock();
 
 //Set the time period(AM/PM)
 function setTimePeriod(time) {
     let ampm = "";
-    if (time > 12) {
-        console.log("Less then 12 hours");
+    if (time < 12) {
         ampm = "AM";
     } else {
-        console.log("Greater then 12 hours");
         ampm = "PM";
     }
     return ampm;
 }
 
-// console.log(period);
 //Set the 12-hour clock format
-
+function period(time) {
+    if (time > 12) {
+        time = time - 12;
+        return time;
+    }
+    return time;
+}
 //Add the 0 for the values lower than 10
-function addZero(time) {}
-
-//Get the date in javascript
-
-//document.querySelector(".year").innerHTML = year;
-
-//Javascript for dot menu toggle
+function addZero(time) {
+    if (time < 10) {
+        time = "0" + time;
+    }
+    return time;
+}
 
 // Events call
 const updateTime = setInterval(clock, 1000);
