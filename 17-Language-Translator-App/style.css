@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+    height: 100vh;
+    background: #efefef;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    min-width: 600px;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #eee;
+}
+
+.language_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.language_box select {
+    padding: 8px 16px;
+    border: 1px solid #bcbcbc;
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+.language_box select:focus {
+    border: 1px solid green;
+}
+.language_box textarea {
+    border: 1px solid #cbcbcb;
+    background: #ffffff;
+}
