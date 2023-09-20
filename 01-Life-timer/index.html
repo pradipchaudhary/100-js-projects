@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Life Timer Calculator | 100 JavaScript Projects</title>
+        <!-- Style Sheet Link -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <!-- front container -->
+            <div id="initEle" class="main_container">
+                <h1>Select Your Date of Birth ?</h1>
+            </div>
+
+            <!-- DOB Input form  -->
+            <div class="dobForm" id="dobForm">
+                <form action="" class="dob__form">
+                    <select name="year" id="year">
+                        <option value="default">Year</option>
+                    </select>
+                    <select name="month" id="year">
+                        <option value="month">Month</option>
+                    </select>
+                    <select name="date" id="year">
+                        <option value="day">Day</option>
+                    </select>
+                </form>
+                <button type="submit" id="start">Start</button>
+            </div>
+
+            <!-- Time Container -->
+            <div id="afterDobEle" class="time_container hide">
+                <h1>How Much Life Journey Covered, Till Now 💗</h1>
+                <img class="heartbeat" src="heartbeat.gif" alt="heartbeat" />
+                <div class="inner_container">
+                    <div class="inner_item">
+                        <h2 id="year">00</h2>
+                        <h4>Years</h4>
+                    </div>
+                    <div class="inner_item">
+                        <h2 id="month">00</h2>
+                        <h4>Month</h4>
+                    </div>
+                    <div class="inner_item">
+                        <h2 id="day">00</h2>
+                        <h4>Day</h4>
+                    </div>
+                    <div class="inner_item">
+                        <h2 id="hour">00</h2>
+                        <h4>Hour</h4>
+                    </div>
+                    <div class="inner_item">
+                        <h2 id="minute">00</h2>
+                        <h4>Minute</h4>
+                    </div>
+                    <div class="inner_item">
+                        <h2 id="second">00</h2>
+                        <h4>Second</h4>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Script Include -->
+        <script src="index.js"></script>
+    </body>
+</html>
