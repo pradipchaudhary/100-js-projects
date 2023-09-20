@@ -45,7 +45,7 @@ function Circle(t, e, i, n, s) {
                 (context.strokeStyle = "rgba(255,255,255, 0.1)"),
                 context.stroke(),
                 context.fill(),
-                (context.fillStyle = "rgba(0,0,0,0.05)");
+                (context.fillStyle = "rgba(219, 219, 219, 0.185)");
         }),
         (this.update = function () {
             (this.x + this.radius > innerWidth || this.x - this.radius < 0) &&
