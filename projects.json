@@ -1,7 +1,7 @@
 [
     {
         "index": "01",
-        "name": "Life-Timer",
+        "name": "Life-timer",
         "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/01-Life-timer"
     },
     {
@@ -110,7 +110,7 @@
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/22-Shopping-Cart"
     },
     {
-        "index": "22",
+        "index": "23",
         "name": "Todo-App",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/23-Todo-App"
     }
