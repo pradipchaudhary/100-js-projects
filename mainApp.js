@@ -2,6 +2,7 @@
 const list = document.querySelector(".list");
 const canvas = document.getElementById("pradip-canvas"),
     context = canvas.getContext("2d");
+const ancherEl = document.querySelectorAll("a");
 
 fetch("./projects.json")
     .then((res) => res.json())
@@ -79,3 +80,21 @@ function render() {
     for (var t = 0; t < circles.length; t++) circles[t].update();
 }
 render();
+
+// Custom cursor
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.setAttribute(
+        "style",
+        "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+    );
+});
+
+document.addEventListener("click", () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500);
+});
