@@ -83,6 +83,7 @@ render();
 
 // Custom cursor
 const cursor = document.querySelector(".cursor");
+let size;
 
 document.addEventListener("mousemove", (e) => {
     cursor.setAttribute(
@@ -91,10 +92,11 @@ document.addEventListener("mousemove", (e) => {
     );
 });
 
-document.addEventListener("click", () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500);
-});
+// document.addEventListener("mousemove", (ev) => {
+//     let path = ev.composedPath();
+//     if (path.some((x) => x.tagName == "A")) {
+//         cursor.classList.add("expand");
+//         console.log("Hover");
+//         size = 20;
+//     }
+// });
