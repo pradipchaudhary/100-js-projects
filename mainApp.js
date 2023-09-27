@@ -4,6 +4,11 @@ const canvas = document.getElementById("pradip-canvas"),
     context = canvas.getContext("2d");
 const ancherEl = document.querySelectorAll("a");
 
+// Pre-loading
+window.onload = function () {
+    console.log("Loaded");
+};
+
 fetch("./projects.json")
     .then((res) => res.json())
     .then((data) => updateUI(data));
