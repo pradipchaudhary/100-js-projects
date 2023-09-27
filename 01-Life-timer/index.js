@@ -1,9 +1,8 @@
-const nowDate = new Date();
-<<<<<<< HEAD
-//
-// this.years = function (startYear) {
-//     var currentYear = new Date().getFullYear(),
-//         years = [];
+// const years = function () {
+// let startYear = new Date().getFullYear();
+// console.log(startYear);
+//     const currentYear = new Date().getFullYear();
+//     const years = [];
 //     startYear = startYear || 1980;
 //     while (startYear <= currentYear) {
 //         years.push(startYear++);
@@ -11,21 +10,15 @@ const nowDate = new Date();
 //     return years;
 // };
 
-// console.log(this.years(2019 - 20));
-=======
-console.log(nowDate);
-//
-this.years = function (startYear) {
-    var currentYear = new Date().getFullYear(),
-        years = [];
-    startYear = startYear || 1980;
-    while (startYear <= currentYear) {
-        years.push(startYear++);
+// console.log(years());
+
+const years = function () {
+    const currentYear = new Date().getFullYear();
+    let years = [];
+    let startYear = 1980;
+    for (let i = startYear; i <= currentYear; i++) {
+        years.push(i);
     }
+
     return years;
 };
-
-console.log(this.years(2019 - 20));
->>>>>>> cc76e13e95a9fa439e30a5dd9ec1dc7a5f0ffe5b
-
-// console.log(this.years);
