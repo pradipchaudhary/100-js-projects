@@ -57,9 +57,11 @@ header .search_box .search_button {
 }
 header .search_box .search_input {
     color: var(--gray-text);
-    border: 1px solid var(--border);
     background: var(--black);
     min-width: 60%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--border);
 }
 header .search_box .search_button {
     background: var(--primary);
@@ -74,11 +76,10 @@ header .search_box .search_button {
 .inner_profile {
     padding: 25px;
     margin-top: 60px;
-    /* border: 1px solid var(--border); */
     font-family: var(--roboto);
     border-radius: 6px;
     min-width: 700px;
-    background: #0e2345;
+    background: #10151c;
 }
 .profile_box .profile_header {
     display: flex;
