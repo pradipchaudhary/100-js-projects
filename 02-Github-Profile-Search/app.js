@@ -52,7 +52,7 @@ const fetchProfile = async (event) => {
             loading.style.color = "#efefef";
             const res = await fetch(`${url}/${username}`);
             const data = await res.json();
-            console.log(data);
+            // console.log(data);
 
             if (data.name) {
                 profileBox.innerHTML = profileGenerator(data);

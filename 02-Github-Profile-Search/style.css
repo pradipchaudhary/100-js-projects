@@ -61,14 +61,11 @@ header .search_box .search_input {
     min-width: 60%;
     outline: none;
     border: none;
+    font-size: large;
     border-bottom: 1px solid var(--border);
 }
-header .search_box .search_button {
-    background: var(--primary);
-    color: var(--gray);
-    border: 1px solid var(--primary);
-    outline: var(--primary);
-    cursor: pointer;
+header .search_box .search_input:focus {
+    border-bottom: 1px solid var(--primary);
 }
 
 /* === Profile Box CSS === */
@@ -79,7 +76,7 @@ header .search_box .search_button {
     font-family: var(--roboto);
     border-radius: 6px;
     min-width: 700px;
-    background: #10151c;
+    border: 1px solid var(--border);
 }
 .profile_box .profile_header {
     display: flex;
@@ -170,7 +167,7 @@ header .search_box .search_button {
 #popular_repos a {
     text-decoration: none;
     color: var(--gray);
-    background: #133467;
+    background: var(--primary);
     padding: 5px 16px;
     border-radius: 16px;
     font-size: 15px;
