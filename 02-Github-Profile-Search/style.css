@@ -75,7 +75,8 @@ header .search_box .search_input:focus {
     margin-top: 60px;
     font-family: var(--roboto);
     border-radius: 6px;
-    min-width: 700px;
+    min-width: 100%;
+    max-width: 100%;
     border: 1px solid var(--border);
 }
 .profile_box .profile_header {
