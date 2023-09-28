@@ -16,25 +16,12 @@ html {
     overflow: hidden;
     color: #f7f7f7;
     font-family: "Roboto", sans-serif;
-    background: rgb(212, 15, 100);
-    background: radial-gradient(
-        circle,
-        rgba(238, 174, 202, 1) 0%,
-        rgba(148, 187, 233, 1) 100%
-    );
+    background: #212121;
 }
 
 /* === Default === */
 .hide {
     display: none !important;
-}
-h1 {
-    font-size: 2.6rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px #ccc;
-    letter-spacing: 2px;
-    color: #fcfcfc;
-    text-align: center;
 }
 /* === Main === */
 main {
@@ -57,7 +44,8 @@ main {
 .main_container h1 {
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    color: #a6a6a6;
 }
 /* === Time Container === */
 
@@ -127,26 +115,24 @@ form select {
     height: 40px;
     font-size: 16px;
     padding: 0 10px;
-    border: 1px solid #e884b4;
+    border: 1px solid #313131;
     min-width: 120px;
     background: transparent;
-    color: #525252;
+    color: #a6a6a6;
     font-weight: 100;
 }
-/* form select:focus {
-    padding: 0 14px;
-    border: 2px solid #675afe;
-} */
+
 #start {
     height: 40px;
     font-size: 16px;
     padding: 0 10px;
-    border: 1px solid #f095c1;
+    border: 1px solid #1f6feb;
     min-width: 120px;
     background: transparent;
-    color: #525252;
+    color: #ffffff;
     font-weight: 100;
-    background: #eca8c9;
+    background: #1f6feb;
     border-radius: 30px;
     margin-top: 40px;
+    cursor: pointer;
 }
