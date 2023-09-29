@@ -8,7 +8,7 @@ toggleButton.addEventListener("click", function (e) {
         toggleButton.src = "dark.png";
         document.body.classList.add("dark");
     } else if (toggleButton.src.includes("dark")) {
-        title.innerHTML = "Click for dark mode.";
+        title.innerHTML = "Click for Dark mode.";
         toggleButton.src = "light.png";
         document.body.classList.remove("dark");
     }
