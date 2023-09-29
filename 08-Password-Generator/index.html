@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-</head>
-<body>
-    <div class="container">
-        <div class="inner_container">
-            <h1 class="header"> <i class="fa fa-lock" style="color: red"> </i> Password Generator </h1>
-            <div id="password"></div>
-            <div class="range_container">
-                <label for="range">Password Length <span id="passwordRangeValue">8</span></label>
-                <input type="range" min="1" max="20" value="8" id="passwordRangeInput">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password Generator | 100 JavaScript Projects</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="inner_container">
+                <h1 class="header">
+                    <i class="fa fa-lock" style="color: red"> </i> Password
+                    Generator
+                </h1>
+                <div id="password"></div>
+                <div class="range_container">
+                    <label for="range"
+                        >Password Length
+                        <span id="passwordRangeValue">8</span></label
+                    >
+                    <input
+                        type="range"
+                        min="1"
+                        max="20"
+                        value="8"
+                        id="passwordRangeInput"
+                    />
+                </div>
+                <div class="checkboxes">
+                    <div class="form_controler">
+                        <label for="uppercase"> Include uppercase </label>
+                        <input
+                            type="checkbox"
+                            name="uppercase"
+                            id="uppercase"
+                        />
+                    </div>
+                    <div class="form_controler">
+                        <label for="numbers"> Include numbers </label>
+                        <input type="checkbox" name="numbers" id="numbers" />
+                    </div>
+                    <div class="form_controler">
+                        <label for="symbols"> Include symbols </label>
+                        <input type="checkbox" name="symbols" id="symbols" />
+                    </div>
+                </div>
             </div>
-            <div class="checkboxes">
-                <div class="form_controler">
-                    <label for="uppercase"> Include uppercase </label>
-                    <input type="checkbox" name="uppercase" id="uppercase">
-                </div>
-                <div class="form_controler">
-                    <label for="numbers"> Include numbers </label>
-                    <input type="checkbox" name="numbers" id="numbers">
-                </div>
-                <div class="form_controler">
-                    <label for="symbols"> Include symbols </label>
-                    <input type="checkbox" name="symbols" id="symbols">
-                </div>
+            <div class="button_container">
+                <button id="generateButton">Generate Password</button>
             </div>
         </div>
-        <div class="button_container">
-            <button id="generateButton">Generate Password</button>
-        </div>
-    </div>
 
-    <script
-      src="https://kit.fontawesome.com/7a4b62b0a4.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    
-</body>
+        <script
+            src="https://kit.fontawesome.com/7a4b62b0a4.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"
+        ></script>
+    </body>
 </html>
