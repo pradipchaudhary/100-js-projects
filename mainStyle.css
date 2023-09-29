@@ -14,8 +14,7 @@
 
 html {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    /* 1rem - 16px */
+    font-size: 16px; /* 1rem - 16px */
 }
 
 body {
@@ -56,7 +55,7 @@ body::-webkit-scrollbar-button {
     display: none;
 }
 
-/* ===  */
+/* === Custom Cursor ===  */
 
 .cursor {
     width: 7px;
@@ -78,6 +77,29 @@ body::-webkit-scrollbar-button {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     padding: 10px;
+}
+
+.expand {
+    width: 0px;
+    height: 0px;
+    background-color: rgba(34, 0, 255, 0.279) !important;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.expand::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.305) !important;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(34, 0, 255, 0.279) !important;
 }
 
 #pradip-canvas {
@@ -171,13 +193,12 @@ ul.list li .code-link {
     width: 100px;
     text-align: center;
     transition: color 0.2s ease;
-    /* font-style: italic; */
     letter-spacing: -0.5px;
 }
 /* hover */
 ul.list li .project-name:hover,
 ul.list li .code-link:hover {
-    color: rebeccapurple;
+    color: #2200ff;
     border-radius: 2px;
 }
 

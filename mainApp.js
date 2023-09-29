@@ -13,15 +13,17 @@ fetch("./projects.json")
     .then((res) => res.json())
     .then((data) => updateUI(data));
 
-// Const UpdateUI
+//  UpdateUI
 const updateUI = (projects) => {
     projects.map(({ name, code, index }) => {
         const itemList = document.createElement("li");
         itemList.innerHTML = `
 		<span class="project-number">${index}</span>
-		<a href="/${index}-${name}/index.html" target="_blank" class="project-name">
+		<span class="project-name">
+        <a href="/${index}-${name}/index.html" target="_blank" >
 		    ${projectNameFormatter(name)}
 		</a>
+        </span>
 		<a href="${code}" target="_blank" class="code-link">
 		    ${"{"} code ${"}"} 
 		</a>
@@ -87,7 +89,7 @@ function render() {
 render();
 
 // Custom cursor
-const cursor = document.querySelector(".cursor");
+const cursor = document.querySelector("#cursor");
 let size;
 
 document.addEventListener("mousemove", (e) => {
@@ -97,11 +99,15 @@ document.addEventListener("mousemove", (e) => {
     );
 });
 
-// document.addEventListener("mousemove", (ev) => {
-//     let path = ev.composedPath();
-//     if (path.some((x) => x.tagName == "A")) {
-//         cursor.classList.add("expand");
-//         console.log("Hover");
-//         size = 20;
-//     }
-// });
+document.addEventListener("mousemove", (ev) => {
+    let path = ev.composedPath();
+    cursor.classList.remove("expand");
+    cursor.classList.add("cursor");
+
+    if (path.some((x) => x.tagName == "A")) {
+        cursor.classList.add("expand");
+        cursor.classList.remove("cursor");
+        console.log("Hover");
+        size = 20;
+    }
+});
