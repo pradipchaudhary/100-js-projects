@@ -2,10 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
-    --primary: #ffba0a;
-    --primary-light: #ffde89;
-    --primary-x-light: #fae6b3;
-    --primary-dark: #e6a5;
+    --primary: #e5cff7;
+    --secondary: #9d76c1;
+    --third: #713abe;
+    --forth: #5b0888;
+    --hover: #631e89;
+    --light-color: #efefef;
+    --roboto: "Roboto", sans-serif;
 }
 * {
     margin: 0;
@@ -13,8 +16,12 @@
     box-sizing: border-box;
 }
 html {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--roboto);
     font-size: 62.5%;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary);
+    color: var(--forth);
 }
 body {
     width: 100%;
@@ -23,50 +30,37 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-<<<<<<< HEAD
-    background: linear-gradient(
-        178.63deg,
-        var(--primary),
-        rgba(230, 191, 92, 0) 108.92%
-    );
-=======
->>>>>>> 2a5e3ae62f34c862941469b8413973ff5c7ec2a6
 }
 .container {
     padding: 10px;
 }
 .container .inner_container {
     padding: 25px;
-<<<<<<< HEAD
-=======
-    background: linear-gradient(
-        178.63deg,
-        var(--primary),
-        rgba(230, 191, 92, 0) 108.92%
-    );
->>>>>>> 2a5e3ae62f34c862941469b8413973ff5c7ec2a6
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
 }
-.inner_container #password {
-    width: 100%;
-    height: 38px;
-    color: #0075ff;
-    background: var(--primary-x-light);
-    margin-top: 20px;
+.container .inner_container h1.header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-/* === Range === */
-.inner_container .range_container {
-    display: flex;
     flex-direction: column;
+}
+.container .inner_container h1.header i {
+    color: var(--forth);
+    font-size: 8rem;
+    margin: 15px;
+}
+.inner_container #password {
+    background: var(--secondary);
+    color: var(--light-color);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 16px;
-    gap: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 25px 0;
 }
 
 /* === Checkbox === */
@@ -76,48 +70,62 @@ body {
 .inner_container .checkboxes .form_controler {
     display: flex;
     justify-content: space-between;
-    margin-top: 6px;
+    margin-top: 10px;
 }
 .inner_container .checkboxes .form_controler label {
     font-weight: 400;
+    font-size: 17px;
 }
 
+.form_controler #passwordRangeValue {
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--forth);
+}
 /* === Button === */
 .button_container {
     width: 100%;
 }
 .button_container #generateButton {
-    background: var(--primary-light);
+    background: var(--forth);
+    color: var(--light-color);
     border: none;
-    padding: 1.2rem 0;
-    font-size: 1.8rem;
+    padding: 1.3rem 0;
+    font-size: 2rem;
     transition: 0.3s ease-in-out;
     cursor: pointer;
     width: 100%;
     font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
 }
+.button_container #generateButton:hover,
 .button_container #generateButton:active {
-    background: var(--primary);
-    color: white;
+    background: var(--hover);
+    color: var(--light-color);
     transition: 0.3s ease-in-out;
-    cursor: crosshair;
+    cursor: pointer;
 }
 /* === Range CSS === */
-/* input[type="range"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-
-	height: 0.5rem;
-	padding: 0;
-	outline: none;
-	cursor: pointer;
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 0.2rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--secondary);
+    width: 100%;
+    margin-top: 10px;
 }
 input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	height: 2rem;
-	width: 0.8rem;
-	background-color: red;
-	border: 1px solid red;
-	border-radius: 3px;
-} */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 2.4rem;
+    width: 0.8rem;
+    background-color: var(--forth);
+    border: 1px solid var(--forth);
+    border-radius: 6px;
+}

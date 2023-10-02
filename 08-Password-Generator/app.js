@@ -45,7 +45,6 @@ generateButton.addEventListener("click", function () {
 
     const password = generatePassword(passwordLength);
     passwordEl.innerText = password;
-    console.log(password);
 });
 
 passwordEl.addEventListener("click", (e) => {
@@ -54,7 +53,7 @@ passwordEl.addEventListener("click", (e) => {
             .writeText(passwordEl.innerText)
             .then(() => {
                 Toastify({
-                    text: "Copied to clipboard.",
+                    text: "Copy Password",
                     duration: 3000,
                     destination: "https://github.com/apvarun/toastify-js",
                     newWindow: true,
@@ -64,7 +63,7 @@ passwordEl.addEventListener("click", (e) => {
                     stopOnFocus: true, // Prevents dismissing of toast on hover
                     style: {
                         background:
-                            "linear-gradient(to right, #ffba0a, #ffde89)",
+                            "linear-gradient(to right, #e5cff7, #9d76c1)",
                     },
                     onClick: function () {}, // Callback after click
                 }).showToast();
