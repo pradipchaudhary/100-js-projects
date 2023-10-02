@@ -14,13 +14,9 @@
 
 html {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    /* 1rem - 16px */
+    font-size: 16px; /* 1rem - 16px */
 }
-a {
-    text-decoration: none;
-    color: #bfbfbf;
-}
+
 body {
     width: 100%;
     height: 100vh;
@@ -34,7 +30,78 @@ body {
 }
 a {
     color: #302f2f;
+    text-decoration: none;
 }
+/* === Custom Scrolling === */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #dedddd;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+    transition: 0.6s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* === Custom Cursor ===  */
+
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.expand {
+    width: 0px;
+    height: 0px;
+    background-color: rgba(34, 0, 255, 0.279) !important;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.expand::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.305) !important;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(34, 0, 255, 0.279) !important;
+}
+
 #pradip-canvas {
     position: fixed;
     top: 0;
@@ -126,13 +193,13 @@ ul.list li .code-link {
     width: 100px;
     text-align: center;
     transition: color 0.2s ease;
-    font-style: italic;
     letter-spacing: -0.5px;
 }
 /* hover */
 ul.list li .project-name:hover,
 ul.list li .code-link:hover {
-    color: rebeccapurple;
+    color: #2200ff;
+    border-radius: 2px;
 }
 
 /* === Footer CSS === */
@@ -160,4 +227,27 @@ footer > a:hover {
 
 footer > object {
     width: 26px;
+    color: rgba(219, 219, 219, 0.546);
+}
+
+/* Mobile  */
+
+@media all and (min-width: 320px) and (max-width: 780px) {
+    #projects {
+        width: 90%;
+    }
+    header h1.title {
+        font-size: 1.5rem;
+        word-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    header h1.title img {
+        width: 100px;
+        margin: 0px;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+    }
 }
