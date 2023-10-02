@@ -23,5 +23,6 @@ const initClock = () => {
 
 // Event handlers
 initClock();
-
 setInterval(initClock, 1000);
+
+// end

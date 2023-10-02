@@ -36,9 +36,7 @@ body {
     background: rgb(49, 47, 47);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7),
         0px 0px 20px rgba(0, 0, 0, 0.7);
-    /* box-shadow: 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
-        inset 0 -1.2em 1.2em rgba(255, 255, 255, 0.06),
-        0 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0 1.2em 1.2em rgba(0, 0, 0, 0.3); */
+
     position: relative;
 }
 
