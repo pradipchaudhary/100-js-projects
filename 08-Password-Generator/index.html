@@ -16,24 +16,24 @@
         <div class="container">
             <div class="inner_container">
                 <h1 class="header">
-                    <i class="fa fa-lock" style="color: red"> </i> Password
-                    Generator
+                    <i class="fa fa-lock"> </i> <span>Password Generator</span>
                 </h1>
-                <div id="password"></div>
+                <div id="password">k9*ZIm8l</div>
                 <div class="range_container">
-                    <label for="range"
-                        >Password Length
-                        <span id="passwordRangeValue">8</span></label
-                    >
                     <input
                         type="range"
                         min="1"
-                        max="20"
+                        max="16"
                         value="8"
                         id="passwordRangeInput"
                     />
                 </div>
+
                 <div class="checkboxes">
+                    <div class="form_controler">
+                        <label for="range">Password Length </label>
+                        <span id="passwordRangeValue">8</span>
+                    </div>
                     <div class="form_controler">
                         <label for="uppercase"> Include uppercase </label>
                         <input
@@ -51,9 +51,9 @@
                         <input type="checkbox" name="symbols" id="symbols" />
                     </div>
                 </div>
-            </div>
-            <div class="button_container">
-                <button id="generateButton">Generate Password</button>
+                <div class="button_container">
+                    <button id="generateButton">Generate Password</button>
+                </div>
             </div>
         </div>
 
