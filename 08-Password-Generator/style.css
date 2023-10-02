@@ -23,17 +23,28 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
+<<<<<<< HEAD
+    background: linear-gradient(
+        178.63deg,
+        var(--primary),
+        rgba(230, 191, 92, 0) 108.92%
+    );
+=======
+>>>>>>> 2a5e3ae62f34c862941469b8413973ff5c7ec2a6
 }
 .container {
     padding: 10px;
 }
 .container .inner_container {
     padding: 25px;
+<<<<<<< HEAD
+=======
     background: linear-gradient(
         178.63deg,
         var(--primary),
         rgba(230, 191, 92, 0) 108.92%
     );
+>>>>>>> 2a5e3ae62f34c862941469b8413973ff5c7ec2a6
 }
 .inner_container #password {
     width: 100%;
