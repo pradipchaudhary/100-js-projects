@@ -2,6 +2,7 @@
 const title = document.querySelector(".title");
 const toggleButton = document.querySelector(".toggleImage");
 
+// Functions
 toggleButton.addEventListener("click", function (e) {
     if (toggleButton.src.includes("light")) {
         title.innerHTML = "Click for Light mode.";
