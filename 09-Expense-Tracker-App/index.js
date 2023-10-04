@@ -72,8 +72,8 @@ const renderTransaction = function () {
         priceEl.innerHTML = `${isCredit ? "+" : "-"}  Rs. ${amount}`;
         leftEl.appendChild(priceEl);
 
-        // transactionsContainerEl.appendChild(transactionEl);
-        console.log(transactionEl);
+        transactionsContainerEl.appendChild(transactionEl);
+        // console.log(transactionEl);
         // transactionsContainerEl.insertAdjacentHTML("afterbegin", transactionEl);
     });
 };
@@ -101,7 +101,7 @@ const addTransaction = (e) => {
     };
     initState.transaction.push(transaction);
 
-    renderTransaction();
+    // renderTransaction();
     console.log(transaction);
     title = "";
     amount = "";
