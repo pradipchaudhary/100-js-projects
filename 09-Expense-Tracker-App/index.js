@@ -30,17 +30,18 @@ const initState = {
     ],
 };
 
-const renderTransactions = function () {
+const renderTransaction = function () {
     const transactionLists = initState.transaction;
 
     transactionLists.map(function (transaction, index) {
         const { id, text, amount, type } = transaction;
         const isCredit = type === "credit" ? true : false;
-        console.log(isCredit);
+
         // Create a new transaction item
         const transactionEl = document.createElement("div");
         transactionEl.className = "transaction";
         transactionEl.setAttribute("key", index);
+
         // Create left div and append to transaction div
         const leftEl = document.createElement("left");
         leftEl.className = "left";
@@ -71,8 +72,41 @@ const renderTransactions = function () {
         priceEl.innerHTML = `${isCredit ? "+" : "-"}  Rs. ${amount}`;
         leftEl.appendChild(priceEl);
 
-        transactionsContainerEl.appendChild(transactionEl);
+        // transactionsContainerEl.appendChild(transactionEl);
+        console.log(transactionEl);
+        // transactionsContainerEl.insertAdjacentHTML("afterbegin", transactionEl);
     });
 };
 
-renderTransactions();
+// renderTransactions();
+
+const addTransaction = (e) => {
+    e.preventDefault();
+    const isEarn = e.submitter.id === "earnBtn" ? true : false;
+
+    const formData = new FormData(transactionFormEl);
+    let title = formData.get("text");
+    let amount = formData.get("amount");
+    console.log(title, amount);
+
+    if (title === "" || amount === "") {
+        return false;
+    }
+
+    const transaction = {
+        id: Math.floor(Math.random() * 1000),
+        text: title,
+        amount: +amount,
+        type: isEarn ? "credit" : "debit",
+    };
+    initState.transaction.push(transaction);
+
+    renderTransaction();
+    console.log(transaction);
+    title = "";
+    amount = "";
+};
+
+// Event Called
+transactionFormEl.addEventListener("submit", addTransaction);
+renderTransaction();
