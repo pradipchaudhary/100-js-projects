@@ -36,24 +36,3 @@ const products = [
         price: 10,
     },
 ];
-
-const categories = [...new Set(products.map((product) => product))];
-console.log(categories);
-
-document.querySelector(".productList").innerHTML = categories
-    .map((item) => {
-        const { id, title, image, price } = item;
-        return `
-      <div class="box" kety="${id}">
-            <div class="img-box">
-                  <img src="${image}" alt="product img" class="images">
-            </div>
-            <div class="bottom">
-                  <p>${title}</p>
-                  <h2>$ ${price}</h2>
-                  <button>Add to Cart </button>
-            </div>
-      </div>
-    `;
-    })
-    .join("");
