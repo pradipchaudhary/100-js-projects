@@ -44,16 +44,28 @@ document.querySelector(".productList").innerHTML = categories
     .map((item) => {
         const { id, title, image, price } = item;
         return `
-      <div class="box" kety="${id}">
-            <div class="img-box">
-                  <img src="${image}" alt="product img" class="images">
-            </div>
-            <div class="bottom">
-                  <p>${title}</p>
-                  <h2>$ ${price}</h2>
-                  <button>Add to Cart </button>
-            </div>
-      </div>
-    `;
+            <div class="box" kety="${id}">
+                    <div class="img-box">
+                        <img src="${image}" alt="product img" class="images">
+                    </div>
+                    <div class="bottom">
+                        <p>${title}</p>
+                        <h2>$ ${price}</h2>
+                    <button onclick='${addToCart(id)}'> add to cart </button>
+                    </div>
+            </div>`;
     })
     .join("");
+
+// add to cart
+// function addToCart(a) {
+//     console.log("add to cart " + a);
+// }
+
+// const cart = [];
+
+// function displayCart() {
+//     let j = 0;
+//     if (cart.length == 0) {
+//     }
+// }
