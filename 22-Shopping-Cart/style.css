@@ -1,7 +1,10 @@
 /* Import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
 :root {
-    --primary-color: #706fd3;
+    --primary-color: #ffa91f;
+    --secondary-color: #ff1e46;
+    --dark: #535353;
+    --border-color: #fdadbc;
 }
 * {
     margin: 0;
@@ -20,94 +23,123 @@ body {
 .wrapper {
     max-width: 1100px;
     margin: 0px auto;
-    border: 1px solid #ccc;
-    background: #fff;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 header {
-    background: #706fd3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    color: #ffffff;
+    color: #212121;
     height: 100px;
 }
-.shoppingCard {
+header h1.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1.title img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+header h1.title span {
+    font-size: 38px;
+    background: -webkit-linear-gradient(45deg, #ffa91f, #ff1e46);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.shoppingCart {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 20px;
+    position: relative;
 }
-.shoppingCard .item {
-    width: 30px;
-    height: 30px;
-    background: #f1f1f1;
+.shoppingCart img.cartIcon {
+    width: 38px;
+    height: 38px;
+    margin: 30px;
+}
+.shoppingCart .item {
+    width: 28px;
+    height: 28px;
+    background: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: #212121;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    top: 22px;
+    background: -webkit-linear-gradient(45deg, #ffa91f, #ff1e46);
 }
 .container {
     display: flex;
     margin-top: 10px;
 }
 /* Sidebar */
-.cardItemContainer {
-    width: 40%;
+.cartItemContainer {
+    width: 38%;
     height: 100%;
-    background-color: rgb(223 223 223);
-    padding: 15px;
+    background-color: rgb(223 223 223 / 58%);
+    padding: 20px;
     text-align: center;
-    margin-top: 60px;
+    border-radius: 8px;
+    margin: 50px 0px 20px 25px;
 }
 .head {
-    background: var(--primary-color);
-    color: #eee;
     display: flex;
     align-items: center;
     padding: 10px;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 600;
+    color: #6e6e6e;
+    border-bottom: 1px solid var(--border-color);
 }
-.cardItemContainer p {
+.cartItemContainer p {
     padding: 15px;
+}
+.cartItemContainer #cartItem {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
 }
 
 .foot {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    border-top: 1px solid var(--primary-color);
-    margin-top: 20px;
+    border-top: 2px solid var(--border-color);
+    margin-top: 30px;
+    color: #6e6e6e;
 }
 
 /* Product list */
 .product {
-    width: 70%;
+    width: 74%;
     padding: 20px;
     display: block;
-}
-.product h1 {
-    border-bottom: 1px solid #ccc;
-    display: block;
-    color: #212121;
-    margin-bottom: 30px;
 }
 
 .productList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: 30px;
 }
 
 .box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 15px;
 }
@@ -129,21 +161,24 @@ header {
     text-align: center;
 }
 .bottom h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 10px 0;
 }
 button {
     width: 100%;
     padding: 10px;
-    background: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #efefef;
     margin: 10px 0;
-    border: 1px solid var(--primary-color);
     font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    background-size: 100%;
+    background: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
 }
 button:hover {
-    background: black;
-    border: 1px solid #000;
+    background-color: var(--primary-color);
 }

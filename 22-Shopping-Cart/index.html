@@ -5,32 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shopping Cart | 100 JavaScript Projects</title>
         <!-- CSS Link -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="wrapper">
             <header>
-                <h1>Logo</h1>
-                <div class="shoppingCard">
-                    <span class="icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                    <span class="item">0</span>
+                <h1 class="title">
+                    <img src="img/shopping-cart.png" alt="" /><span
+                        >Shopping</span
+                    >
+                </h1>
+                <div class="shoppingCart">
+                    <img class="cartIcon" src="img/shopping-bag.png" alt="" />
+                    <span class="item">4</span>
                 </div>
             </header>
             <div class="container">
                 <main class="product">
-                    <h1>Products</h1>
                     <div class="productList"></div>
                 </main>
-                <div class="cardItemContainer">
+                <div class="cartItemContainer">
                     <h2 class="head">My Cart</h2>
                     <div id="cartItem">Your cart is empty</div>
                     <div class="foot">
