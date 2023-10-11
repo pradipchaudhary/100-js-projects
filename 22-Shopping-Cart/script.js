@@ -3,43 +3,43 @@ const productListEl = document.querySelector(".productList");
 const products = [
     {
         id: 1,
-        title: "Mercural Futsal Shoes For Men By Jutta Ghar Nepal",
-        image: "https://static-01.daraz.com.np/p/f7610aef1e17958866687f33d0c84376.jpg_750x750.jpg_.webp",
-        price: 999,
+        title: "Deerway Sport Shoes (Slv Grey/ Blue) 24513505-5",
+        image: "img/product-1.webp",
+        price: 2139,
     },
     {
         id: 2,
-        title: "Non-Stretchable Summer Cotton Pants For Women",
-        image: "https://static-01.daraz.com.np/p/491151fc679b17a8091f128ab05340ea.jpg_750x750.jpg_.webp",
-        price: 1319,
+        title: "Upgrade CPU for G31/G41 Mainboards Intel Core2 Quad Q8400 @ 2.66GHz",
+        image: "img/product-6.webp",
+        price: 2200,
     },
     {
         id: 3,
-        title: "Golden Frame & Black Lens Sunglasses For Men & Women",
-        image: "https://static-01.daraz.com.np/p/04036e4af19d0db93edec186559387c6.jpg_750x750.jpg_.webp",
-        price: 600,
+        title: "Sunlite 04 Black Goldstar Shoes For Men",
+        image: "img/product-2.webp",
+        price: 1000,
     },
     {
         id: 4,
-        title: "Naviforce NF9203 Men Quartz Luxury Fashion Casual ",
-        image: "https://static-01.daraz.com.np/p/67f6f28d52fc24f3b65f346087526946.jpg_750x750.jpg_.webp",
-        price: 1200,
+        title: "Morning Walk Grey Sports Milano Casual Running Shoes For Men",
+        image: "img/product-3.webp",
+        price: 600,
     },
     {
         id: 5,
-        title: "Mercural Futsal Shoes For Men By Jutta Ghar Nepal",
-        image: "https://static-01.daraz.com.np/p/f7610aef1e17958866687f33d0c84376.jpg_750x750.jpg_.webp",
-        price: 10,
+        title: "Ddr3 8 Gb Pc3 Laptop Ram",
+        image: "img/product-4.webp",
+        price: 2100,
     },
     {
         id: 6,
-        title: "Mercural Futsal Shoes For Men By Jutta Ghar Nepal",
-        image: "https://static-01.daraz.com.np/p/f7610aef1e17958866687f33d0c84376.jpg_750x750.jpg_.webp",
-        price: 10,
+        title: "V8 Audio USB Headset Microphone Webcast Live Sound Card",
+        image: "img/product-5.webp",
+        price: 979,
     },
 ];
-
 let listCarts = [];
+
 const initApp = () => {
     products.map((product, key) => {
         const { id, title, image, price } = product;
@@ -60,25 +60,35 @@ const initApp = () => {
 };
 
 initApp();
-
+console.log(listCarts);
 function addToCart(key) {
     if (listCarts[key] == null) {
         listCarts[key] = products[key];
+        // console.log(listCarts[key] == null);
+        console.log(products[key]);
         listCarts[key].quantity = 1;
+        console.log(key);
     }
     reloadCart();
 }
 
 function reloadCart() {
-    cartItem.innerHTML = "Your Cart is empty";
+    cartItem.innerHTML = "";
     let count = 0;
     let totalPrice = 0;
     listCarts.forEach((value, key) => {
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
+        console.log(value);
 
         if (value !== null) {
             let newDiv = document.createElement("div");
+            newDiv.innerHTML = `
+                <div class=""><img src="${value.image}" width="100" /></div>
+                <div>${value.title}</div>
+                <div>${value.price}</div>
+            `;
+            cartItem.appendChild(newDiv);
         } else {
             console.log("Hello world!");
         }
