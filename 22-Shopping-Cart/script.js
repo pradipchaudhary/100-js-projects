@@ -73,7 +73,7 @@ function addToCart(key) {
 }
 
 function reloadCart() {
-    cartItem.innerHTML = "";
+    cartItems.innerHTML = "";
     let count = 0;
     let totalPrice = 0;
     listCarts.forEach((value, key) => {
@@ -83,12 +83,15 @@ function reloadCart() {
 
         if (value !== null) {
             let newDiv = document.createElement("div");
+            newDiv.classList.add("cartItem");
             newDiv.innerHTML = `
-                <div class=""><img src="${value.image}" width="100" /></div>
+                <div class="item_img">
+                    <img src="${value.image}" />
+                </div>
                 <div>${value.title}</div>
-                <div>${value.price}</div>
+                <div>$ ${value.price}  </div>
             `;
-            cartItem.appendChild(newDiv);
+            cartItems.appendChild(newDiv);
         } else {
             console.log("Hello world!");
         }
