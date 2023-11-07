@@ -54,54 +54,7 @@ body::-webkit-scrollbar-thumb:hover {
 body::-webkit-scrollbar-button {
     display: none;
 }
-
-/* === Custom Cursor ===  */
-
-.cursor {
-    width: 7px;
-    height: 7px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    pointer-events: none;
-}
-
-.cursor::after {
-    content: "";
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.expand {
-    width: 0px;
-    height: 0px;
-    background-color: rgba(34, 0, 255, 0.279) !important;
-    border-radius: 50%;
-    position: absolute;
-    pointer-events: none;
-}
-
-.expand::after {
-    content: "";
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid rgba(255, 255, 255, 0.305) !important;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: rgba(34, 0, 255, 0.279) !important;
-}
-
+/* === Canvas === */
 #pradip-canvas {
     position: fixed;
     top: 0;
