@@ -88,7 +88,7 @@ function reloadCart() {
                 <div class="item_img">
                     <img src="${value.image}" />
                 </div>
-                <div>${value.title}</div>
+                <div>${value.title.slice(0, 20)}</div>
                 <div>$ ${value.price}  </div>
             `;
             cartItems.appendChild(newDiv);

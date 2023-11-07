@@ -111,7 +111,7 @@ header h1.title span {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
 }
 
 .cartItemContainer .cartItem {
@@ -119,7 +119,7 @@ header h1.title span {
     gap: 6px;
 }
 .cartItemContainer .cartItem .item_img {
-    width: 100px;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 1px solid var(--border-color);
@@ -195,7 +195,6 @@ button {
     border-radius: 2px;
     cursor: pointer;
     background-size: 100%;
-    background: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
 button:hover {
