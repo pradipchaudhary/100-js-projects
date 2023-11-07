@@ -5,10 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shopping Cart | 100 JavaScript Projects</title>
         <!-- CSS Link -->
+
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Shopping Card</h1>
+        <div class="wrapper">
+            <header>
+                <h1 class="title">
+                    <img src="img/shopping-cart.png" alt="" /><span
+                        >Shopping</span
+                    >
+                </h1>
+                <div class="shoppingCart">
+                    <img class="cartIcon" src="img/shopping-bag.png" alt="" />
+                    <span class="item">4</span>
+                </div>
+            </header>
+            <div class="container">
+                <main class="product">
+                    <div class="productList"></div>
+                </main>
+                <div class="cartItemContainer">
+                    <h2 class="head">My Cart</h2>
+                    <div id="cartItems">Your cart is empty</div>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 class="total">$ 0. 00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- JavaScript Include -->
         <script src="script.js"></script>
     </body>
