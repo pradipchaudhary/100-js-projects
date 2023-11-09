@@ -1,0 +1,26 @@
+/* === Google Fonts include */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+:root {
+    --white: #fff;
+    --primary: #1f6feb;
+    --black: #0d1117;
+    --border: #30363d;
+    --gray: #c9d1d9;
+    --gray-text: #8b949e;
+    --roboto: "Roboto", sans-serif;
+    --oswald: "Oswald", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    background: var(--gray);
+    font-family: var(--roboto);
+}
