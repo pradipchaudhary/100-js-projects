@@ -1,6 +1,5 @@
 const url = `https://api.github.com/users`;
 const searchInputEl = document.getElementById("searchInput");
-const searchButtonEl = document.getElementById("searchButton");
 const profileBox = document.getElementById("profileBox");
 const loading = document.getElementById("loading");
 
@@ -52,7 +51,6 @@ const fetchProfile = async (event) => {
             loading.style.color = "#efefef";
             const res = await fetch(`${url}/${username}`);
             const data = await res.json();
-            // console.log(data);
 
             if (data.name) {
                 profileBox.innerHTML = profileGenerator(data);
