@@ -173,6 +173,7 @@ footer > span {
 
 footer > a {
     color: #2200ff;
+    font-weight: bold;
 }
 footer > a:hover {
     color: #1702a1;
