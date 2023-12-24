@@ -1,18 +1,14 @@
 // Select DOM element
 const buttonsEl = document.querySelectorAll("button");
-const disabledEl = document.querySelector(".display");
+let displayEl = document.querySelector(".display");
 
-// const array = [];
-
-// for (let i = 0; i < buttonsEl.length; i++) {
-//     // console.log(i);
-//     array.push(buttonsEl[i].value);
-//     console.log(array.push(buttonsEl[i]));
-// }
 const array = Array.from(buttonsEl);
 
 array.forEach(function (button) {
-    console.log(button.innerHTML);
+    button.addEventListener("click", (e) => {
+        console.log(e.target.innerHTML);
+        displayEl.value = e.target.innerHTML;
+    });
 });
 
 // console.log(array);
