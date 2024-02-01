@@ -1,0 +1,206 @@
+/*=== Google Fonts ===*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;500&display=swap");
+
+:root {
+    --primary: #fffb00;
+    --js-color: #ffdf00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; /* 1rem - 16px */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #302f2f;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
+}
+a {
+    color: #302f2f;
+    text-decoration: none;
+}
+/* === Custom Scrolling === */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #dedddd;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+    transition: 0.6s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
+/* === Canvas === */
+#pradip-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* main */
+main {
+    width: 700px;
+    margin: auto;
+}
+header {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .brand {
+    color: #000;
+    background: #f7d800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+}
+header .brand h1,
+header .brand h2,
+header .brand h3 {
+    width: 100%;
+    text-align: center;
+}
+header .brand h1 {
+    font-size: 1.5rem;
+    line-height: normal;
+}
+header .brand h2 {
+    padding: 5px 0;
+    color: #f7d800;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: normal;
+    background: #000;
+    text-align: center;
+}
+header .brand h3 {
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #161616;
+    padding-top: 16px;
+    font-weight: 300;
+}
+/* Project lists */
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+ul.list li {
+    padding: 10px 0px;
+    border-bottom: 1px solid #bbb4be94;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+ul.list li:last-child {
+    border: none;
+}
+ul.list li:hover {
+    background: #e0e0e036;
+}
+
+ul.list li .project-number {
+    width: 40px;
+    text-align: center;
+}
+ul.list li .project-name {
+    width: calc(100% - 90px);
+    padding-left: 15px;
+    transition: color 0.2s ease;
+}
+ul.list li .code-link {
+    width: 100px;
+    text-align: center;
+    transition: color 0.2s ease;
+    letter-spacing: -0.5px;
+}
+/* hover */
+ul.list li .project-name:hover,
+ul.list li .code-link:hover {
+    color: #2200ff;
+    border-radius: 2px;
+}
+
+/* === Footer CSS === */
+footer {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > span {
+    color: #ff0000;
+}
+
+footer > a {
+    color: #2200ff;
+    font-weight: bold;
+}
+footer > a:hover {
+    color: #1702a1;
+}
+
+footer > object {
+    width: 26px;
+    color: rgba(219, 219, 219, 0.546);
+}
+
+/* Mobile  */
