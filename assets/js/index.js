@@ -50,10 +50,10 @@ function Circle(t, e, i, n, s) {
         (this.draw = function () {
             context.beginPath(),
                 context.arc(this.x, this.y, this.radius, 2 * Math.PI, !1),
-                (context.strokeStyle = "rgba(255,255,255, 0.1)"),
+                (context.strokeStyle = "rgba(255,251,0, 0.1)"),
                 context.stroke(),
                 context.fill(),
-                (context.fillStyle = "rgba(219, 219, 219, 0.300)");
+                (context.fillStyle = "rgba(201, 170, 28, .600)");
         }),
         (this.update = function () {
             (this.x + this.radius > innerWidth || this.x - this.radius < 0) &&
@@ -87,27 +87,3 @@ function render() {
     for (var t = 0; t < circles.length; t++) circles[t].update();
 }
 render();
-
-// Custom cursor
-const cursor = document.querySelector("#cursor");
-let size;
-
-document.addEventListener("mousemove", (e) => {
-    cursor.setAttribute(
-        "style",
-        "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-    );
-});
-
-document.addEventListener("mousemove", (ev) => {
-    let path = ev.composedPath();
-    cursor.classList.remove("expand");
-    cursor.classList.add("cursor");
-
-    if (path.some((x) => x.tagName == "A")) {
-        cursor.classList.add("expand");
-        cursor.classList.remove("cursor");
-        console.log("Hover");
-        size = 20;
-    }
-});

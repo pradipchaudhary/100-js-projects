@@ -26,12 +26,6 @@ body {
     height: 100vh;
     color: #303030;
     background: #fcd72b;
-    /* background: rgb(238, 174, 202);
-    background: radial-gradient(
-        circle,
-        rgba(238, 174, 202, 1) 0%,
-        rgba(148, 187, 233, 1) 100%
-    ); */
 }
 a {
     color: #302f2f;
@@ -93,7 +87,7 @@ header .brand h1 {
 header .brand h1 span {
     font-size: 1.4rem;
     font-weight: 300;
-    color: #7331ff;
+    color: #2200ff;
     letter-spacing: 2px;
     font-family: "Roboto", sans-serif;
     padding-left: 5px;
@@ -133,7 +127,7 @@ header nav ul {
 }
 #projects ul.list li {
     padding: 10px 0px;
-    border-bottom: 1px solid #bbb4be94;
+    border-bottom: 1px solid #e8c939;
     display: flex;
     justify-content: space-between;
     align-items: center;
