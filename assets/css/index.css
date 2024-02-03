@@ -81,6 +81,7 @@ header .brand {
     justify-content: center;
     flex-direction: column;
 }
+
 header .brand h1 {
     font-size: 4rem;
 }
