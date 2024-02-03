@@ -82,37 +82,15 @@ header .brand {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
-header .brand h1,
-header .brand h2,
-header .brand h3 {
-    width: 100%;
-    text-align: center;
-}
-header .brand h1 {
-    font-size: 1.5rem;
-    line-height: normal;
-}
-header .brand h2 {
-    padding: 5px 0;
-    color: #f7d800;
-    font-size: 1.1rem;
-    font-weight: 500;
-    line-height: normal;
-    background: #000;
-    text-align: center;
-}
-header .brand h3 {
-    font-size: 0.6rem;
-    font-weight: 400;
-    padding: 4px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+
+header .brand img {
+    object-fit: cover;
 }
 
 header nav ul {
