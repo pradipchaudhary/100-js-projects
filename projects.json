@@ -1,102 +1,503 @@
 [
     {
         "index": "01",
-        "name": "Life-Timer",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Life-timer"
+        "name": "To-Do List App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/01-To-Do%20List%20App"
     },
     {
         "index": "02",
-        "name": "Github-Profile-Search",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Github-Profile-Search"
+        "name": "Simple Calculator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/simple-calculator"
     },
     {
         "index": "03",
-        "name": "Marks-Calculator",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Marks-Calculator"
+        "name": "Digital Clock",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/digital-clock"
     },
     {
         "index": "04",
-        "name": "Math-Quiz-App",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Math-Quiz-App"
+        "name": "Tip Calculator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tip-calculator"
     },
     {
         "index": "05",
-        "name": "Random-Hex-Color-Generator",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Hex-Color-Generator"
+        "name": "Temperature Converter",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/temperature-converter"
     },
     {
         "index": "06",
-        "name": "QR-Code-Generator",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/QR-Code-Generator"
+        "name": "Random Quote Generator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/random-quote-generator"
     },
     {
         "index": "07",
-        "name": "Dark-Mode",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Dark-Mode"
+        "name": "Basic Image Slider",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/basic-image-slider"
     },
     {
         "index": "08",
-        "name": "Password-Generator",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Password-Generator"
+        "name": "Countdown Timer",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/countdown-timer"
     },
     {
         "index": "09",
-        "name": "Expense-Tracker-App",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Expense-Tracker-App"
+        "name": "BMI Calculator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/bmi-calculator"
     },
     {
         "index": "10",
-        "name": "Analog-Clock",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Analog-Clock"
+        "name": "Currency Converter",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/currency-converter"
     },
     {
         "index": "11",
-        "name": "Memory-Game",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Memory-Game"
+        "name": "Weather App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/weather-app"
     },
     {
         "index": "12",
-        "name": "Younz-Jokes-Generator",
-        "code": "https://github.com/pradipchaudhary/javascript-projects/tree/master/Random-Joks-Generator"
+        "name": "Expense Tracker",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/expense-tracker"
     },
     {
         "index": "13",
-        "name": "Box-Shadow-Generator",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Box-Shadow-Generator"
+        "name": "Memory Game",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/memory-game"
     },
     {
         "index": "14",
-        "name": "Weather-App",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Weather-App"
+        "name": "Chat Application",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/chat-application"
     },
     {
         "index": "15",
-        "name": "OTP-Verification-Form",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/OTP-Verification-Form"
+        "name": "Interactive Quiz",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/interactive-quiz"
     },
     {
         "index": "16",
-        "name": "Digital-Clock",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Digital-Clock"
+        "name": "Pomodoro Timer",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/pomodoro-timer"
     },
     {
         "index": "17",
-        "name": "Language-Translator-App",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Language-Translator-App"
+        "name": "Music Player",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/music-player"
     },
     {
         "index": "18",
-        "name": "SatoshiToUSD-Converter",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/SatoshiToUSD-Converter"
+        "name": "Recipe App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/recipe-app"
     },
     {
         "index": "19",
-        "name": "Pexels-Clone",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/Pexels-Clone"
+        "name": "Car Rental Website",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/car-rental-website"
     },
     {
         "index": "20",
-        "name": "Chat-GPT",
-        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree/master/20-Chat-GPT"
+        "name": "Blogging Platform",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/blogging-platform"
+    },
+    {
+        "index": "21",
+        "name": "Social Media Dashboard",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/social-media-dashboard"
+    },
+    {
+        "index": "22",
+        "name": "E-commerce Website",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/e-commerce-website"
+    },
+    {
+        "index": "23",
+        "name": "Real-time Chat Room",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/real-time-chat-room"
+    },
+    {
+        "index": "24",
+        "name": "Photo Editing Tool",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/photo-editing-tool"
+    },
+    {
+        "index": "25",
+        "name": "Cryptocurrency Tracker",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/cryptocurrency-tracker"
+    },
+    {
+        "index": "26",
+        "name": "Fitness Tracker",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/fitness-tracker"
+    },
+    {
+        "index": "27",
+        "name": "Job Board Platform",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/job-board-platform"
+    },
+    {
+        "index": "28",
+        "name": "AI-powered Recommendation System",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/ai-powered-recommendation-system"
+    },
+    {
+        "index": "29",
+        "name": "Augmented Reality Game",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/augmented-reality-game"
+    },
+    {
+        "index": "30",
+        "name": "Video Streaming Platform",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/video-streaming-platform"
+    },
+    {
+        "index": "31",
+        "name": "Google Maps Integration",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/google-maps-integration"
+    },
+    {
+        "index": "32",
+        "name": "Twitter/Facebook API Integration",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/twitter-facebook-api-integration"
+    },
+    {
+        "index": "33",
+        "name": "YouTube Video Player",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/youtube-video-player"
+    },
+    {
+        "index": "34",
+        "name": "GitHub Profile Viewer",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/github-profile-viewer"
+    },
+    {
+        "index": "35",
+        "name": "Weather Forecast using OpenWeatherMap API",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/weather-forecast"
+    },
+    {
+        "index": "36",
+        "name": "News Aggregator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/news-aggregator"
+    },
+    {
+        "index": "37",
+        "name": "Currency Exchange Rates using API",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/currency-exchange-rates"
+    },
+    {
+        "index": "38",
+        "name": "NASA API for Astronomy Data",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/nasa-api-astronomy-data"
+    },
+    {
+        "index": "39",
+        "name": "Random Joke Generator using Joke API",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/random-joke-generator"
+    },
+    {
+        "index": "40",
+        "name": "Recipe Finder using Food API",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/recipe-finder"
+    },
+    {
+        "index": "41",
+        "name": "Drawing App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/drawing-app"
+    },
+    {
+        "index": "42",
+        "name": "Virtual Piano",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/virtual-piano"
+    },
+    {
+        "index": "43",
+        "name": "Interactive Storytelling",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/interactive-storytelling"
+    },
+    {
+        "index": "44",
+        "name": "3D Cube Puzzle",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/3d-cube-puzzle"
+    },
+    {
+        "index": "45",
+        "name": "Text-based Adventure Game",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/text-adventure-game"
+    },
+    {
+        "index": "46",
+        "name": "Music Visualizer",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/music-visualizer"
+    },
+    {
+        "index": "47",
+        "name": "Meme Generator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/meme-generator"
+    },
+    {
+        "index": "48",
+        "name": "Virtual Pet",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/virtual-pet"
+    },
+    {
+        "index": "49",
+        "name": "Color Palette Generator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/color-palette-generator"
+    },
+    {
+        "index": "50",
+        "name": "Emoji Translator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/emoji-translator"
+    },
+    {
+        "index": "51",
+        "name": "File Uploader",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/file-uploader"
+    },
+    {
+        "index": "52",
+        "name": "Password Generator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/password-generator"
+    },
+    {
+        "index": "53",
+        "name": "QR Code Generator/Scanner",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/qr-code-generator"
+    },
+    {
+        "index": "54",
+        "name": "Unit Converter",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/unit-converter"
+    },
+    {
+        "index": "55",
+        "name": "Markdown Editor",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/markdown-editor"
+    },
+    {
+        "index": "56",
+        "name": "Voice Assistant",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/voice-assistant"
+    },
+    {
+        "index": "57",
+        "name": "Note-taking App",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/note-taking-app"
+    },
+    {
+        "index": "58",
+        "name": "Browser Extension",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/browser-extension"
+    },
+    {
+        "index": "59",
+        "name": "Calendar/Planner",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/calendar-planner"
+    },
+    {
+        "index": "60",
+        "name": "Clipboard Manager",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/clipboard-manager"
+    },
+    {
+        "index": "61",
+        "name": "Interactive Charts (using D3.js)",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/interactive-charts"
+    },
+    {
+        "index": "62",
+        "name": "Heatmap Generator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/heatmap-generator"
+    },
+    {
+        "index": "63",
+        "name": "Dashboard with Graphs and Metrics",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/dashboard-graphs-metrics"
+    },
+    {
+        "index": "64",
+        "name": "Geographical Data Visualization",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/geographical-data-viz"
+    },
+    {
+        "index": "65",
+        "name": "Network Traffic Analyzer",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/network-traffic-analyzer"
+    },
+    {
+        "index": "66",
+        "name": "Stock Market Tracker with Graphs",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/stock-market-tracker"
+    },
+    {
+        "index": "67",
+        "name": "Polls and Survey Data Visualization",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/polls-survey-data-viz"
+    },
+    {
+        "index": "68",
+        "name": "Visualizing COVID-19 Data",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/covid19-data-viz"
+    },
+    {
+        "index": "69",
+        "name": "Population Density Map",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/population-density-map"
+    },
+    {
+        "index": "70",
+        "name": "Social Media Analytics Dashboard",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/social-media-analytics"
+    },
+    {
+        "index": "71",
+        "name": "Tic Tac Toe",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tic-tac-toe"
+    },
+    {
+        "index": "72",
+        "name": "Snake Game",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/snake-game"
+    },
+    {
+        "index": "73",
+        "name": "2048",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/2048"
+    },
+    {
+        "index": "74",
+        "name": "Sudoku Solver",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/sudoku-solver"
+    },
+    {
+        "index": "75",
+        "name": "Chess Game",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/chess-game"
+    },
+    {
+        "index": "76",
+        "name": "Hangman",
+
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/hangman"
+    },
+    {
+        "index": "77",
+        "name": "Memory Puzzle Game",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/memory-puzzle-game"
+    },
+    {
+        "index": "78",
+        "name": "Battleship",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/battleship"
+    },
+    {
+        "index": "79",
+        "name": "Crossword Puzzle",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/crossword-puzzle"
+    },
+    {
+        "index": "80",
+        "name": "Platformer Game",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/platformer-game"
+    },
+    {
+        "index": "81",
+        "name": "Screen Reader Compatibility",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/screen-reader-compatibility"
+    },
+    {
+        "index": "82",
+        "name": "Keyboard Navigation Improvement",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/keyboard-navigation-improvement"
+    },
+    {
+        "index": "83",
+        "name": "Contrast Checker",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/contrast-checker"
+    },
+    {
+        "index": "84",
+        "name": "Text Resize/Zoom Functionality",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/text-resize-zoom-functionality"
+    },
+    {
+        "index": "85",
+        "name": "Color Blindness Simulator",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/color-blindness-simulator"
+    },
+    {
+        "index": "86",
+        "name": "Speech Recognition Interface",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/speech-recognition-interface"
+    },
+    {
+        "index": "87",
+        "name": "Focus Management",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/focus-management"
+    },
+    {
+        "index": "88",
+        "name": "High-Contrast Mode",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/high-contrast-mode"
+    },
+    {
+        "index": "89",
+        "name": "Aria Role Implementation",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/aria-role-implementation"
+    },
+    {
+        "index": "90",
+        "name": "Responsive Design for Accessibility",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/responsive-design-accessibility"
+    },
+    {
+        "index": "91",
+        "name": "Code Profiler and Optimizer",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/code-profiler-optimizer"
+    },
+    {
+        "index": "92",
+        "name": "Lazy Loading Images",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/lazy-loading-images"
+    },
+    {
+        "index": "93",
+        "name": "Debouncing and Throttling Functions",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/debouncing-throttling-functions"
+    },
+    {
+        "index": "94",
+        "name": "Caching Mechanism",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/caching-mechanism"
+    },
+    {
+        "index": "95",
+        "name": "Reducing DOM Manipulations",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/reducing-dom-manipulations"
+    },
+    {
+        "index": "96",
+        "name": "Memory Leak Detection",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/memory-leak-detection"
+    },
+    {
+        "index": "97",
+        "name": "Network Performance Analyzer",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/network-performance-analyzer"
+    },
+    {
+        "index": "98",
+        "name": "Minification and Bundling",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/minification-bundling"
+    },
+    {
+        "index": "99",
+        "name": "Tree Shaking for Unused Code",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/tree-shaking-unused-code"
+    },
+    {
+        "index": "100",
+        "name": "Code Splitting",
+        "code": "https://github.com/pradipchaudhary/100-javascript-projects/code-splitting"
     }
 ]
