@@ -8,7 +8,7 @@
 
 <!-- ![Screenshot](banner.jpg) -->
 
-_Feel free to explore each project in detail by navigating to their respective folders. Each project contains its own set of files and instructions on how to run or integrate them._
+Feel free to explore each project in detail by navigating to their respective folders. Each project contains its own set of files and instructions on how to run or integrate them.
 
 ## Contribution
 
