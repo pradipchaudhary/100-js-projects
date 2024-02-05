@@ -4,7 +4,7 @@
 
 **This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities.**
 
-[![Logo](./assets/images/banner.jpg)](https://100-javascript-projects.vercel.app/)
+[![Logo](./assets/images/thumbnail.png)](https://100-javascript-projects.vercel.app/)
 
 <!-- ![Screenshot](banner.jpg) -->
 
