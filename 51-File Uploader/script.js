@@ -1,43 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
+function uploadFile() {
     const fileInput = document.getElementById("fileInput");
-    const fileList = document.getElementById("fileList");
+    const progressBar = document.getElementById("progressBar");
+    const status = document.getElementById("status");
 
-    fileInput.addEventListener("change", handleFileSelect);
+    const file = fileInput.files[0];
+    if (!file) {
+        alert("Please select a file.");
+        return;
+    }
 
-    function handleFileSelect(event) {
-        const files = event.target.files;
+    const formData = new FormData();
+    formData.append("file", file);
 
-        fileList.innerHTML = ""; // Clear existing file list
+    const xhr = new XMLHttpRequest();
 
-        for (let i = 0; i < files.length; i++) {
-            const file = files[i];
-            const listItem = document.createElement("div");
-            listItem.classList.add("file-item");
-
-            const fileName = document.createElement("span");
-            fileName.textContent = file.name;
-
-            const fileSize = document.createElement("span");
-            fileSize.textContent = ` (${formatBytes(file.size)})`;
-
-            listItem.appendChild(fileName);
-            listItem.appendChild(fileSize);
-
-            fileList.appendChild(listItem);
+    xhr.upload.onprogress = function (e) {
+        if (e.lengthComputable) {
+            const progress = (e.loaded / e.total) * 100;
+            progressBar.value = progress;
         }
-    }
+    };
 
-    function formatBytes(bytes, decimals = 2) {
-        if (bytes === 0) return "0 Bytes";
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            status.innerHTML = "File uploaded successfully!";
+        } else {
+            status.innerHTML = "Error uploading file. Please try again.";
+        }
+    };
 
-        const k = 1024;
-        const dm = decimals < 0 ? 0 : decimals;
-        const sizes = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
-
-        const i = Math.floor(Math.log(bytes) / Math.log(k));
-
-        return (
-            parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i]
-        );
-    }
-});
+    xhr.open("POST", "your_upload_endpoint_url", true);
+    xhr.send(formData);
+}
