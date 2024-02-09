@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QR Code Generator/Scanner</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            #qr-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #qr-code {
+                margin-bottom: 10px;
+            }
+
+            video {
+                width: 100%;
+                max-width: 300px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="qr-container">
+            <div id="qr-code"></div>
+            <button onclick="generateQRCode()">Generate QR Code</button>
+            <video id="scanner" style="display: none"></video>
+        </div>
+
+        <script src="https://rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+        <script>
+            function generateQRCode() {
+                const text = prompt("Enter text for QR Code");
+                if (text) {
+                    const qrCodeDiv = document.getElementById("qr-code");
+                    qrCodeDiv.innerHTML = ""; // Clear previous QR code
+                    const qrcode = new QRCode(qrCodeDiv, {
+                        text: text,
+                        width: 128,
+                        height: 128,
+                    });
+                }
+            }
+
+            // Scanner functionality
+            const scanner = new Instascan.Scanner({
+                video: document.getElementById("scanner"),
+            });
+            scanner.addListener("scan", function (content) {
+                alert("Scanned: " + content);
+            });
+
+            document
+                .querySelector("button")
+                .addEventListener("click", function () {
+                    const video = document.getElementById("scanner");
+                    if (video.style.display === "none") {
+                        Instascan.Camera.getCameras()
+                            .then(function (cameras) {
+                                if (cameras.length > 0) {
+                                    scanner.start(cameras[0]);
+                                    video.style.display = "block";
+                                } else {
+                                    alert("No cameras found.");
+                                }
+                            })
+                            .catch(function (e) {
+                                console.error(e);
+                            });
+                    } else {
+                        scanner.stop();
+                        video.style.display = "none";
+                    }
+                });
+        </script>
+    </body>
+</html>
