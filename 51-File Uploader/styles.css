@@ -1,31 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
 }
 
-.file-uploader {
+.container {
     text-align: center;
 }
 
-.file-label {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+input {
+    margin: 10px 0;
 }
 
-.file-list {
-    margin-top: 20px;
-    text-align: left;
+progress {
+    width: 100%;
+    margin: 10px 0;
 }
 
-.file-item {
-    margin-bottom: 10px;
+#status {
+    margin: 10px 0;
 }
