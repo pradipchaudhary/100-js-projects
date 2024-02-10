@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Social Media Analytics Dashboard</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Social Media Analytics Dashboard</h1>
+            <div id="dashboard">
+                <div id="engagement-chart-container">
+                    <h2>Engagement Overview</h2>
+                    <canvas
+                        id="engagementChart"
+                        width="800"
+                        height="400"
+                    ></canvas>
+                </div>
+                <div id="posts-list-container">
+                    <h2>Recent Posts</h2>
+                    <ul id="postsList"></ul>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
