@@ -3,28 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Social Media Analytics Dashboard || 100 JavaScript Projects
+        </title>
         <link rel="stylesheet" href="styles.css" />
-        <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <title>Social Media Analytics Dashboard</title>
     </head>
     <body>
-        <div class="container">
+        <header>
             <h1>Social Media Analytics Dashboard</h1>
-            <div id="dashboard">
-                <div id="engagement-chart-container">
-                    <h2>Engagement Overview</h2>
-                    <canvas
-                        id="engagementChart"
-                        width="800"
-                        height="400"
-                    ></canvas>
-                </div>
-                <div id="posts-list-container">
-                    <h2>Recent Posts</h2>
-                    <ul id="postsList"></ul>
-                </div>
+        </header>
+
+        <div class="container">
+            <div class="widget">
+                <h2>Followers</h2>
+                <p>Total Followers: 10,000</p>
+            </div>
+
+            <div class="widget">
+                <h2>Engagement</h2>
+                <p>Posts Liked: 5,000</p>
+                <p>Comments Received: 1,000</p>
+            </div>
+
+            <div class="widget">
+                <h2>Posts</h2>
+                <p>Total Posts: 100</p>
+                <p>Most Popular: Post Title</p>
             </div>
         </div>
+
         <script src="app.js"></script>
     </body>
 </html>
