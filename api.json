@@ -1,0 +1,223 @@
+[
+    {
+        "id": "1",
+        "name": "Personal Blog",
+        "category": "Web Development",
+        "features": [
+            "Blog post creation",
+            "User authentication",
+            "Comment section"
+        ],
+        "problem_solve": [
+            "Share personal experiences",
+            "Practice CRUD operations",
+            "Implement user authentication"
+        ],
+        "description": "Create a personal blog platform where users can share their thoughts and experiences.",
+        "tag": ["blog", "web development", "authentication"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/blog_cover.jpg",
+        "code_link": "https://github.com/username/personal-blog"
+    },
+    {
+        "id": "2",
+        "name": "E-commerce Website",
+        "category": "Web Development",
+        "features": ["Product catalog", "Shopping cart", "User accounts"],
+        "problem_solve": [
+            "Implementing product listings",
+            "Shopping cart functionality",
+            "User authentication and authorization"
+        ],
+        "description": "Build an online store with features like product browsing, shopping cart management, and user accounts.",
+        "tag": ["e-commerce", "web development", "shopping cart"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/e-commerce_cover.jpg",
+        "code_link": "https://github.com/username/e-commerce-website"
+    },
+    {
+        "id": "3",
+        "name": "Weather App",
+        "category": "Web Development",
+        "features": [
+            "Real-time weather data",
+            "Location-based forecast",
+            "Search functionality"
+        ],
+        "problem_solve": [
+            "API integration",
+            "Asynchronous programming",
+            "Handling user input"
+        ],
+        "description": "Develop a weather application that provides real-time weather information based on user input or location.",
+        "tag": ["weather", "web development", "API"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/weather_app_cover.jpg",
+        "code_link": "https://github.com/username/weather-app"
+    },
+    {
+        "id": "4",
+        "name": "Portfolio Website",
+        "category": "Web Development",
+        "features": ["Project showcase", "Resume section", "Contact form"],
+        "problem_solve": [
+            "Showcasing skills and projects",
+            "Building a personal brand online",
+            "Contact form handling"
+        ],
+        "description": "Build a portfolio website to showcase your skills, projects, and resume in a visually appealing manner.",
+        "tag": ["portfolio", "web development", "personal branding"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/portfolio_cover.jpg",
+        "code_link": "https://github.com/username/portfolio-website"
+    },
+    {
+        "id": "5",
+        "name": "Quiz Application",
+        "category": "Web Development",
+        "features": ["Multiple-choice questions", "Score tracking", "Timer"],
+        "problem_solve": [
+            "Creating interactive quizzes",
+            "Tracking user scores",
+            "Implementing timers"
+        ],
+        "description": "Develop a quiz application with various categories, multiple-choice questions, and a scoring system.",
+        "tag": ["quiz", "web development", "education"],
+        "language": ["HTML", "CSS", "JavaScript", "Vue.js"],
+        "cover_img": "images/quiz_app_cover.jpg",
+        "code_link": "https://github.com/username/quiz-app"
+    },
+    {
+        "id": "6",
+        "name": "Social Media Dashboard",
+        "category": "Web Development",
+        "features": ["User profiles", "Post sharing", "Activity feed"],
+        "problem_solve": [
+            "Building social features",
+            "User profile management",
+            "Activity tracking"
+        ],
+        "description": "Create a social media dashboard with user profiles, post sharing, and an activity feed for users.",
+        "tag": ["social media", "web development", "dashboard"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/social_media_dashboard_cover.jpg",
+        "code_link": "https://github.com/username/social-media-dashboard"
+    },
+    {
+        "id": "7",
+        "name": "Event Countdown Timer",
+        "category": "Web Development",
+        "features": [
+            "Countdown timer",
+            "Event details",
+            "Notification reminders"
+        ],
+        "problem_solve": [
+            "Implementing countdowns",
+            "Displaying event details",
+            "Notification handling"
+        ],
+        "description": "Build an event countdown timer that allows users to set reminders for upcoming events.",
+        "tag": ["countdown timer", "web development", "events"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/countdown_timer_cover.jpg",
+        "code_link": "https://github.com/username/countdown-timer"
+    },
+    {
+        "id": "8",
+        "name": "Recipe Sharing Platform",
+        "category": "Web Development",
+        "features": [
+            "Recipe submissions",
+            "Search functionality",
+            "User ratings"
+        ],
+        "problem_solve": [
+            "User-generated content",
+            "Implementing search features",
+            "Rating and feedback system"
+        ],
+        "description": "Create a platform for users to share and explore recipes, including search and rating features.",
+        "tag": ["recipes", "web development", "community"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Vue.js",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/recipe_sharing_cover.jpg",
+        "code_link": "https://github.com/username/recipe-sharing-platform"
+    },
+    {
+        "id": "9",
+        "name": "Task Tracker",
+        "category": "Web Development",
+        "features": [
+            "Task creation",
+            "Priority management",
+            "Completion tracking"
+        ],
+        "problem_solve": [
+            "Task organization",
+            "Priority management",
+            "Tracking task completion"
+        ],
+        "description": "Build a task tracker application to help users organize and manage their daily tasks efficiently.",
+        "tag": ["task tracker", "web development", "productivity"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/task_tracker_cover.jpg",
+        "code_link": "https://github.com/username/task-tracker"
+    },
+    {
+        "id": "10",
+        "name": "Feedback Form",
+        "category": "Web Development",
+        "features": [
+            "Customizable form fields",
+            "Submission tracking",
+            "User feedback analytics"
+        ],
+        "problem_solve": [
+            "Building dynamic forms",
+            "Tracking form submissions",
+            "Analyzing user feedback"
+        ],
+        "description": "Develop a feedback form application with customizable fields, submission tracking, and analytics.",
+        "tag": ["feedback form", "web development", "user feedback"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/feedback_form_cover.jpg",
+        "code_link": "https://github.com/username/feedback-form"
+    }
+]

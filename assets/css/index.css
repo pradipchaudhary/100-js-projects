@@ -25,7 +25,7 @@ body {
     width: 100%;
     height: 100vh;
     color: #303030;
-    background: #fcd72b;
+    background: rgb(0 0 0 / 3%);
 }
 a {
     color: #302f2f;
@@ -65,7 +65,7 @@ body::-webkit-scrollbar-button {
 
 /* main */
 main {
-    width: 700px;
+    width: 1200px;
     margin: auto;
 }
 header {
@@ -114,47 +114,63 @@ header nav ul {
     font-family: "Roboto", sans-serif;
 }
 /* Project lists */
-#projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px auto;
+#container {
+    margin-top: 30px;
 }
-#projects ul {
-    list-style-type: none;
-    margin-bottom: 5rem;
-    margin-top: 1.5rem;
+h2.cat-title {
+    margin-bottom: 25px;
+    font-weight: 400;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 10px;
+}
+.projects-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* project item */
+.project-item {
+    width: 285px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #efefef;
+}
+.project-item img {
     width: 100%;
+    object-fit: cover;
 }
-#projects ul.list li {
-    padding: 10px 0px;
-    border-bottom: 1px solid #e8c939;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.2s ease;
+.project-info {
+    padding: 10px;
 }
-ul.list li:last-child {
-    border: none;
+.project-info .lang {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #2200ff;
 }
-ul.list li:hover {
-    background: #e0e0e036;
+.project-info h3.project-name {
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding: 5px 0;
 }
-
-ul.list li .project-number {
-    width: 40px;
-    text-align: center;
+.project-info p.description {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #131212;
+    line-height: 22px;
+    margin-bottom: 10px;
 }
-ul.list li .project-name {
-    width: calc(100% - 90px);
-    padding-left: 15px;
-    transition: color 0.2s ease;
+.project-info .project-features {
+    margin-top: 10px;
 }
-ul.list li .code-link {
-    width: 100px;
-    text-align: center;
-    transition: color 0.2s ease;
-    letter-spacing: -0.5px;
+.project-info .project-features .features-title {
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.project-info .project-features ul li {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin-left: 20px;
 }
 /* hover */
 ul.list li .project-name:hover,

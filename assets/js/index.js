@@ -1,5 +1,6 @@
 "use strict";
-const list = document.querySelector(".list");
+// const projectsItems = document.querySelector(".projects-items");
+const projectsItems = document.getElementById("projects-items");
 const canvas = document.getElementById("pradip-canvas"),
     context = canvas.getContext("2d");
 const ancherEl = document.querySelectorAll("a");
@@ -9,29 +10,56 @@ window.onload = function () {
     console.log("Loaded");
 };
 
-fetch("./projects.json")
+fetch("./api.json")
     .then((res) => res.json())
     .then((data) => updateUI(data));
 
 //  UpdateUI
+// const updateUI = (projects) => {
+//     projects.map(({ name, code, index }) => {
+//         const itemList = document.createElement("li");
+//         itemList.innerHTML = `
+// 		<span class="project-number">${index}</span>
+// 		<span class="project-name">
+//         <a href="/${index}-${name}/index.html" target="_blank" >
+// 		    ${projectNameFormatter(name)}
+// 		</a>
+//         </span>
+// 		<a href="${code}" target="_blank" class="code-link">
+// 		    ${"{"} code ${"}"}
+// 		</a>
+// 		`;
+//         list.appendChild(itemList);
+//     });
+// };
+
 const updateUI = (projects) => {
-    projects.map(({ name, code, index }) => {
-        const itemList = document.createElement("li");
-        itemList.innerHTML = `
-		<span class="project-number">${index}</span>
-		<span class="project-name">
-        <a href="/${index}-${name}/index.html" target="_blank" >
-		    ${projectNameFormatter(name)}
-		</a>
-        </span>
-		<a href="${code}" target="_blank" class="code-link">
-		    ${"{"} code ${"}"} 
-		</a>
-		`;
-        list.appendChild(itemList);
+    projects.map((project) => {
+        const projectItem = document.createElement("div");
+        projectItem.className = "project-item";
+        console.log(projectItem);
+        projectItem.innerHTML = `
+                            <img src="./assets/screen/thumbnail.png" alt="" />
+                            <div class="project-info">
+                                <div class="lang">html, css, JavaScript</div>
+                                <h3 class="project-name">Personal Blog</h3>
+                                <p class="description">
+                                    Create a personal blog platform where users
+                                    can share their thoughts and experiences.
+                                </p>
+                                <div class="project-features">
+                                    <h4 class="features-title">Features:</h4>
+                                    <ul>
+                                        <li>Blog post creation</li>
+                                        <li>User authentication</li>
+                                        <li>Comment section</li>
+                                    </ul>
+                                </div>
+                            </div>
+        `;
+        projectsItems.appendChild(projectItem);
     });
 };
-
 // Project Name Formatter
 const projectNameFormatter = (name) => {
     return name
