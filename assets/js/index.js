@@ -34,27 +34,19 @@ fetch("./api.json")
 // };
 
 const updateUI = (projects) => {
-    projects.map((project) => {
+    projects.map(({ id, name, description, language }) => {
         const projectItem = document.createElement("div");
         projectItem.className = "project-item";
         console.log(projectItem);
         projectItem.innerHTML = `
                             <img src="./assets/screen/thumbnail.png" alt="" />
                             <div class="project-info">
-                                <div class="lang">html, css, JavaScript</div>
-                                <h3 class="project-name">Personal Blog</h3>
+                                <div class="lang">${language}</div>
+                                <h3 class="project-name">${name}</h3>
                                 <p class="description">
-                                    Create a personal blog platform where users
-                                    can share their thoughts and experiences.
+                                    ${description}
                                 </p>
-                                <div class="project-features">
-                                    <h4 class="features-title">Features:</h4>
-                                    <ul>
-                                        <li>Blog post creation</li>
-                                        <li>User authentication</li>
-                                        <li>Comment section</li>
-                                    </ul>
-                                </div>
+                                
                             </div>
         `;
         projectsItems.appendChild(projectItem);
@@ -78,10 +70,10 @@ function Circle(t, e, i, n, s) {
         (this.draw = function () {
             context.beginPath(),
                 context.arc(this.x, this.y, this.radius, 2 * Math.PI, !1),
-                (context.strokeStyle = "rgba(255,251,0, 0.1)"),
+                (context.strokeStyle = "rgba(255,255,255, 0.1)"),
                 context.stroke(),
                 context.fill(),
-                (context.fillStyle = "rgba(201, 170, 28, .600)");
+                (context.fillStyle = "rgba(0,0,0,0.05)");
         }),
         (this.update = function () {
             (this.x + this.radius > innerWidth || this.x - this.radius < 0) &&

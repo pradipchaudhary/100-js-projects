@@ -131,30 +131,33 @@ h2.cat-title {
 /* project item */
 .project-item {
     width: 285px;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     border: 1px solid #efefef;
+    background: #faf9f9;
+    border-radius: 5px;
 }
 .project-item img {
     width: 100%;
     object-fit: cover;
 }
 .project-info {
-    padding: 10px;
+    padding: 14px;
 }
 .project-info .lang {
-    font-weight: 300;
-    font-size: 0.8rem;
+    font-weight: 400;
+    font-size: 0.7rem;
+    word-spacing: 8px;
     color: #2200ff;
 }
 .project-info h3.project-name {
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     padding: 5px 0;
 }
 .project-info p.description {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #131212;
     line-height: 22px;
     margin-bottom: 10px;
@@ -185,7 +188,7 @@ footer {
     width: 100%;
     text-align: center;
     color: #000;
-    padding: 0.8rem;
+    padding: 7rem 0 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
