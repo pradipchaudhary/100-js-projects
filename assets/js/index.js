@@ -34,23 +34,38 @@ fetch("./api.json")
 // };
 
 const updateUI = (projects) => {
-    projects.map(({ id, name, description, language }) => {
-        const projectItem = document.createElement("div");
-        projectItem.className = "project-item";
-        console.log(projectItem);
-        projectItem.innerHTML = `
+    projects.map(
+        ({
+            id,
+            name,
+            category,
+            features,
+            problem_solve,
+            description,
+            tag,
+            language,
+            cover_img,
+            code_link,
+        }) => {
+            const projectItem = document.createElement("div");
+            projectItem.className = "project-item";
+            console.log(projectItem);
+            projectItem.innerHTML = `
                             <img src="./assets/screen/thumbnail.png" alt="" />
                             <div class="project-info">
                                 <div class="lang">${language}</div>
-                                <h3 class="project-name">${name}</h3>
+                               <a href=${code_link} > 
+                               <h3 class="project-name">${name}</h3>
+                               </a>
                                 <p class="description">
                                     ${description}
                                 </p>
                                 
                             </div>
         `;
-        projectsItems.appendChild(projectItem);
-    });
+            projectsItems.appendChild(projectItem);
+        }
+    );
 };
 // Project Name Formatter
 const projectNameFormatter = (name) => {
