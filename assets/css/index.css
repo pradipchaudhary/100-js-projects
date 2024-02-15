@@ -137,43 +137,13 @@ h2.cat-title {
     background: #faf9f9;
     border-radius: 5px;
 }
-.project-item img {
-    width: 100%;
-    object-fit: cover;
+.projects-list {
+    list-style: none;
 }
-.project-info {
-    padding: 14px;
-}
-.project-info .lang {
-    font-weight: 400;
-    font-size: 0.7rem;
-    word-spacing: 8px;
-    color: #2200ff;
-}
-.project-info h3.project-name {
-    font-weight: 500;
-    font-size: 1.4rem;
-    padding: 5px 0;
-}
-.project-info p.description {
-    font-weight: 300;
-    font-size: 0.9rem;
-    color: #131212;
-    line-height: 22px;
-    margin-bottom: 10px;
-}
-.project-info .project-features {
-    margin-top: 10px;
-}
-.project-info .project-features .features-title {
-    margin-bottom: 5px;
-    font-weight: 400;
-}
-.project-info .project-features ul li {
-    font-weight: 300;
-    font-size: 0.9rem;
-    line-height: 22px;
-    margin-left: 20px;
+.projects-list li {
+    padding: 5px;
+    display: flex;
+    gap: 40px;
 }
 /* hover */
 ul.list li .project-name:hover,
