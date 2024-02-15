@@ -65,7 +65,7 @@ body::-webkit-scrollbar-button {
 
 /* main */
 main {
-    width: 1200px;
+    width: 700px;
     margin: auto;
 }
 header {
@@ -114,20 +114,7 @@ header nav ul {
     font-family: "Roboto", sans-serif;
 }
 /* Project lists */
-#container {
-    margin-top: 30px;
-}
-h2.cat-title {
-    margin-bottom: 25px;
-    font-weight: 400;
-    border-bottom: 1px solid #efefef;
-    padding-bottom: 10px;
-}
-.projects-items {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+
 /* project item */
 .project-item {
     width: 285px;
@@ -141,9 +128,15 @@ h2.cat-title {
     list-style: none;
 }
 .projects-list li {
-    padding: 5px;
+    padding: 6px;
     display: flex;
-    gap: 40px;
+    gap: 10px;
+}
+.projects-list li .project-number {
+    width: 35px;
+}
+.projects-list li .project-name {
+    width: 80%;
 }
 /* hover */
 ul.list li .project-name:hover,
