@@ -12,7 +12,11 @@ Feel free to explore each project in detail by navigating to their respective fo
 
 # Projects Lists
 
-### [1. Todo List App ](https://github.com)
+**[1. Todo List App ](https://github.com)** <br>
+**[1. Simple Calculator ](https://github.com)** <br>
+**[1. Digital Clock ](https://github.com)** <br>
+**[1. Tip Calculator ](https://github.com)** <br>
+**[1. Temperature converter ](https://github.com)** <br>
 
 ---
 
