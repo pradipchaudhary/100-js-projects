@@ -1,10 +1,10 @@
-# 100 JavaScript Projects
+# [100 JavaScript Projects](https://github.com/pradipchaudhary/100-javascript-projects)
 
 **A Collection of Vanilla JavaScript Projects**
 
-**This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities.**
+This repository contains a collection of various Vanilla JavaScript projects. Each project is designed to showcase different aspects of JavaScript and its functionalities.
 
-[![Logo](./assets/images/thumbnail.png)](https://100-javascript-projects.vercel.app/)
+[![Logo](./assets/images/100jsproject.jpg)](https://100-javascript-projects.vercel.app/)
 
 <!-- ![Screenshot](banner.jpg) -->
 
@@ -12,7 +12,9 @@ Feel free to explore each project in detail by navigating to their respective fo
 
 # Projects Lists
 
-## [1. Todo List App ](https://github.com)
+### [1. Todo List App ](https://github.com)
+
+---
 
 ## Contribution
 
