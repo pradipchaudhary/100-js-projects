@@ -1,0 +1,40 @@
+{
+   "categories": [
+      {
+         "id": 1,
+         "name": "Web Development",
+         "projects": [
+            {
+               "id": 101,
+               "name": "Portfolio Website",
+               "description": "Showcase your skills and projects.",
+               "api": null
+            },
+            {
+               "id": 102,
+               "name": "Personal Blog",
+               "description": "Write and publish articles.",
+               "api": null
+            }
+         ]
+      },
+      {
+         "id": 2,
+         "name": "Data Visualization",
+         "projects": [
+            {
+               "id": 201,
+               "name": "Charting Library",
+               "description": "Develop a library for creating different types of charts.",
+               "api": null
+            },
+            {
+               "id": 202,
+               "name": "Interactive Dashboard",
+               "description": "Build a customizable dashboard with data visualizations.",
+               "api": null
+            }
+         ]
+      }
+   ]
+}
