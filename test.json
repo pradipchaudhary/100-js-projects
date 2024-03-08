@@ -35,6 +35,46 @@
                "api": null
             }
          ]
+      },
+      {
+         "id": 3,
+         "name": "APIs and Microservices",
+         "projects": []
+      },
+      {
+         "id": 4,
+         "name": "Game Development",
+         "projects": []
+      },
+      {
+         "id": 5,
+         "name": "Automation and Scripting",
+         "projects": []
+      },
+      {
+         "id": 6,
+         "name": "Artificial Intelligence and Machine Learning",
+         "projects": []
+      },
+      {
+         "id": 7,
+         "name": "Augmented Reality (AR) and Virtual Reality (VR)",
+         "projects": []
+      },
+      {
+         "id": 8,
+         "name": "IoT (Internet of Things)",
+         "projects": []
+      },
+      {
+         "id": 9,
+         "name": "DevOps and Infrastructure",
+         "projects": []
+      },
+      {
+         "id": 10,
+         "name": "Security",
+         "projects": []
       }
    ]
 }
