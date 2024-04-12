@@ -8,4 +8,43 @@ body {
 
 .blog-post h2 {
   color: #820808;
+}
+
+.container {
+  max-width: 1080px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1.logo {
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+.header nav {
+  background: transparent;
+}
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.header nav ul li {
+  display: inline-block;
+}
+.header nav ul li a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #010101;
+}
+
+.home__hero {
+  padding: 5rem 0px;
 }/*# sourceMappingURL=styles.css.map */

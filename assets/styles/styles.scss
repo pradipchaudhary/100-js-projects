@@ -17,3 +17,48 @@ body {
 .blog-post h2 {
   color: $heading-color;
 }
+
+.container {
+  max-width: 1080px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1.logo {
+    font-weight: 500;
+    font-size: 1.75rem;
+  }
+
+  nav {
+    background: transparent;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      li {
+        display: inline-block;
+
+        a {
+          font-weight: 300;
+          text-decoration: none;
+          color: #010101;
+        }
+      }
+    }
+  }
+}
+
+.home__hero {
+  padding: 5rem 0px;
+}
