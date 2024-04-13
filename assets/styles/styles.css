@@ -47,6 +47,27 @@ body {
 
 .home__hero {
   padding: 5rem 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home__hero h1.project-name {
+  font-size: 3.75rem;
+  margin: 0px;
+}
+.home__hero h2.project-tagline {
+  font-weight: 300;
+  font-size: 1.75rem;
+}
+.home__hero a.btn {
+  border: 1px solid #010101;
+  padding: 0.75rem 1rem;
+  background: #010101;
+  color: #efefef;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 2px;
 }
 
 footer {
