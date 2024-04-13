@@ -47,4 +47,16 @@ body {
 
 .home__hero {
   padding: 5rem 0px;
+}
+
+footer {
+  padding: 5rem;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer span {
+  color: red;
 }/*# sourceMappingURL=styles.css.map */

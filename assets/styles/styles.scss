@@ -62,3 +62,18 @@ body {
 .home__hero {
   padding: 5rem 0px;
 }
+
+// Footer section
+footer {
+  padding: 5rem;
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      color: red;
+    }
+  }
+}
