@@ -1,9 +1,6 @@
 "use strict";
 const list = document.querySelector(".projects-list");
 // const projectsItems = document.getElementById("projects-items");
-const canvas = document.getElementById("pradip-canvas"),
-  context = canvas.getContext("2d");
-const ancherEl = document.querySelectorAll("a");
 
 // Pre-loading
 window.onload = function () {
