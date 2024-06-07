@@ -13,14 +13,10 @@ function convert() {
 
     if (selectedUnit === "km") {
         result = convertKilometersToMiles(inputValue);
-        resultElement.innerText = `${inputValue} Kilometers is approximately ${result.toFixed(
-            2
-        )} Miles.`;
+        resultElement.innerText = `${inputValue} Kilometers is approximately ${result.toFixed(2)} Miles.`;
     } else if (selectedUnit === "mi") {
         result = convertMilesToKilometers(inputValue);
-        resultElement.innerText = `${inputValue} Miles is approximately ${result.toFixed(
-            2
-        )} Kilometers.`;
+        resultElement.innerText = `${inputValue} Miles is approximately ${result.toFixed(2)} Kilometers.`;
     }
 }
 
