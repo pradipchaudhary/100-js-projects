@@ -1,0 +1,771 @@
+[
+    {
+        "id": "1",
+        "name": "Personal Blog",
+        "category": "Web Development",
+        "features": [
+            "Blog post creation",
+            "User authentication",
+            "Comment section"
+        ],
+        "problem_solve": [
+            "Share personal experiences",
+            "Practice CRUD operations",
+            "Implement user authentication"
+        ],
+        "description": "Create a personal blog platform where users can share their thoughts and experiences.",
+        "tag": ["blog", "web development", "authentication"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/blog_cover.jpg",
+        "code_link": "https://github.com/username/personal-blog"
+    },
+    {
+        "id": "2",
+        "name": "E-commerce Website",
+        "category": "Web Development",
+        "features": ["Product catalog", "Shopping cart", "User accounts"],
+        "problem_solve": [
+            "Implementing product listings",
+            "Shopping cart functionality",
+            "User authentication and authorization"
+        ],
+        "description": "Build an online store with features like product browsing, shopping cart management, and user accounts.",
+        "tag": ["e-commerce", "web development", "shopping cart"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/e-commerce_cover.jpg",
+        "code_link": "https://github.com/username/e-commerce-website"
+    },
+    {
+        "id": "3",
+        "name": "Weather App",
+        "category": "Web Development",
+        "features": [
+            "Real-time weather data",
+            "Location-based forecast",
+            "Search functionality"
+        ],
+        "problem_solve": [
+            "API integration",
+            "Asynchronous programming",
+            "Handling user input"
+        ],
+        "description": "Develop a weather application that provides real-time weather information based on user input or location.",
+        "tag": ["weather", "web development", "API"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/weather_app_cover.jpg",
+        "code_link": "https://github.com/username/weather-app"
+    },
+    {
+        "id": "4",
+        "name": "Portfolio Website",
+        "category": "Web Development",
+        "features": ["Project showcase", "Resume section", "Contact form"],
+        "problem_solve": [
+            "Showcasing skills and projects",
+            "Building a personal brand online",
+            "Contact form handling"
+        ],
+        "description": "Build a portfolio website to showcase your skills, projects, and resume in a visually appealing manner.",
+        "tag": ["portfolio", "web development", "personal branding"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/portfolio_cover.jpg",
+        "code_link": "https://github.com/username/portfolio-website"
+    },
+    {
+        "id": "5",
+        "name": "Quiz Application",
+        "category": "Web Development",
+        "features": ["Multiple-choice questions", "Score tracking", "Timer"],
+        "problem_solve": [
+            "Creating interactive quizzes",
+            "Tracking user scores",
+            "Implementing timers"
+        ],
+        "description": "Develop a quiz application with various categories, multiple-choice questions, and a scoring system.",
+        "tag": ["quiz", "web development", "education"],
+        "language": ["HTML", "CSS", "JavaScript", "Vue.js"],
+        "cover_img": "images/quiz_app_cover.jpg",
+        "code_link": "https://github.com/username/quiz-app"
+    },
+    {
+        "id": "6",
+        "name": "Social Media Dashboard",
+        "category": "Web Development",
+        "features": ["User profiles", "Post sharing", "Activity feed"],
+        "problem_solve": [
+            "Building social features",
+            "User profile management",
+            "Activity tracking"
+        ],
+        "description": "Create a social media dashboard with user profiles, post sharing, and an activity feed for users.",
+        "tag": ["social media", "web development", "dashboard"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/social_media_dashboard_cover.jpg",
+        "code_link": "https://github.com/username/social-media-dashboard"
+    },
+    {
+        "id": "7",
+        "name": "Event Countdown Timer",
+        "category": "Web Development",
+        "features": [
+            "Countdown timer",
+            "Event details",
+            "Notification reminders"
+        ],
+        "problem_solve": [
+            "Implementing countdowns",
+            "Displaying event details",
+            "Notification handling"
+        ],
+        "description": "Build an event countdown timer that allows users to set reminders for upcoming events.",
+        "tag": ["countdown timer", "web development", "events"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/countdown_timer_cover.jpg",
+        "code_link": "https://github.com/username/countdown-timer"
+    },
+    {
+        "id": "8",
+        "name": "Recipe Sharing Platform",
+        "category": "Web Development",
+        "features": [
+            "Recipe submissions",
+            "Search functionality",
+            "User ratings"
+        ],
+        "problem_solve": [
+            "User-generated content",
+            "Implementing search features",
+            "Rating and feedback system"
+        ],
+        "description": "Create a platform for users to share and explore recipes, including search and rating features.",
+        "tag": ["recipes", "web development", "community"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Vue.js",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/recipe_sharing_cover.jpg",
+        "code_link": "https://github.com/username/recipe-sharing-platform"
+    },
+    {
+        "id": "9",
+        "name": "Task Tracker",
+        "category": "Web Development",
+        "features": [
+            "Task creation",
+            "Priority management",
+            "Completion tracking"
+        ],
+        "problem_solve": [
+            "Task organization",
+            "Priority management",
+            "Tracking task completion"
+        ],
+        "description": "Build a task tracker application to help users organize and manage their daily tasks efficiently.",
+        "tag": ["task tracker", "web development", "productivity"],
+        "language": ["HTML", "CSS", "JavaScript", "React"],
+        "cover_img": "images/task_tracker_cover.jpg",
+        "code_link": "https://github.com/username/task-tracker"
+    },
+    {
+        "id": "10",
+        "name": "Feedback Form",
+        "category": "Web Development",
+        "features": [
+            "Customizable form fields",
+            "Submission tracking",
+            "User feedback analytics"
+        ],
+        "problem_solve": [
+            "Building dynamic forms",
+            "Tracking form submissions",
+            "Analyzing user feedback"
+        ],
+        "description": "Develop a feedback form application with customizable fields, submission tracking, and analytics.",
+        "tag": ["feedback form", "web development", "user feedback"],
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "cover_img": "images/feedback_form_cover.jpg",
+        "code_link": "https://github.com/username/feedback-form"
+    },
+    {
+        "id": "11",
+        "name": "Task Manager",
+        "category": "Mobile App Development",
+        "features": [
+            "Add, edit, and delete tasks",
+            "Task categories",
+            "Due dates and reminders"
+        ],
+        "problem_solve": ["Task organization and management"],
+        "description": "Create a task manager app that allows users to efficiently organize and manage their tasks.",
+        "tag": ["Task Management", "Productivity"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/1-task-manager.jpg",
+        "code_link": "https://github.com/username/task-manager-app"
+    },
+    {
+        "id": "12",
+        "name": "Fitness Tracker",
+        "category": "Mobile App Development",
+        "features": [
+            "Workout logging",
+            "Progress tracking",
+            "Fitness goals",
+            "Exercise categorization"
+        ],
+        "problem_solve": ["Fitness tracking and goal setting"],
+        "description": "Develop a fitness tracking app to help users monitor their workouts and achieve their fitness goals.",
+        "tag": ["Fitness", "Health", "Exercise"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/2-fitness-tracker.jpg",
+        "code_link": "https://github.com/username/fitness-tracker-app"
+    },
+    {
+        "id": "13",
+        "name": "Budget Tracker",
+        "category": "Mobile App Development",
+        "features": [
+            "Expense tracking",
+            "Budget goals",
+            "Income and expense categorization"
+        ],
+        "problem_solve": ["Personal finance management"],
+        "description": "Build a personal finance app to help users manage their budgets and track expenses.",
+        "tag": ["Finance", "Budgeting"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/3-budget-tracker.jpg",
+        "code_link": "https://github.com/username/budget-tracker-app"
+    },
+    {
+        "id": "14",
+        "name": "Recipe App",
+        "category": "Mobile App Development",
+        "features": [
+            "Recipe search",
+            "Save and share recipes",
+            "Ingredient lists",
+            "Step-by-step instructions"
+        ],
+        "problem_solve": ["Recipe discovery and organization"],
+        "description": "Create a recipe app that makes it easy for users to discover, save, and share their favorite recipes.",
+        "tag": ["Cooking", "Recipes"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/4-recipe-app.jpg",
+        "code_link": "https://github.com/username/recipe-app"
+    },
+    {
+        "id": "15",
+        "name": "Language Learning",
+        "category": "Mobile App Development",
+        "features": [
+            "Vocabulary quizzes",
+            "Pronunciation exercises",
+            "Interactive lessons"
+        ],
+        "problem_solve": ["Language learning and practice"],
+        "description": "Design a language learning app to help users learn and practice new languages effectively.",
+        "tag": ["Language Learning", "Education"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/5-language-learning.jpg",
+        "code_link": "https://github.com/username/language-learning-app"
+    },
+    {
+        "id": "16",
+        "name": "Travel Planner",
+        "category": "Mobile App Development",
+        "features": [
+            "Destination information",
+            "Itinerary creation",
+            "Expense tracking"
+        ],
+        "problem_solve": ["Trip planning and organization"],
+        "description": "Develop a travel planner app to assist users in planning and organizing their trips.",
+        "tag": ["Travel", "Trip Planning"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/6-travel-planner.jpg",
+        "code_link": "https://github.com/username/travel-planner-app"
+    },
+    {
+        "id": "17",
+        "name": "Weather App",
+        "category": "Mobile App Development",
+        "features": [
+            "Real-time weather data",
+            "Hourly forecasts",
+            "Multi-day forecast"
+        ],
+        "problem_solve": ["Access to accurate and timely weather information"],
+        "description": "Build a weather app that provides users with real-time weather updates and forecasts.",
+        "tag": ["Weather", "Forecast"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/7-weather-app.jpg",
+        "code_link": "https://github.com/username/weather-app"
+    },
+    {
+        "id": "18",
+        "name": "Social Media Scheduler",
+        "category": "Mobile App Development",
+        "features": [
+            "Post scheduling",
+            "Content calendar",
+            "Analytics for post engagement"
+        ],
+        "problem_solve": ["Efficient social media management"],
+        "description": "Create an app that allows users to schedule and automate posts on various social media platforms.",
+        "tag": ["Social Media", "Scheduling"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/8-social-media-scheduler.jpg",
+        "code_link": "https://github.com/username/social-media-scheduler-app"
+    },
+    {
+        "id": "19",
+        "name": "Collaborative Notes",
+        "category": "Mobile App Development",
+        "features": [
+            "Real-time collaboration",
+            "Version history",
+            "Different note formats"
+        ],
+        "problem_solve": ["Collaborative note-taking"],
+        "description": "Develop a collaborative note-taking app that enables users to create, edit, and share notes with others.",
+        "tag": ["Notes", "Collaboration"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/9-collaborative-notes.jpg",
+        "code_link": "https://github.com/username/collaborative-notes-app"
+    },
+    {
+        "id": "20",
+        "name": "Quiz Game",
+        "category": "Mobile App Development",
+        "features": ["Multiple-choice questions", "Scoring", "Leaderboards"],
+        "problem_solve": ["Knowledge testing and entertainment"],
+        "description": "Build a quiz or trivia game app that allows users to test their knowledge on various topics.",
+        "tag": ["Quiz", "Trivia", "Games"],
+        "language": ["JavaScript", "React Native"],
+        "cover_img": "assets/screen/10-quiz-game.jpg",
+        "code_link": "https://github.com/username/quiz-game-app"
+    },
+    {
+        "id": 21,
+        "name": "Platformer Game",
+        "category": "Game Development",
+        "features": [
+            "Navigate character through levels",
+            "Avoid obstacles",
+            "Collect items",
+            "Reach the goal"
+        ],
+        "problem_solve": [
+            "Game mechanics",
+            "Collision detection",
+            "Level design"
+        ],
+        "description": "Create a classic platformer game with levels, obstacles, and a goal for players to reach.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/21-platformer-game.jpg",
+        "code_link": "https://github.com/your-username/platformer-game"
+    },
+    {
+        "id": 22,
+        "name": "Puzzle Game",
+        "category": "Game Development",
+        "features": [
+            "Challenge problem-solving skills",
+            "Matching, sorting, or logic puzzles"
+        ],
+        "problem_solve": ["Puzzle design", "User interface", "Game logic"],
+        "description": "Develop a puzzle game that challenges players' problem-solving skills with various puzzles.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/22-puzzle-game.jpg",
+        "code_link": "https://github.com/your-username/puzzle-game"
+    },
+    {
+        "id": 23,
+        "name": "Endless Runner",
+        "category": "Game Development",
+        "features": [
+            "Control character through an ever-changing environment",
+            "Avoid obstacles",
+            "Achieve a high score"
+        ],
+        "problem_solve": [
+            "Infinite level generation",
+            "Obstacle avoidance",
+            "Score tracking"
+        ],
+        "description": "Build an endless runner game where players control a character running through changing environments.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/23-endless-runner.jpg",
+        "code_link": "https://github.com/your-username/endless-runner"
+    },
+    {
+        "id": 24,
+        "name": "Tower Defense Game",
+        "category": "Game Development",
+        "features": [
+            "Strategically place towers",
+            "Defend against waves of enemies",
+            "Different types of towers and enemies"
+        ],
+        "problem_solve": [
+            "Tower placement logic",
+            "Wave management",
+            "Variety in towers and enemies"
+        ],
+        "description": "Design a tower defense game with strategic tower placement and wave-based enemy attacks.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/24-tower-defense-game.jpg",
+        "code_link": "https://github.com/your-username/tower-defense-game"
+    },
+    {
+        "id": 25,
+        "name": "Card Game",
+        "category": "Game Development",
+        "features": [
+            "Blackjack, poker, or custom card-based strategy game",
+            "Implement rules and user interfaces",
+            "Possibly include multiplayer functionality"
+        ],
+        "problem_solve": [
+            "Card game mechanics",
+            "Rules implementation",
+            "User interface design"
+        ],
+        "description": "Create a card game, such as blackjack or poker, with rules, user interfaces, and possible multiplayer functionality.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/25-card-game.jpg",
+        "code_link": "https://github.com/your-username/card-game"
+    },
+    {
+        "id": 26,
+        "name": "RPG (Role-Playing Game)",
+        "category": "Game Development",
+        "features": [
+            "Characters, quests, and storyline",
+            "Character customization",
+            "Battles and inventory system"
+        ],
+        "problem_solve": [
+            "RPG mechanics",
+            "Character customization",
+            "Quest and storyline development"
+        ],
+        "description": "Develop a simple RPG with characters, quests, battles, and an inventory system.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/26-rpg-game.jpg",
+        "code_link": "https://github.com/your-username/rpg-game"
+    },
+    {
+        "id": 27,
+        "name": "Memory Game",
+        "category": "Game Development",
+        "features": [
+            "Matching pairs of cards",
+            "Game mechanics",
+            "Memory management"
+        ],
+        "problem_solve": [
+            "Card matching logic",
+            "Memory management",
+            "Game mechanics"
+        ],
+        "description": "Build a memory matching game where players find matching pairs of cards to test their memory.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/27-memory-game.jpg",
+        "code_link": "https://github.com/your-username/memory-game"
+    },
+    {
+        "id": 28,
+        "name": "Breakout Clone",
+        "category": "Game Development",
+        "features": [
+            "Classic Breakout gameplay",
+            "Collision detection",
+            "Physics and game mechanics"
+        ],
+        "problem_solve": [
+            "Collision detection",
+            "Physics in gaming",
+            "Game mechanics"
+        ],
+        "description": "Create a clone of the classic Breakout game with paddle, ball, and brick-breaking mechanics.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/28-breakout-clone.jpg",
+        "code_link": "https://github.com/your-username/breakout-clone"
+    },
+    {
+        "id": 29,
+        "name": "Trivia Quiz Game",
+        "category": "Game Development",
+        "features": [
+            "Choose different categories",
+            "Answer questions",
+            "Scoring system and timer"
+        ],
+        "problem_solve": [
+            "Question and answer logic",
+            "Scoring system implementation",
+            "Timer functionality"
+        ],
+        "description": "Develop a trivia quiz game where players choose categories, answer questions, and earn scores within a time limit.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/29-trivia-quiz-game.jpg",
+        "code_link": "https://github.com/your-username/trivia-quiz-game"
+    },
+    {
+        "id": 30,
+        "name": "Multiplayer Game with WebSockets",
+        "category": "Game Development",
+        "features": [
+            "Real-time multiplayer gameplay",
+            "WebSockets for communication",
+            "Simple multiplayer Pong, Tic Tac Toe, or more complex game"
+        ],
+        "problem_solve": [
+            "WebSockets implementation",
+            "Real-time synchronization",
+            "Multiplayer game design"
+        ],
+        "description": "Build a real-time multiplayer game using WebSockets. It could be a simple multiplayer Pong, Tic Tac Toe, or a more complex game with multiple players interacting in real-time.",
+        "tag": [],
+        "language": ["JavaScript"],
+        "cover_img": "assets/screen/30-multiplayer-game.jpg",
+        "code_link": "https://github.com/your-username/multiplayer-game"
+    },
+    {
+        "id": "31",
+        "name": "Customizable Chart Library",
+        "category": "Data Visualization",
+        "features": [
+            "Build a customizable chart library",
+            "Include various chart types (line, bar, pie, etc.)",
+            "Allow users to easily integrate and customize charts"
+        ],
+        "problem_solve": [
+            "Providing a customizable solution for data visualization",
+            "Enabling users to easily integrate charts into their projects"
+        ],
+        "description": "Develop a customizable chart library that offers various chart types (line charts, bar charts, pie charts, etc.). Users should be able to easily integrate and customize the charts based on their data visualization needs.",
+        "tag": ["Chart Library", "Data Visualization", "Customization"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/31-chart-library.jpg",
+        "code_link": "https://github.com/yourusername/chart-library-project"
+    },
+    {
+        "id": "32",
+        "name": "Music Playlist Visualizer",
+        "category": "Data Visualization",
+        "features": [
+            "Create a music playlist visualizer",
+            "Visualize song attributes like tempo, energy, etc.",
+            "Use interactive charts to represent playlist dynamics"
+        ],
+        "problem_solve": [
+            "Enhancing music exploration through visualization",
+            "Providing insights into playlist dynamics"
+        ],
+        "description": "Build a music playlist visualizer that utilizes song attributes such as tempo, energy, and mood. Use interactive charts and graphs to represent playlist dynamics, helping users explore and understand their music preferences.",
+        "tag": ["Music", "Playlist", "Data Visualization"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/32-music-playlist.jpg",
+        "code_link": "https://github.com/yourusername/music-playlist-project"
+    },
+    {
+        "id": "33",
+        "name": "Cryptocurrency Price Tracker",
+        "category": "Data Visualization",
+        "features": [
+            "Fetch real-time cryptocurrency price data",
+            "Visualize price trends using line charts",
+            "Include additional information such as market cap"
+        ],
+        "problem_solve": [
+            "Tracking real-time cryptocurrency prices",
+            "Visualizing price trends and market data"
+        ],
+        "description": "Develop a cryptocurrency price tracker that fetches real-time price data for various cryptocurrencies. Visualize price trends using line charts and include additional information such as market capitalization, providing users with insights into the cryptocurrency market.",
+        "tag": ["Cryptocurrency", "Price Tracker", "Data Visualization"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/33-crypto-price-tracker.jpg",
+        "code_link": "https://github.com/yourusername/crypto-price-tracker-project"
+    },
+    {
+        "id": "34",
+        "name": "Social Network Analysis",
+        "category": "Data Visualization",
+        "features": [
+            "Analyze and visualize social network connections",
+            "Represent nodes and edges in a graph",
+            "Include metrics such as centrality and clustering coefficient"
+        ],
+        "problem_solve": [
+            "Understanding social network structures",
+            "Visualizing relationships and network metrics"
+        ],
+        "description": "Create a social network analysis tool that allows users to input network data and visualize connections between nodes. Represent nodes and edges in a graph, and include metrics such as centrality and clustering coefficient for a comprehensive analysis.",
+        "tag": ["Social Network", "Graph Analysis", "Data Visualization"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/34-social-network-analysis.jpg",
+        "code_link": "https://github.com/yourusername/social-network-analysis-project"
+    },
+    {
+        "id": "35",
+        "name": "Environmental Data Logger",
+        "category": "Data Visualization",
+        "features": [
+            "Collect environmental data (temperature, humidity, etc.)",
+            "Visualize data trends over time",
+            "Include alerts for abnormal environmental conditions"
+        ],
+        "problem_solve": [
+            "Monitoring and visualizing environmental conditions",
+            "Providing alerts for abnormal conditions"
+        ],
+        "description": "Build an environmental data logger that collects data such as temperature, humidity, and air quality. Visualize data trends over time using charts and graphs, and include alerts to notify users of abnormal environmental conditions.",
+        "tag": ["Environmental Monitoring", "Data Visualization", "Alerts"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/35-environmental-data-logger.jpg",
+        "code_link": "https://github.com/yourusername/environmental-data-logger-project"
+    },
+    {
+        "id": "36",
+        "name": "Recipe Recommendation Visualizer",
+        "category": "Data Visualization",
+        "features": [
+            "Create a recipe recommendation system",
+            "Visualize ingredient compatibility and popularity",
+            "Use charts to represent nutritional information"
+        ],
+        "problem_solve": [
+            "Enhancing recipe discovery through visualization",
+            "Providing insights into ingredient compatibility"
+        ],
+        "description": "Develop a recipe recommendation visualizer that suggests recipes based on ingredient compatibility and popularity. Use charts to represent nutritional information, helping users discover new and healthy recipes.",
+        "tag": [
+            "Recipe Recommendation",
+            "Data Visualization",
+            "Nutritional Information"
+        ],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/36-recipe-recommendation.jpg",
+        "code_link": "https://github.com/yourusername/recipe-recommendation-project"
+    },
+    {
+        "id": "37",
+        "name": "Language Learning Progress Tracker",
+        "category": "Data Visualization",
+        "features": [
+            "Track language learning progress over time",
+            "Visualize vocabulary growth and proficiency",
+            "Include interactive charts for a personalized learning experience"
+        ],
+        "problem_solve": [
+            "Motivating language learners through progress tracking",
+            "Visualizing language proficiency and vocabulary growth"
+        ],
+        "description": "Build a language learning progress tracker that allows users to track their proficiency and vocabulary growth over time. Visualize language learning data using interactive charts for a personalized and motivating learning experience.",
+        "tag": ["Language Learning", "Progress Tracker", "Data Visualization"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/37-language-learning.jpg",
+        "code_link": "https://github.com/yourusername/language-learning-project"
+    },
+    {
+        "id": "38",
+        "name": "Space Exploration Data Visualization",
+        "category": "Data Visualization",
+        "features": [
+            "Fetch and visualize space exploration data",
+            "Represent celestial objects, missions, and events",
+            "Include interactive features for exploring space data"
+        ],
+        "problem_solve": [
+            "Enhancing understanding of space exploration",
+            "Providing an immersive experience of space data"
+        ],
+        "description": "Develop a space exploration data visualization tool that fetches and visualizes data related to celestial objects, space missions, and historical events. Include interactive features for users to explore and learn about space.",
+        "tag": ["Space Exploration", "Data Visualization", "Interactive"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/38-space-exploration.jpg",
+        "code_link": "https://github.com/yourusername/space-exploration-project"
+    },
+    {
+        "id": "39",
+        "name": "COVID-19 Dashboard",
+        "category": "Data Visualization",
+        "features": [
+            "Fetch and display real-time COVID-19 data",
+            "Visualize global and regional statistics",
+            "Include trends, vaccination data, and recovery rates"
+        ],
+        "problem_solve": [
+            "Providing real-time information on the COVID-19 pandemic",
+            "Visualizing global and regional statistics"
+        ],
+        "description": "Build a COVID-19 dashboard that fetches and displays real-time data on the COVID-19 pandemic. Visualize global and regional statistics, trends, vaccination data, and recovery rates to provide users with up-to-date information.",
+        "tag": ["COVID-19", "Dashboard", "Data Visualization"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/39-covid-19-dashboard.jpg",
+        "code_link": "https://github.com/yourusername/covid-19-dashboard-project"
+    },
+    {
+        "id": "40",
+        "name": "Job Market Trends Analyzer",
+        "category": "Data Visualization",
+        "features": [
+            "Analyze job market trends and demand",
+            "Visualize data on popular job titles, skills, and industries",
+            "Include interactive charts for exploring employment trends"
+        ],
+        "problem_solve": [
+            "Providing insights into job market trends",
+            "Helping job seekers make informed career decisions"
+        ],
+        "description": "Create a job market trends analyzer that analyzes and visualizes data on popular job titles, skills, and industries. Include interactive charts for users to explore employment trends and make informed career decisions.",
+        "tag": ["Job Market", "Trends Analyzer", "Data Visualization"],
+        "language": ["HTML", "CSS", "JavaScript"],
+        "cover_img": "assets/screen/40-job-market-trends.jpg",
+        "code_link": "https://github.com/yourusername/job-market-trends-project"
+    }
+]

@@ -1,8 +1,13 @@
 "use strict";
+<<<<<<< HEAD
 const list = document.querySelector(".list");
 const canvas = document.getElementById("todo-canvas");
 const context = canvas.getContext("2d");
 const ancherEl = document.querySelectorAll("a");
+=======
+const list = document.querySelector(".projects-list");
+// const projectsItems = document.getElementById("projects-items");
+>>>>>>> a4450a347b2cdf0ddbe39f056c8a6f8e25481581
 
 // Pre-loading
 window.onload = function () {
@@ -25,7 +30,7 @@ const updateUI = (projects) => {
 		</a>
         </span>
 		<a href="${code}" target="_blank" class="code-link">
-		    ${"{"} code ${"}"} 
+		    ${"{"} code ${"}"}
 		</a>
 		`;
     list.appendChild(itemList);
@@ -53,7 +58,11 @@ function Circle(t, e, i, n, s) {
         (context.strokeStyle = "rgba(255,255,255, 0.1)"),
         context.stroke(),
         context.fill(),
+<<<<<<< HEAD
         (context.fillStyle = "rgba(219, 219, 219, 0.300)");
+=======
+        (context.fillStyle = "rgba(0,0,0,0.05)");
+>>>>>>> a4450a347b2cdf0ddbe39f056c8a6f8e25481581
     }),
     (this.update = function () {
       (this.x + this.radius > innerWidth || this.x - this.radius < 0) &&
@@ -85,6 +94,7 @@ function render() {
   for (var t = 0; t < circles.length; t++) circles[t].update();
 }
 render();
+<<<<<<< HEAD
 
 // Custom cursor
 const cursor = document.querySelector("#cursor");
@@ -109,3 +119,5 @@ document.addEventListener("mousemove", (ev) => {
     size = 20;
   }
 });
+=======
+>>>>>>> a4450a347b2cdf0ddbe39f056c8a6f8e25481581
