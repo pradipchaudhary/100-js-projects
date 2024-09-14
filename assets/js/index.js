@@ -1,85 +1,58 @@
-"use strict";
-const list = document.querySelector(".projects-list");
-// const projectsItems = document.getElementById("projects-items");
+async function fetchProjects() {
+    try {
+        const response = await fetch("../../api.json"); // Adjust the path as needed
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        displayProjects(data);
+    } catch (error) {
+        console.error("Error fetching projects:", error);
+    }
+}
 
-// Pre-loading
-window.onload = function () {
-  console.log("Loaded");
-};
+fetchProjects();
 
-fetch("./projects.json")
-  .then((res) => res.json())
-  .then((data) => updateUI(data));
+function displayProjects(data) {
+    const container = document.getElementById("beginner-level"); // Ensure this ID exists in your HTML
+    // console.log("Categories:", data.categories);
+    data.categories.forEach((category) => {
+        // Create a section for each category
+        const section = document.createElement("section");
+        section.classList.add("category-section");
 
-//  UpdateUI
-const updateUI = (projects) => {
-  projects.map(({ name, code, index }) => {
-    const itemList = document.createElement("li");
-    itemList.innerHTML = `
-		<span class="project-number">${index}</span>
-		<span class="project-name">
-        <a href="/${index}-${name}/index.html" target="_blank" >
-		    ${projectNameFormatter(name)}
-		</a>
-        </span>
-		<a href="${code}" target="_blank" class="code-link">
-		    ${"{"} code ${"}"}
-		</a>
-		`;
-    list.appendChild(itemList);
-  });
-};
+        // Create a header for the category
+        const header = document.createElement("h2");
+        header.textContent = category.level;
+        header.classList.add("category-level");
+        section.appendChild(header);
 
-// Project Name Formatter
-const projectNameFormatter = (name) => {
-  return name
-    .split("-")
-    .map((word) => word[0] + word.slice(1))
-    .join(" ");
-};
+        // Create a list for the projects
+        const projectList = document.createElement("ul");
 
-// Canvas Animation
-function Circle(t, e, i, n, s) {
-  (this.x = t),
-    (this.y = e),
-    (this.dx = i),
-    (this.dy = n),
-    (this.radius = s),
-    (this.draw = function () {
-      context.beginPath(),
-        context.arc(this.x, this.y, this.radius, 2 * Math.PI, !1),
-        (context.strokeStyle = "rgba(255,255,255, 0.1)"),
-        context.stroke(),
-        context.fill(),
-        (context.fillStyle = "rgba(0,0,0,0.05)");
-    }),
-    (this.update = function () {
-      (this.x + this.radius > innerWidth || this.x - this.radius < 0) &&
-        (this.dx = -this.dx),
-        (this.y + this.radius > innerHeight || this.y - this.radius < 0) &&
-          (this.dy = -this.dy),
-        (this.x += this.dx),
-        (this.y += this.dy),
-        this.draw();
+        category.projects.forEach((project) => {
+            // Create a list item for each project
+            const listItem = document.createElement("li");
+
+            // Add project details
+            listItem.innerHTML = `
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
+                <p><strong>Difficulty:</strong> ${project.difficulty}</p>
+                <p><strong>Tech Used:</strong> ${project.tech_used.join(
+                    ", "
+                )}</p>
+                <p><strong>Estimated Time:</strong> ${
+                    project.estimated_time
+                }</p>
+            `;
+
+            projectList.appendChild(listItem);
+        });
+
+        section.appendChild(projectList);
+        container.appendChild(section);
     });
 }
-(canvas.width = window.innerWidth),
-  (canvas.height = window.innerHeight),
-  (window.onresize = function () {
-    (canvas.width = window.innerWidth), (canvas.height = window.innerHeight);
-  });
-let circles = [];
-for (let t = 0; t < 100; t++) {
-  let t = 10 * Math.random(),
-    e = Math.random() * (innerWidth - 2 * t) + t,
-    i = Math.random() * (innerHeight - 2 * t) + t,
-    n = Math.random() - 0.5,
-    s = Math.random() - 0.5;
-  circles.push(new Circle(e, i, n, s, t));
-}
-function render() {
-  requestAnimationFrame(render),
-    context.clearRect(0, 0, innerWidth, innerHeight);
-  for (var t = 0; t < circles.length; t++) circles[t].update();
-}
-render();
+
+displayProjects();
