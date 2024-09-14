@@ -22,18 +22,18 @@
                     "estimated_time": "3 hours"
                 },
                 {
+                    "name": "Counter App",
+                    "description": "A basic counter that increments and decrements a value.",
+                    "difficulty": "Easy",
+                    "tech_used": ["HTML", "CSS", "JavaScript"],
+                    "estimated_time": "1 hour"
+                },
+                {
                     "name": "Random Quote Generator",
                     "description": "Display a random quote from a predefined list.",
                     "difficulty": "Easy",
                     "tech_used": ["HTML", "CSS", "JavaScript"],
                     "estimated_time": "2 hours"
-                },
-                {
-                    "name": "Number Guessing Game",
-                    "description": "Create a number guessing game where the user has to guess the correct number.",
-                    "difficulty": "Easy",
-                    "tech_used": ["HTML", "CSS", "JavaScript"],
-                    "estimated_time": "3 hours"
                 },
                 {
                     "name": "Weather App",
@@ -55,13 +55,6 @@
                     "estimated_time": "5 hours"
                 },
                 {
-                    "name": "Quiz App",
-                    "description": "Build a quiz app with multiple-choice questions and scoring.",
-                    "difficulty": "Intermediate",
-                    "tech_used": ["HTML", "CSS", "JavaScript"],
-                    "estimated_time": "6 hours"
-                },
-                {
                     "name": "Todo List with Local Storage",
                     "description": "Enhance the basic To-Do List app to save tasks in local storage.",
                     "difficulty": "Intermediate",
@@ -69,11 +62,11 @@
                     "estimated_time": "4 hours"
                 },
                 {
-                    "name": "Recipe Finder",
-                    "description": "Fetch recipes based on user input using an API.",
+                    "name": "Quiz App",
+                    "description": "Build a quiz app with multiple-choice questions and scoring.",
                     "difficulty": "Intermediate",
-                    "tech_used": ["HTML", "CSS", "JavaScript", "API"],
-                    "estimated_time": "4 hours"
+                    "tech_used": ["HTML", "CSS", "JavaScript"],
+                    "estimated_time": "6 hours"
                 },
                 {
                     "name": "Interactive Poll",
@@ -81,6 +74,13 @@
                     "difficulty": "Intermediate",
                     "tech_used": ["HTML", "CSS", "JavaScript", "API"],
                     "estimated_time": "3 hours"
+                },
+                {
+                    "name": "Recipe Finder",
+                    "description": "Fetch recipes based on user input using an API.",
+                    "difficulty": "Intermediate",
+                    "tech_used": ["HTML", "CSS", "JavaScript", "API"],
+                    "estimated_time": "4 hours"
                 }
             ]
         },
@@ -101,6 +101,20 @@
                     "estimated_time": "12 hours"
                 },
                 {
+                    "name": "Drag and Drop Interface",
+                    "description": "Implement a drag-and-drop feature for items.",
+                    "difficulty": "Advanced",
+                    "tech_used": ["HTML", "CSS", "JavaScript"],
+                    "estimated_time": "6 hours"
+                },
+                {
+                    "name": "API Integration with Auth",
+                    "description": "Fetch data from an API that requires authentication.",
+                    "difficulty": "Advanced",
+                    "tech_used": ["HTML", "CSS", "JavaScript", "OAuth", "API"],
+                    "estimated_time": "8 hours"
+                },
+                {
                     "name": "Real-time Data Dashboard",
                     "description": "Create a dashboard displaying real-time data using web sockets.",
                     "difficulty": "Advanced",
@@ -119,26 +133,6 @@
                     "difficulty": "Advanced",
                     "tech_used": ["HTML", "CSS", "JavaScript"],
                     "estimated_time": "8 hours"
-                },
-                {
-                    "name": "Weather App with Geolocation",
-                    "description": "Enhance the weather app to detect user location and show relevant weather information.",
-                    "difficulty": "Advanced",
-                    "tech_used": [
-                        "HTML",
-                        "CSS",
-                        "JavaScript",
-                        "API",
-                        "Geolocation"
-                    ],
-                    "estimated_time": "6 hours"
-                },
-                {
-                    "name": "Social Media Dashboard",
-                    "description": "Build a dashboard to display social media statistics fetched from multiple APIs.",
-                    "difficulty": "Advanced",
-                    "tech_used": ["HTML", "CSS", "JavaScript", "API"],
-                    "estimated_time": "12 hours"
                 }
             ]
         },
@@ -192,24 +186,31 @@
                     "estimated_time": "12 hours"
                 },
                 {
-                    "name": "Complex Social Media Platform",
-                    "description": "Build a fully functional social media platform with real-time interactions, media uploads, and user authentication.",
+                    "name": "Social Media Feed",
+                    "description": "Build a feed to display posts from a social media API.",
                     "difficulty": "Expert",
-                    "tech_used": [
-                        "HTML",
-                        "CSS",
-                        "JavaScript",
-                        "Node.js",
-                        "MongoDB",
-                        "OAuth"
-                    ],
-                    "estimated_time": "30 hours"
+                    "tech_used": ["HTML", "CSS", "JavaScript", "API"],
+                    "estimated_time": "18 hours"
                 }
             ]
         },
         {
             "level": "Master",
             "projects": [
+                {
+                    "name": "Complex Real-time Collaboration Platform",
+                    "description": "Build a platform for real-time collaboration with advanced features.",
+                    "difficulty": "Master",
+                    "tech_used": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "Node.js",
+                        "Socket.io",
+                        "WebRTC"
+                    ],
+                    "estimated_time": "40 hours"
+                },
                 {
                     "name": "Custom JavaScript Framework",
                     "description": "Design and build your own JavaScript framework.",
@@ -241,20 +242,6 @@
                     "difficulty": "Master",
                     "tech_used": ["JavaScript", "AR.js"],
                     "estimated_time": "70 hours"
-                },
-                {
-                    "name": "Collaborative Real-Time Editing Platform",
-                    "description": "Build a platform like Google Docs that allows multiple users to collaborate in real-time.",
-                    "difficulty": "Master",
-                    "tech_used": [
-                        "HTML",
-                        "CSS",
-                        "JavaScript",
-                        "Node.js",
-                        "Socket.io",
-                        "WebRTC"
-                    ],
-                    "estimated_time": "50 hours"
                 }
             ]
         }
