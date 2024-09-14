@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+
+:root {
+    --primary-color: #101820; /* Dark Black */
+    --accent-color: #fee715; /* Bright Yellow */
+    --body-bg: #efefef;
+}
+
+body {
+    background-color: var(--body-bg); /* Background uses primary color */
+    color: var(--primary-color); /* Text uses accent color */
+    font-family: Arial, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif; /* variable usage */
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    color: var(
+        --primary-color
+    ); /* Apply accent color to headings, paragraphs, and links */
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 830px !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
