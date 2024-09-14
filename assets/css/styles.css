@@ -3,7 +3,7 @@
 :root {
     --primary-color: #101820; /* Dark Black */
     --accent-color: #fee715; /* Bright Yellow */
-    --body-bg: #efefef;
+    --body-bg: #ffff;
 }
 * {
     margin: 0;
