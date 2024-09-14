@@ -5,6 +5,11 @@
     --accent-color: #fee715; /* Bright Yellow */
     --body-bg: #efefef;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--body-bg); /* Background uses primary color */
@@ -52,4 +57,38 @@ a {
 
 a:hover {
     color: var(--primary-color);
+}
+
+/* === Header CSS === */
+header {
+    background-color: var(--accent-color);
+    padding: 4rem 0;
+    width: 100%;
+    height: 450px;
+}
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.header .logo span {
+    width: 35px;
+    height: 35px;
+    background-color: #ffff;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -6px;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
 }
