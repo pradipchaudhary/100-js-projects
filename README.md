@@ -1,5 +1,7 @@
 # [100 JavaScript Projects](https://100jsproject.vercel.app/)
 
+![JavaScript Projects](./screen.jpg)
+
 Welcome to the **100 JavaScript Projects** repository! This collection is aimed at beginner to intermediate JavaScript developers who are looking to sharpen their skills by building real-world projects. Whether you're just starting out with JavaScript or looking to deepen your understanding, this repo will provide a diverse range of projects to help you on your journey.
 
 ## 📚 About

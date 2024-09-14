@@ -127,12 +127,43 @@ header .header {
     font-size: 2rem;
     font-family: "BroetownSignature", sans-serif;
     font-weight: 600;
+    word-spacing: 4px;
 }
 .home_hero a.btn {
     border: 1px solid var(--primary-color);
-    padding: 1rem 2rem;
+    padding: 0.7rem 1rem;
     margin-top: 3rem;
+    background: black;
+    color: #c7c7c7;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: color 0.3s ease, border 0.3s ease;
 }
+.home_hero a.btn:hover {
+    color: #ffffff;
+}
+
+/* === Project Lists === */
+.project-lists {
+    padding: 3rem 0;
+}
+
+section .category-section {
+    padding: 1rem 0;
+}
+.category-section .category-level {
+    font-size: 2.4rem;
+    margin: 3rem 0 1rem;
+    /* font-family: "Mexcellent", sans-serif; */
+}
+.category-section ul {
+    list-style: none;
+}
+.category-section ul li {
+    padding: 10px 0;
+}
+
 /* === Footer CSS === */
 /* Container for the footer */
 footer {
