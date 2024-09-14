@@ -88,7 +88,7 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 Feel free to reach out if you have any questions or feedback!
 
 -   **GitHub**: [pradipchaudhary](https://github.com/pradipchaudhary)
--   **Email**: [your-email@example.com](mailto:your-email@example.com)
+-   **Email**: [chaudharypradip678@gmail.com](mailto:your-email@example.com)
 
 ---
 

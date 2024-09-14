@@ -5,6 +5,16 @@
     --accent-color: #fee715; /* Bright Yellow */
     --body-bg: #ffff;
 }
+@font-face {
+    font-family: "Mexcellent";
+    src: url("../fonts/mexcellent-rg.ttf") format("truetype");
+    /* Add other formats if available (e.g., .woff, .woff2) */
+}
+@font-face {
+    font-family: "BroetownSignature";
+    src: url("../fonts/Broetown-Signature.ttf") format("truetype");
+    /* Add other formats if available (e.g., .woff, .woff2) */
+}
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +24,7 @@
 body {
     background-color: var(--body-bg); /* Background uses primary color */
     color: var(--primary-color); /* Text uses accent color */
-    font-family: Arial, sans-serif;
-    font-family: "Roboto", Helvetica, sans-serif; /* variable usage */
+    font-family: "Roboto", Helvetica, sans-serif;
 }
 
 h1,
@@ -66,6 +75,9 @@ header {
     width: 100%;
     height: 450px;
 }
+header .container {
+    height: 100%;
+}
 header .header {
     display: flex;
     justify-content: space-between;
@@ -75,6 +87,8 @@ header .header {
     display: flex;
     font-size: 1.5rem;
     font-weight: 500;
+    font-family: "Mexcellent", sans-serif;
+    color: #ff0000;
 }
 .header .logo span {
     width: 35px;
@@ -91,4 +105,77 @@ header .header {
     display: flex;
     list-style: none;
     gap: 16px;
+}
+
+/* Home Hero */
+.home_hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.home_hero h1 {
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: "Mexcellent", sans-serif;
+}
+.home_hero p {
+    color: #000000;
+    font-size: 2rem;
+    font-family: "BroetownSignature", sans-serif;
+    font-weight: 600;
+}
+.home_hero a.btn {
+    border: 1px solid var(--primary-color);
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+}
+/* === Footer CSS === */
+/* Container for the footer */
+footer {
+    background-color: var(--primary-color); /* Dark background */
+    padding: 20px 0;
+    color: #fff; /* White text */
+    text-align: center; /* Center-align content */
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer object {
+    margin-right: 10px;
+}
+
+.footer span {
+    color: var(--accent-color); /* Yellow color for the heart */
+    font-size: 18px;
+}
+
+.footer a {
+    color: var(--accent-color); /* Yellow text for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer object {
+        margin-bottom: 10px;
+    }
 }
