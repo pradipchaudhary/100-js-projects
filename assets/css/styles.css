@@ -106,7 +106,19 @@ header .header {
     list-style: none;
     gap: 16px;
 }
-
+.header ul li a {
+    text-transform: lowercase;
+    font-size: 1rem;
+    color: #464646;
+    transition: all 0.3s ease;
+}
+.header ul li a:hover {
+    color: #000000;
+}
+.header ul li a.buy-coffee-button {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+}
 /* Home Hero */
 .home_hero {
     width: 100%;
@@ -138,7 +150,7 @@ header .header {
     border-radius: 5px;
     font-size: 0.9rem;
     font-weight: 300;
-    transition: color 0.3s ease, border 0.3s ease;
+    transition: all 0.3s ease;
 }
 .home_hero a.btn:hover {
     color: #ffffff;
@@ -179,6 +191,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 200;
 }
 
 .footer object {
@@ -189,11 +202,14 @@ footer {
     color: var(--accent-color); /* Yellow color for the heart */
     font-size: 18px;
 }
-
+.footer span.heart-icon {
+    color: red;
+}
 .footer a {
     color: var(--accent-color); /* Yellow text for the link */
     text-decoration: none;
     font-weight: bold;
+    /* font-weight: 200; */
 }
 
 .footer a:hover {
