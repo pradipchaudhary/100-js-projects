@@ -83,7 +83,7 @@ header .header {
     justify-content: space-between;
     align-items: center;
 }
-.header .logo {
+.header .logo a {
     display: flex;
     font-size: 1.5rem;
     font-weight: 500;
