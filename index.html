@@ -50,71 +50,84 @@
     </head>
 
     <body>
-        <header>
-            <div class="container">
-                <div class="header">
-                    <h1 class="logo">
-                        <a href="#" target="_blank" rel="noreferrer">
-                            <span>1</span><span>0</span><span>0</span>
-                        </a>
-                    </h1>
-                    <nav>
-                        <ul>
-                            <li><a href="#home">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li>
-                                <a
-                                    href="https://www.buymeacoffee.com/pradipchaudhary"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    class="buy-coffee-button"
-                                    >Buy me a coffee</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="home_hero">
-                    <h1>100 JavaScript Projects</h1>
-                    <p>Explore a diverse range of 100 JavaScript Projects.</p>
+        <!-- Loading Section -->
+        <div id="loading-section">
+            <div class="loading-content">
+                <h1><span id="counter">10</span></h1>
+            </div>
+        </div>
 
+        <!-- Page Content -->
+        <div id="page-content" class="hidden">
+            <header>
+                <div class="container">
+                    <div class="header">
+                        <h1 class="logo">
+                            <a href="#" target="_blank" rel="noreferrer">
+                                <span>1</span><span>0</span><span>0</span>
+                            </a>
+                        </h1>
+                        <nav>
+                            <ul>
+                                <li><a href="#home">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li>
+                                    <a
+                                        href="https://www.buymeacoffee.com/pradipchaudhary"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        class="buy-coffee-button"
+                                        >Buy me a coffee</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="home_hero">
+                        <h1>100 JavaScript Projects</h1>
+                        <p>
+                            Explore a diverse range of 100 JavaScript Projects.
+                        </p>
+
+                        <a
+                            href="https://github.com/pradipchaudhary/100-javascript-projects"
+                            target="_blank"
+                            class="btn"
+                            >View on GitHub</a
+                        >
+                    </div>
+                </div>
+            </header>
+
+            <main id="content" class="main-content" role="main">
+                <div class="container">
+                    <!-- Beginner Level Projects  -->
+                    <div class="project-lists">
+                        <!-- <h2 class="project-level">Beginner Levels</h2> -->
+                        <div id="beginner-level" class="project-list"></div>
+                    </div>
+                </div>
+            </main>
+            <!-- Footer  -->
+            <footer>
+                <div class="container footer">
+                    <img
+                        src="./assets/images/code.png"
+                        alt="Code Icon"
+                        width="30px"
+                    />
+
+                    &nbsp; with&nbsp; <span class="heart-icon">❤</span>&nbsp;
+                    by&nbsp;
                     <a
-                        href="https://github.com/pradipchaudhary/100-javascript-projects"
+                        href="http://pradipchaudhary.com.np/"
                         target="_blank"
-                        class="btn"
-                        >View on GitHub</a
+                        rel="noreferrer"
+                        >Pradip Chaudhary</a
                     >
                 </div>
-            </div>
-        </header>
-
-        <main id="content" class="main-content" role="main">
-            <div class="container">
-                <!-- Beginner Level Projects  -->
-                <div class="project-lists">
-                    <!-- <h2 class="project-level">Beginner Levels</h2> -->
-                    <div id="beginner-level" class="project-list"></div>
-                </div>
-            </div>
-        </main>
-        <!-- Footer  -->
-        <footer>
-            <div class="container footer">
-                <object
-                    data="./assets/images/code.png"
-                    type="image/png"
-                    width="30px"
-                ></object>
-                &nbsp; with&nbsp; <span class="heart-icon">❤</span>&nbsp;
-                by&nbsp;
-                <a
-                    href="http://pradipchaudhary.com.np/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Pradip Chaudhary</a
-                >
-            </div>
-        </footer>
+            </footer>
+        </div>
 
         <!-- JS Includes -->
         <script src="./assets/js/index.js"></script>

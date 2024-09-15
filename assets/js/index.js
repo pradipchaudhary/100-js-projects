@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", function () {
+    let counter = 1;
+    const counterElement = document.getElementById("counter");
+    const loadingSection = document.getElementById("loading-section");
+    const pageContent = document.getElementById("page-content");
+
+    // Create the counter animation
+    const interval = setInterval(() => {
+        counterElement.innerText = counter;
+
+        if (counter >= 100) {
+            clearInterval(interval); // Stop the counter when it reaches 100
+            loadingSection.style.opacity = 0; // Fade out the loading section
+
+            setTimeout(() => {
+                loadingSection.style.display = "none"; // Remove the loading section
+                pageContent.classList.remove("hidden"); // Show the page content
+
+                // Add class to trigger the fade-in and slide-up animation
+                document.body.classList.add("page-loaded");
+            }, 500); // Wait for the fade-out animation to complete
+        }
+
+        counter++;
+    }, 30); // Adjust this interval for faster or slower counting
+});
+
 async function fetchProjects() {
     try {
         const response = await fetch("../../api.json"); // Adjust the path as needed
