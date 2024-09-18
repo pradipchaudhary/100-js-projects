@@ -195,7 +195,7 @@ header .header {
 
 /* === Project Lists === */
 .project-lists {
-    padding: 3rem 0;
+    padding: 0rem 0;
 }
 
 section .category-section {
@@ -213,6 +213,24 @@ section .category-section {
     padding: 10px 0;
 }
 
+/* === Page CSS === */
+.page h1.page-title {
+    font-size: 2.4rem;
+    margin: 3rem 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+}
+.page h2 {
+    font-size: 1.5re4;
+    padding: 2rem 0 0.6rem;
+}
+.page ul {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+.page ul li {
+    margin: 10px 0;
+}
 /* === Footer CSS === */
 /* Container for the footer */
 footer {
