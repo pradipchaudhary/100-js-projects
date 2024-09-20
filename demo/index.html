@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page Loader with Split Animation</title>
+        <style>
+            /* Basic reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body,
+            html {
+                height: 100%;
+                overflow: hidden; /* Prevent scrolling while loading */
+            }
+
+            /* Loader container */
+            #loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+            }
+
+            /* Loading count text */
+            #loading-count {
+                font-size: 3rem;
+                font-family: Arial, sans-serif;
+                z-index: 2; /* Display above the backgrounds */
+                color: white;
+            }
+
+            /* Background sections */
+            #loader-bg-top,
+            #loader-bg-bottom {
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                background: #3498db; /* Same color initially */
+                z-index: 1;
+                transition: background-color 1s ease, transform 2s ease-in-out;
+            }
+
+            #loader-bg-top {
+                top: 0;
+                transform: translateY(0);
+            }
+
+            #loader-bg-bottom {
+                bottom: 0;
+                transform: translateY(0);
+            }
+
+            /* Change background color and trigger split animation */
+            .split-bg #loader-bg-top {
+                transform: translateY(-100%);
+            }
+
+            .split-bg #loader-bg-bottom {
+                background-color: #2ecc71; /* Color changes to green after loading */
+                transform: translateY(100%);
+            }
+
+            /* Hidden state for loader */
+            .hidden {
+                display: none;
+            }
+
+            /* Content of the website */
+            .content {
+                display: none; /* Initially hidden */
+                opacity: 0;
+                transition: opacity 1s ease-in;
+            }
+
+            .content.visible {
+                display: block; /* Make it block after the animation is done */
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Loader -->
+        <div id="loader">
+            <div id="loading-count">0%</div>
+            <div id="loader-bg-top"></div>
+            <div id="loader-bg-bottom"></div>
+        </div>
+
+        <!-- Website content -->
+        <div class="content">
+            <h1>Welcome to the Website!</h1>
+            <p>
+                Your website content is now visible after the loading animation.
+            </p>
+        </div>
+
+        <script>
+            // Loading counter logic
+            let count = 0;
+            const loadingCount = document.getElementById("loading-count");
+            const loader = document.getElementById("loader");
+            const content = document.querySelector(".content");
+
+            function updateLoadingCount() {
+                count++;
+                loadingCount.innerText = count + "%";
+
+                if (count < 100) {
+                    setTimeout(updateLoadingCount, 20); // Speed of counting
+                } else {
+                    // Trigger background split after loading count reaches 100
+                    triggerBackgroundSplit();
+                }
+            }
+
+            // Function to trigger background split animation
+            function triggerBackgroundSplit() {
+                loader.classList.add("split-bg");
+
+                // After the split animation, hide the loader and show the content
+                setTimeout(() => {
+                    loader.classList.add("hidden");
+                    content.classList.add("visible"); // Show the content only after split
+                }, 2000); // Wait for the split animation to complete (2s)
+            }
+
+            // Start loading count
+            updateLoadingCount();
+        </script>
+    </body>
+</html>
