@@ -25,6 +25,7 @@ body {
     background-color: var(--body-bg); /* Background uses primary color */
     color: var(--primary-color); /* Text uses accent color */
     font-family: "Roboto", Helvetica, sans-serif;
+    /* overflow: hidden; */
 }
 
 h1,
@@ -67,44 +68,80 @@ a {
 a:hover {
     color: var(--primary-color);
 }
-/* Style for the loading section */
-#loading-section {
+/* Loader container */
+#loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f1f1f1;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    transition: opacity 0.5s ease;
+    flex-direction: column;
+    color: white;
 }
 
-.loading-content h1 {
-    font-size: 15rem;
-    /* font-family: "BroetownSignature", sans-serif; */
-    letter-spacing: 5px;
+/* Loading count text */
+#loading-count {
+    font-size: 6rem;
+    font-family: Arial, sans-serif;
+    z-index: 2; /* Display above the backgrounds */
+    color: var(--primary-color);
+    transition: opacity 0.5s ease; /* Smooth fade out */
 }
 
-/* Style for the page content */
-#page-content {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(30px); /* Start slightly lower for slide-up effect */
-    transition: opacity 1s ease, transform 1s ease;
+/* Background sections */
+#loader-bg-top,
+#loader-bg-bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: var(--accent-color); /* Same color initially */
+    z-index: 1;
+    transition: background-color 1s ease, transform 2s ease-in-out;
 }
 
-/* Class to trigger the animation */
-.page-loaded #page-content {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Slide up */
+#loader-bg-top {
+    top: 0;
+    transform: translateY(0);
 }
 
+#loader-bg-bottom {
+    bottom: 0;
+    transform: translateY(0);
+}
+
+/* Change background color and trigger split animation */
+.split-bg #loader-bg-top {
+    transform: translateY(-100%);
+    background-color: var(--body-bg);
+}
+
+.split-bg #loader-bg-bottom {
+    background-color: var(
+        --accent-color
+    ); /* Color changes to green after loading */
+    transform: translateY(100%);
+}
+
+/* Hidden state for loader */
 .hidden {
     display: none;
 }
 
+/* Content of the website */
+.content {
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.content.visible {
+    display: block; /* Make it block after the animation is done */
+    opacity: 1;
+}
 /* === Header CSS === */
 header {
     background-color: var(--accent-color);

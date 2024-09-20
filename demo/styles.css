@@ -1,0 +1,105 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define custom variables for colors */
+:root {
+    --primary-color: #ffffff;
+    --accent-color: #1e1e1e;
+}
+
+/* Style for the loading section */
+#loading-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Loading text style */
+.loading-content h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation for loading text */
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+}
+
+/* Overlay panels for the split effect */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: var(--accent-color);
+    z-index: 10000;
+    transition: transform 1s ease-in-out;
+}
+
+/* Top overlay panel */
+.overlay-top {
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+}
+
+/* Bottom overlay panel */
+.overlay-bottom {
+    bottom: 0;
+    left: 0;
+    transform: translateY(0);
+}
+
+/* Style for the page content */
+#page-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Reveal page content when loaded */
+.page-loaded #page-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animate overlays out of view when page is loaded */
+.page-loaded .overlay-top {
+    transform: translateY(-100%);
+}
+
+.page-loaded .overlay-bottom {
+    transform: translateY(100%);
+}
+
+/* Fade out and remove the loading section */
+.page-loaded #loading-section {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease 1s;
+}
+
+/* Hide the loading section after the transition */
+.page-loaded #loading-section.hidden {
+    display: none;
+}

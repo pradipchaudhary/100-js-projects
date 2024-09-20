@@ -1,29 +1,39 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let counter = 1;
-    const counterElement = document.getElementById("counter");
-    const loadingSection = document.getElementById("loading-section");
-    const pageContent = document.getElementById("page-content");
+// Loading counter logic
+let count = 0;
+const loadingCount = document.getElementById("loading-count");
+const loader = document.getElementById("loader");
+const content = document.querySelector(".content");
 
-    // Create the counter animation
-    const interval = setInterval(() => {
-        counterElement.innerText = counter;
+function updateLoadingCount() {
+    count++;
+    loadingCount.innerText = count;
 
-        if (counter >= 100) {
-            clearInterval(interval); // Stop the counter when it reaches 100
-            loadingSection.style.opacity = 0; // Fade out the loading section
+    if (count < 100) {
+        setTimeout(updateLoadingCount, 20); // Speed of counting
+    } else {
+        // Hide the loading count after it reaches 100%
+        setTimeout(() => {
+            loadingCount.style.opacity = 0; // Fade out the count
+        }, 300); // Wait 300ms for a smoother transition
 
-            setTimeout(() => {
-                loadingSection.style.display = "none"; // Remove the loading section
-                pageContent.classList.remove("hidden"); // Show the page content
+        // Trigger background split after loading count reaches 100
+        triggerBackgroundSplit();
+    }
+}
 
-                // Add class to trigger the fade-in and slide-up animation
-                document.body.classList.add("page-loaded");
-            }, 500); // Wait for the fade-out animation to complete
-        }
+// Function to trigger background split animation
+function triggerBackgroundSplit() {
+    loader.classList.add("split-bg");
 
-        counter++;
-    }, 30); // Adjust this interval for faster or slower counting
-});
+    // After the split animation, hide the loader and show the content
+    setTimeout(() => {
+        loader.classList.add("hidden");
+        content.classList.add("visible"); // Show the content only after split
+    }, 2000); // Wait for the split animation to complete (2s)
+}
+
+// Start loading count
+updateLoadingCount();
 
 async function fetchProjects() {
     try {
