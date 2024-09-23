@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react";
+// pages/Home.js
+import { useEffect, useState, useMemo } from "react";
+import ProjectCategory from "../components/ProjectCategory";
+import Error from "../components/Error";
 
 const Home = () => {
     const [projects, setProjects] = useState([]);
@@ -6,60 +9,55 @@ const Home = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchProjects = async () => {
+            setLoading(true);
+            setError(null); // Reset error before new request
+
             try {
                 const response = await fetch("../../api.json");
                 if (!response.ok) {
-                    throw new Error("Network response was not ok");
+                    throw new Error(`HTTP error: ${response.status}`);
                 }
-                const result = await response.json();
-                console.log(result.categories);
-                setProjects(result.categories);
-            } catch (error) {
-                setError(error.message);
+                const data = await response.json();
+                setProjects(data?.categories || []); // Safe access with optional chaining
+                document.title = "Projects Loaded";
+            } catch (err) {
+                setError(err.message);
+                document.title = "Error loading projects";
             } finally {
                 setLoading(false);
             }
         };
 
-        fetchData();
+        fetchProjects();
     }, []);
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
+    const renderedProjects = useMemo(() => {
+        return projects.map((category, index) => (
+            <ProjectCategory category={category} key={index} />
+        ));
+    }, [projects]);
+
+    if (loading) {
+        return (
+            <div className="loading-container">
+                <p>Loading...</p>
+            </div>
+        );
+    }
+
+    if (error) {
+        return (
+            <Error
+                errorMessage={error}
+                onRetry={() => window.location.reload()}
+            />
+        );
+    }
 
     return (
         <main id="content" className="main-content" role="main">
-            {projects.map((category, index) => (
-                <section className="category-section" key={index}>
-                    <div className="container">
-                        <h2 className="category-level">{category.level}</h2>
-                        <div className="projects">
-                            {category.projects.map((item, i) => (
-                                // This needs to return a JSX element for rendering
-                                <div className="project-item" key={i}>
-                                    <>
-                                        <h3>{item.name}</h3>
-                                        <p>{item.description}</p>
-                                        <p>
-                                            <strong>Difficulty:</strong> $
-                                            {item.difficulty}
-                                        </p>
-                                        <p>
-                                            <strong>Tech Used:</strong> $
-                                            {item.tech_used.join(", ")}
-                                        </p>
-                                        <p>
-                                            <strong>Estimated Time:</strong> $
-                                            {item.estimated_time}
-                                        </p>
-                                    </>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-            ))}
+            {renderedProjects}
         </main>
     );
 };

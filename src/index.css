@@ -25,6 +25,8 @@ body {
     color: var(--primary-color); /* Text uses accent color */
     font-family: "Roboto", Helvetica, sans-serif;
     /* overflow: hidden; */
+    /* font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 
 h1,
@@ -240,6 +242,7 @@ section .category-section {
 .category-section .category-level {
     font-size: 2.4rem;
     margin: 3rem 0 1rem;
+    font-weight: 500;
     /* font-family: "Mexcellent", sans-serif; */
 }
 .category-section .projects {
@@ -248,10 +251,33 @@ section .category-section {
 .category-section .projects .project-item {
     padding: 16px;
     margin: 30px 0;
-    background: white;
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffffef;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 7%);
     border-radius: 4px;
-    color: #101820;
+    color: #252525;
+}
+.project-item h3 {
+    color: #131313;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+.project-item p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.project-item strong {
+    color: #3a3a3a;
+    font-weight: 500;
+}
+.project-item a {
+    color: #9333ea;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* === Page CSS === */
@@ -322,23 +348,5 @@ footer {
         margin-bottom: 10px;
     }
 }
-html.lenis,
-html.lenis body {
-    height: auto;
-}
 
-.lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-    overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-    pointer-events: none;
-}
+/* ========================================================================= */
