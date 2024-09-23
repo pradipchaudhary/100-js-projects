@@ -2,6 +2,7 @@
 import { useEffect, useState, useMemo } from "react";
 import ProjectCategory from "../components/ProjectCategory";
 import Error from "../components/Error";
+import Hero from "../components/Hero";
 
 const Home = () => {
     const [projects, setProjects] = useState([]);
@@ -57,6 +58,7 @@ const Home = () => {
 
     return (
         <main id="content" className="main-content" role="main">
+            <Hero />
             {renderedProjects}
         </main>
     );

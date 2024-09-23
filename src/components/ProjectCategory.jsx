@@ -26,8 +26,9 @@ const ProjectCategory = ({ category }) => {
                             </p>
                             <br />
                             {/* Link to project detail page */}
+                            {console.log(item.id)}
                             <Link
-                                to={`/projects/${item.name}`}
+                                to={`/projects/${item.id}`}
                                 className="detail-link"
                             >
                                 View Details

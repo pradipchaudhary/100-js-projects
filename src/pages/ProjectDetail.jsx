@@ -12,11 +12,12 @@ const ProjectDetail = () => {
             try {
                 const response = await fetch("../../api.json");
                 const result = await response.json();
+                const categories = result.categories;
 
                 // Find the project by its ID from the fetched data
-                const project = result.categories
-                    .flatMap((category) => category.projects)
-                    .find((proj) => proj.id === id);
+                const project = categories
+                    .flatMap((category) => category.projects) // Flatten the array to access all projects
+                    .find((proj) => proj.id === parseInt(id)); // Ensure ID comparison is correct
 
                 if (!project) {
                     throw new Error("Project not found");
@@ -37,21 +38,23 @@ const ProjectDetail = () => {
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <div className="project-detail-container ">
-            <h2>{project.name}</h2>
-            <p>{project.description}</p>
-            <p>
-                <strong>Difficulty:</strong> {project.difficulty}
-            </p>
-            <p>
-                <strong>Tech Used:</strong> {project.tech_used.join(", ")}
-            </p>
-            <p>
-                <strong>Estimated Time:</strong> {project.estimated_time}
-            </p>
+        <section className="container">
+            <div className="project-detail-container">
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+                <p>
+                    <strong>Difficulty:</strong> {project.difficulty}
+                </p>
+                <p>
+                    <strong>Tech Used:</strong> {project.tech_used.join(", ")}
+                </p>
+                <p>
+                    <strong>Estimated Time:</strong> {project.estimated_time}
+                </p>
 
-            {/* Additional project details can go here */}
-        </div>
+                {/* Additional project details can go here */}
+            </div>
+        </section>
     );
 };
 
