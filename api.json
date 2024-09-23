@@ -8,6 +8,7 @@
             "level": "Beginner",
             "projects": [
                 {
+                    "id": 1,
                     "name": "Simple Calculator",
                     "description": "Create a basic calculator that can perform addition, subtraction, multiplication, and division.",
                     "difficulty": "Easy",
@@ -15,6 +16,7 @@
                     "estimated_time": "2 hours"
                 },
                 {
+                    "id": 2,
                     "name": "To-Do List App",
                     "description": "Build a simple app to add, delete, and mark tasks as completed.",
                     "difficulty": "Easy",
@@ -22,6 +24,7 @@
                     "estimated_time": "3 hours"
                 },
                 {
+                    "id": 3,
                     "name": "Random Quote Generator",
                     "description": "Display a random quote from a predefined list.",
                     "difficulty": "Easy",
@@ -29,6 +32,7 @@
                     "estimated_time": "2 hours"
                 },
                 {
+                    "id": 4,
                     "name": "Number Guessing Game",
                     "description": "Create a number guessing game where the user has to guess the correct number.",
                     "difficulty": "Easy",
@@ -36,6 +40,7 @@
                     "estimated_time": "3 hours"
                 },
                 {
+                    "id": 5,
                     "name": "Weather App",
                     "description": "Fetch and display the weather for a specific location using a public API.",
                     "difficulty": "Easy",
@@ -48,6 +53,7 @@
             "level": "Intermediate",
             "projects": [
                 {
+                    "id": 6,
                     "name": "Memory Game",
                     "description": "Develop a simple card-matching memory game.",
                     "difficulty": "Intermediate",
@@ -55,6 +61,7 @@
                     "estimated_time": "5 hours"
                 },
                 {
+                    "id": 7,
                     "name": "Quiz App",
                     "description": "Build a quiz app with multiple-choice questions and scoring.",
                     "difficulty": "Intermediate",
@@ -62,6 +69,7 @@
                     "estimated_time": "6 hours"
                 },
                 {
+                    "id": 8,
                     "name": "Todo List with Local Storage",
                     "description": "Enhance the basic To-Do List app to save tasks in local storage.",
                     "difficulty": "Intermediate",
@@ -69,6 +77,7 @@
                     "estimated_time": "4 hours"
                 },
                 {
+                    "id": 9,
                     "name": "Recipe Finder",
                     "description": "Fetch recipes based on user input using an API.",
                     "difficulty": "Intermediate",
@@ -76,6 +85,7 @@
                     "estimated_time": "4 hours"
                 },
                 {
+                    "id": 10,
                     "name": "Interactive Poll",
                     "description": "Create a poll system where users can vote and see results.",
                     "difficulty": "Intermediate",
@@ -88,6 +98,7 @@
             "level": "Advanced",
             "projects": [
                 {
+                    "id": 11,
                     "name": "CRUD Application",
                     "description": "Build a full Create, Read, Update, Delete (CRUD) application.",
                     "difficulty": "Advanced",
@@ -101,6 +112,7 @@
                     "estimated_time": "12 hours"
                 },
                 {
+                    "id": 12,
                     "name": "Real-time Data Dashboard",
                     "description": "Create a dashboard displaying real-time data using web sockets.",
                     "difficulty": "Advanced",
@@ -114,6 +126,7 @@
                     "estimated_time": "10 hours"
                 },
                 {
+                    "id": 13,
                     "name": "Kanban Board",
                     "description": "Develop a kanban board for task management.",
                     "difficulty": "Advanced",
@@ -121,6 +134,7 @@
                     "estimated_time": "8 hours"
                 },
                 {
+                    "id": 14,
                     "name": "Weather App with Geolocation",
                     "description": "Enhance the weather app to detect user location and show relevant weather information.",
                     "difficulty": "Advanced",
@@ -134,6 +148,7 @@
                     "estimated_time": "6 hours"
                 },
                 {
+                    "id": 15,
                     "name": "Social Media Dashboard",
                     "description": "Build a dashboard to display social media statistics fetched from multiple APIs.",
                     "difficulty": "Advanced",
@@ -146,6 +161,7 @@
             "level": "Expert",
             "projects": [
                 {
+                    "id": 16,
                     "name": "Progressive Web App (PWA)",
                     "description": "Build a PWA that works offline and has installable features.",
                     "difficulty": "Expert",
@@ -158,6 +174,7 @@
                     "estimated_time": "15 hours"
                 },
                 {
+                    "id": 17,
                     "name": "Real-time Chat Application",
                     "description": "Create a real-time chat application with user authentication.",
                     "difficulty": "Expert",
@@ -171,6 +188,7 @@
                     "estimated_time": "20 hours"
                 },
                 {
+                    "id": 18,
                     "name": "E-commerce Store",
                     "description": "Develop a full-fledged e-commerce site with cart and checkout features.",
                     "difficulty": "Expert",
@@ -185,6 +203,7 @@
                     "estimated_time": "25 hours"
                 },
                 {
+                    "id": 19,
                     "name": "Stock Market Tracker",
                     "description": "Fetch and display stock market data in real-time.",
                     "difficulty": "Expert",
@@ -192,6 +211,7 @@
                     "estimated_time": "12 hours"
                 },
                 {
+                    "id": 20,
                     "name": "Complex Social Media Platform",
                     "description": "Build a fully functional social media platform with real-time interactions, media uploads, and user authentication.",
                     "difficulty": "Expert",
@@ -211,6 +231,7 @@
             "level": "Master",
             "projects": [
                 {
+                    "id": 21,
                     "name": "Custom JavaScript Framework",
                     "description": "Design and build your own JavaScript framework.",
                     "difficulty": "Master",
@@ -218,6 +239,7 @@
                     "estimated_time": "60 hours"
                 },
                 {
+                    "id": 22,
                     "name": "Machine Learning with TensorFlow.js",
                     "description": "Implement machine learning models in the browser using TensorFlow.js.",
                     "difficulty": "Master",
@@ -225,6 +247,7 @@
                     "estimated_time": "50 hours"
                 },
                 {
+                    "id": 23,
                     "name": "Full Blockchain-based Application",
                     "description": "Develop a decentralized application (dApp) using blockchain technology.",
                     "difficulty": "Master",
@@ -236,6 +259,7 @@
                     "estimated_time": "60 hours"
                 },
                 {
+                    "id": 24,
                     "name": "Advanced Augmented Reality App",
                     "description": "Create an AR application with advanced interactive features.",
                     "difficulty": "Master",
@@ -243,6 +267,7 @@
                     "estimated_time": "70 hours"
                 },
                 {
+                    "id": 25,
                     "name": "Collaborative Real-Time Editing Platform",
                     "description": "Build a platform like Google Docs that allows multiple users to collaborate in real-time.",
                     "difficulty": "Master",
