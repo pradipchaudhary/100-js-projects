@@ -3,10 +3,12 @@
 // Component to display error and retry button
 const Error = ({ errorMessage, onRetry }) => {
     return (
-        <div className="error-container">
-            <p>Error: {errorMessage}</p>
-            <button onClick={onRetry}>Retry</button>
-        </div>
+        <section>
+            <div className="error-container container">
+                <p>Error: {errorMessage}</p>
+                <button onClick={onRetry}>Retry</button>
+            </div>
+        </section>
     );
 };
 
