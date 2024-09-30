@@ -1,9 +1,10 @@
 // pages/Home.js
 import { useEffect, useState, useMemo } from "react";
-import ProjectCategory from "../components/ProjectCategory";
 import Error from "../components/Error";
 import Hero from "../components/Hero";
 import Project from "../components/Project";
+import WhatYoullLearn from "../components/WhatYoullLearn";
+import CommunitySection from "../components/CommunitySection";
 
 const Home = () => {
     const [projects, setProjects] = useState([]);
@@ -24,9 +25,8 @@ const Home = () => {
                     throw new Error(`HTTP error: ${response.status}`);
                 }
                 const data = await response.json();
-                console.log(data);
                 setProjects(data); // Safe access with optional chaining
-                document.title = "Projects Loaded";
+                setLoading(false);
             } catch (err) {
                 setError(err.message);
                 document.title = "Error loading projects";
@@ -39,16 +39,19 @@ const Home = () => {
     }, []);
 
     const renderedProjects = useMemo(() => {
-        return projects.map((project, index) => (
-            <Project project={project} key={index} />
-        ));
+        // Slice the projects array to only get the first 3 projects
+        return projects
+            .slice(0, 3)
+            .map((project, index) => <Project project={project} key={index} />);
     }, [projects]);
 
     if (loading) {
         return (
             <section>
-                <div className="loading-container container">
-                    <p>Loading...</p>
+                <div className="container">
+                    <div className="loading-container ">
+                        <p>Loading...</p>
+                    </div>
                 </div>
             </section>
         );
@@ -68,10 +71,12 @@ const Home = () => {
             <Hero />
             <section className="category-section">
                 <div className="container">
-                    <h2 className="category-level">Beginner </h2>
+                    <h2 className="category-level">Top Projects </h2>
                     <div className="projects">{renderedProjects}</div>
                 </div>
             </section>
+            <WhatYoullLearn />
+            <CommunitySection />
         </main>
     );
 };
