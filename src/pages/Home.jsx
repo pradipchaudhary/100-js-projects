@@ -15,7 +15,8 @@ const Home = () => {
             setError(null); // Reset error before new request
 
             try {
-                const response = await fetch("../../api.json");
+                const response = await fetch("../config/api.json");
+                console.log(response);
                 if (!response.ok) {
                     throw new Error(`HTTP error: ${response.status}`);
                 }
@@ -41,9 +42,11 @@ const Home = () => {
 
     if (loading) {
         return (
-            <div className="loading-container">
-                <p>Loading...</p>
-            </div>
+            <section>
+                <div className="loading-container container">
+                    <p>Loading...</p>
+                </div>
+            </section>
         );
     }
 
