@@ -6,36 +6,41 @@ const ProjectDetail = () => {
     const [project, setProject] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const fetchProject = async () => {
+        try {
+            const response = await fetch(
+                `https://one00jsprojects-t2pk.onrender.com/api/project/${id}`
+            );
+            const project = await response.json();
+            console.log("data: ", project);
 
-    useEffect(() => {
-        const fetchProject = async () => {
-            try {
-                const response = await fetch("../../api.json");
-                const result = await response.json();
-                const categories = result.categories;
-
-                // Find the project by its ID from the fetched data
-                const project = categories
-                    .flatMap((category) => category.projects) // Flatten the array to access all projects
-                    .find((proj) => proj.id === parseInt(id)); // Ensure ID comparison is correct
-
-                if (!project) {
-                    throw new Error("Project not found");
-                }
-
-                setProject(project);
-            } catch (error) {
-                setError(error.message);
-            } finally {
-                setLoading(false);
+            if (!project) {
+                throw new Error("Project not found");
             }
-        };
 
+            setProject(project);
+        } catch (error) {
+            setError(error.message);
+        } finally {
+            setLoading(false);
+        }
+    };
+    useEffect(() => {
         fetchProject();
-    }, [id]);
+    }, [project, id]);
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
+    if (loading)
+        return (
+            <div className="container">
+                <p>Loading...</p>
+            </div>
+        );
+    if (error)
+        return (
+            <div className="container">
+                <p>Error: {error}</p>
+            </div>
+        );
 
     return (
         <section className="container">

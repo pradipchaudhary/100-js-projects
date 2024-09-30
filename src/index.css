@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
 
 :root {
     --primary-color: #101820; /* Dark Black */
@@ -7,11 +8,15 @@
 }
 @font-face {
     font-family: "Mexcellent";
-    src: url("./fonts/mexcellent-rg.ttf") format("truetype");
+    src: url("./assets/fonts/mexcellent-rg.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: "BroetownSignature";
     src: url("./assets/fonts/Broetown-Signature.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -23,10 +28,8 @@
 body {
     background-color: var(--body-bg); /* Background uses primary color */
     color: var(--primary-color); /* Text uses accent color */
-    font-family: "Roboto", Helvetica, sans-serif;
+    font-family: "Raleway", Helvetica, sans-serif;
     /* overflow: hidden; */
-    /* font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 
 h1,
@@ -68,6 +71,17 @@ a {
 
 a:hover {
     color: var(--primary-color);
+}
+.loading-container {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
 }
 
 /* === Header CSS === */
@@ -164,54 +178,157 @@ header .header {
 .project-lists {
     padding: 0rem 0;
 }
-
-#page-content section {
-    padding: 4rem 0;
-}
-
-section .category-section {
+.category-section {
     padding: 1rem 0;
+    background: #fafafa;
+    margin-bottom: 4rem;
 }
 .category-section .category-level {
-    font-size: 48px;
+    font-size: 1.8rem;
     line-height: 48px;
     margin: 3rem 0 1rem;
-    font-weight: 700;
-    /* font-family: "Mexcellent", sans-serif; */
+    font-weight: 600;
+    font-family: "Mexcellent", sans-serif;
 }
 .category-section .projects {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 .category-section .projects .project-item {
-    padding: 16px;
-    margin: 30px 0;
-    background: #ffffffef;
-    box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
-    border-radius: 4px;
-    color: #252525;
+    background: #fff;
+    border-color: #e6e6e6;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-section .projects .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.project-item .thumbnail {
+    background: #dfdfdf;
+    background-image: linear-gradient(
+        to top,
+        #f3e7e9 0%,
+        #e3eeff 99%,
+        #e3eeff 100%
+    );
+    width: 100%;
+    height: 120px;
+    margin-bottom: 8px;
 }
 .project-item h3 {
-    color: #131313;
-    font-weight: 400;
+    color: #222;
+    font-weight: 600;
     font-size: 1.2rem;
-    margin-bottom: 6px;
+    margin: 6px;
 }
 .project-item p {
     font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.3rem;
+    color: #555;
+    margin: 3px 6px;
+}
+.project-item p.sm-font {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .project-item strong {
-    color: #3a3a3a;
+    color: #555;
     font-weight: 500;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .project-item a {
-    color: #9333ea;
-    font-size: 1rem;
+    color: #222;
+    font-size: 0.9rem;
     line-height: 1.5rem;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: all 0.3s ease;
+}
+.project-item a:hover h3 {
+    color: #000;
+}
+
+/* src/components/WhatYoullLearn.css */
+
+/* Container Styling */
+#learn {
+    background: var(--accent-color);
+    background-image: linear-gradient(
+        to top,
+        #f3e7e9 0%,
+        #e3eeff 99%,
+        #e3eeff 100%
+    );
+    padding: 5rem;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: "Arial", sans-serif;
+}
+
+/* Grid Layout */
+
+/* Card Styling */
+.learn-card {
+    /* background-color: #ffffff70; */
+    border-radius: 12px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.learn-card:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); */
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+}
+
+/* Icon Styling */
+.learn-icon {
+    font-size: 3rem;
+}
+
+/* Text Styling */
+.learn-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+}
+
+.learn-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
 }
 
 /* === Page CSS === */
