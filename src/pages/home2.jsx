@@ -3,7 +3,6 @@ import { useEffect, useState, useMemo } from "react";
 import ProjectCategory from "../components/ProjectCategory";
 import Error from "../components/Error";
 import Hero from "../components/Hero";
-import Project from "../components/Project";
 
 const Home = () => {
     const [projects, setProjects] = useState([]);
@@ -16,16 +15,13 @@ const Home = () => {
             setError(null); // Reset error before new request
 
             try {
-                const response = await fetch(
-                    "https://one00jsprojects-t2pk.onrender.com/api/project"
-                );
-
+                const response = await fetch("../config/api.json");
+                console.log(response);
                 if (!response.ok) {
                     throw new Error(`HTTP error: ${response.status}`);
                 }
                 const data = await response.json();
-                console.log(data);
-                setProjects(data); // Safe access with optional chaining
+                setProjects(data?.categories || []); // Safe access with optional chaining
                 document.title = "Projects Loaded";
             } catch (err) {
                 setError(err.message);
@@ -39,8 +35,8 @@ const Home = () => {
     }, []);
 
     const renderedProjects = useMemo(() => {
-        return projects.map((project, index) => (
-            <Project project={project} key={index} />
+        return projects.map((category, index) => (
+            <ProjectCategory category={category} key={index} />
         ));
     }, [projects]);
 
@@ -66,12 +62,7 @@ const Home = () => {
     return (
         <main id="content" className="main-content" role="main">
             <Hero />
-            <section className="category-section">
-                <div className="container">
-                    <h2 className="category-level">Beginner </h2>
-                    <div className="projects">{renderedProjects}</div>
-                </div>
-            </section>
+            {renderedProjects}
         </main>
     );
 };
