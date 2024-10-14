@@ -22,13 +22,13 @@ const Project = ({ project }) => {
                 <strong>
                     <RiToolsFill size={15} />
                 </strong>
-                {truncateString(project.tech_used.join(", "), 30)}
+                {truncateString(project.techUsed.join(", "), 30)}
             </p>
             <p className="sm-font">
                 <strong>
                     <RiTimer2Line size={15} />
                 </strong>
-                {project.estimated_time}
+                {project.estimatedTime}
             </p>
             <br />
             {/* <Link to={`/projects/${project._id}`} className="detail-link">

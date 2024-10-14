@@ -17,15 +17,15 @@ const Home = () => {
             setError(null); // Reset error before new request
 
             try {
-                const response = await fetch(
-                    "https://one00jsprojects-t2pk.onrender.com/api/project"
-                );
+                // Fetch data from the local api.json file in the public folder
+                const response = await fetch("/api.json");
 
                 if (!response.ok) {
                     throw new Error(`HTTP error: ${response.status}`);
                 }
+
                 const data = await response.json();
-                setProjects(data); // Safe access with optional chaining
+                setProjects(data); // Set the fetched data to projects state
                 setLoading(false);
             } catch (err) {
                 setError(err.message);
