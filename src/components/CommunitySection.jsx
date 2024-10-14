@@ -6,6 +6,7 @@ const CommunitySection = () => {
     const [repoData, setRepoData] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [visitorCount, setVisitorCount] = useState(0); // Visitor count state
 
     useEffect(() => {
         // Fetch repository data from GitHub API
@@ -50,7 +51,7 @@ const CommunitySection = () => {
                     <div className="community-stats">
                         <div className="stat-box">
                             <h2 className="stat-number">100+</h2>
-                            <p className="stat-text">JavaScript Projects</p>
+                            <p className="stat-text"> Projects</p>
                         </div>
 
                         <div className="stat-box">
