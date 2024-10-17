@@ -1,5 +1,3 @@
-# [100 JavaScript Projects](https://100jsproject.vercel.app/)
-
 [![GitHub issues](https://img.shields.io/github/issues/pradipchaudhary/100-js-projects)](https://github.com/pradipchaudhary/100-js-projects/issues)
 [![GitHub forks](https://img.shields.io/github/forks/pradipchaudhary/100-js-projects)](https://github.com/pradipchaudhary/100-js-projects/network)
 [![GitHub stars](https://img.shields.io/github/stars/pradipchaudhary/100-js-projects)](https://github.com/pradipchaudhary/100-js-projects/stargazers)

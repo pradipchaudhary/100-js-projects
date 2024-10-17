@@ -1,5 +1,6 @@
 [
     {
+        "index": "01",
         "name": "Tip Calculator",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/tip-calculator",
         "description": "An app to calculate tips based on the bill amount and tip percentage.",
@@ -16,6 +17,7 @@
         "createdAt": "2023-01-07T00:00:00.000Z"
     },
     {
+        "index": "02",
         "name": "Weather App",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/weather-app",
         "description": "A weather app that shows current weather data fetched from an API.",
@@ -32,6 +34,7 @@
         "createdAt": "2023-01-09T00:00:00.000Z"
     },
     {
+        "index": "03",
         "name": "To-Do List",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/todo-list",
         "description": "A simple to-do list app with add, delete, and mark as completed features.",
@@ -48,6 +51,7 @@
         "createdAt": "2023-01-13T00:00:00.000Z"
     },
     {
+        "index": "04",
         "name": "Expense Tracker",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/expense-tracker",
         "description": "An app to track expenses and calculate the remaining balance.",
@@ -64,6 +68,7 @@
         "createdAt": "2023-01-15T00:00:00.000Z"
     },
     {
+        "index": "05",
         "name": "Memory Game",
         "code": "https://github.com/pradipchaudhary/100-javascript-projects/memory-game",
         "description": "A simple memory card matching game built with JavaScript.",

@@ -1,5 +1,5 @@
 // Import Images
-import CodeImg from "../assets/images/code.png";
+import CodeImg from "../../assets/images/code.png";
 
 const Footer = () => {
     return (
