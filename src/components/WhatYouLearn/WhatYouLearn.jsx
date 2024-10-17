@@ -1,4 +1,5 @@
 // src/components/WhatYoullLearn.js
+import "./WhatYouLearn.css";
 
 const learnings = [
     {
@@ -31,7 +32,7 @@ const learnings = [
     },
 ];
 
-const WhatYoullLearn = () => {
+const WhatYouLearn = () => {
     return (
         <section className="learn" id="learn">
             <div className="container">
@@ -60,4 +61,4 @@ const WhatYoullLearn = () => {
     );
 };
 
-export default WhatYoullLearn;
+export default WhatYouLearn;

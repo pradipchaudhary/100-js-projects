@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /**
 
@@ -89,57 +89,6 @@ a:hover {
     font-size: 1.2rem;
 }
 
-/* === Header CSS === */
-header {
-    background-color: var(--accent-color);
-    padding: 4rem 0;
-    width: 100%;
-    /* height: 450px; */
-}
-header .container {
-    height: 100%;
-}
-header .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header .logo a {
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: "Mexcellent", sans-serif;
-    color: #ff0000;
-}
-.header .logo span {
-    width: 35px;
-    height: 35px;
-    background-color: #ffff;
-    border-radius: 50%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -6px;
-}
-.header ul {
-    display: flex;
-    list-style: none;
-    gap: 16px;
-}
-.header ul li a {
-    text-transform: lowercase;
-    font-size: 1rem;
-    color: #464646;
-    transition: all 0.3s ease;
-}
-.header ul li a:hover {
-    color: #000000;
-}
-.header ul li a.buy-coffee-button {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #000000;
-}
 /* Home Hero */
 .home_hero {
     width: 100%;
@@ -266,74 +215,6 @@ header .header {
 }
 .project-item a:hover h3 {
     color: #000;
-}
-
-/* src/components/WhatYoullLearn.css */
-
-/* Container Styling */
-#learn {
-    background: var(--accent-color);
-    background-image: linear-gradient(
-        to top,
-        #f3e7e9 0%,
-        #e3eeff 99%,
-        #e3eeff 100%
-    );
-    padding: 5rem;
-}
-
-/* Section Title */
-.section-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
-    font-family: "Arial", sans-serif;
-}
-
-/* Grid Layout */
-
-/* Card Styling */
-.learn-card {
-    /* background-color: #ffffff70; */
-    border-radius: 12px;
-    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
-    padding: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-.learn-card:hover {
-    transform: translateY(-5px);
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); */
-    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
-}
-
-/* Icon Styling */
-.learn-icon {
-    font-size: 3rem;
-}
-
-/* Text Styling */
-.learn-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.learn-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #222;
-    margin: 0;
-}
-
-.learn-description {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 10px;
 }
 
 /* === Page CSS === */

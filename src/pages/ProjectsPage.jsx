@@ -1,10 +1,10 @@
-// pages/Home.js
+// pages/ProjectPage.js
 import { useEffect, useState, useMemo } from "react";
-import ProjectCategory from "../components/ProjectCategory";
-import Error from "../components/Error";
-import Hero from "../components/Hero";
+import Project from "../components/Project";
+import Loading from "../components/common/Loading";
+import Error from "../components/common/Error";
 
-const Home = () => {
+const Projects = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -15,14 +15,16 @@ const Home = () => {
             setError(null); // Reset error before new request
 
             try {
-                const response = await fetch("../config/api.json");
-                console.log(response);
+                const response = await fetch("/api.json");
+
                 if (!response.ok) {
-                    throw new Error(`HTTP error: ${response.status}`);
+                    throw new Error(
+                        `Error ${response.status}: ${response.statusText}`
+                    );
                 }
+
                 const data = await response.json();
-                setProjects(data?.categories || []); // Safe access with optional chaining
-                document.title = "Projects Loaded";
+                setProjects(data.projects); // Save the projects data
             } catch (err) {
                 setError(err.message);
                 document.title = "Error loading projects";
@@ -35,18 +37,14 @@ const Home = () => {
     }, []);
 
     const renderedProjects = useMemo(() => {
-        return projects.map((category, index) => (
-            <ProjectCategory category={category} key={index} />
+        return projects.map((project) => (
+            <Project project={project} key={project.id} /> // Use a unique ID
         ));
     }, [projects]);
 
     if (loading) {
         return (
-            <section>
-                <div className="loading-container container">
-                    <p>Loading...</p>
-                </div>
-            </section>
+            <Loading /> // Use a dedicated loading component
         );
     }
 
@@ -61,10 +59,14 @@ const Home = () => {
 
     return (
         <main id="content" className="main-content" role="main">
-            <Hero />
-            {renderedProjects}
+            <section className="project-section">
+                <div className="container">
+                    <h2 className="project-level">All Projects</h2>
+                    <div className="projects">{renderedProjects}</div>
+                </div>
+            </section>
         </main>
     );
 };
 
-export default Home;
+export default Projects;

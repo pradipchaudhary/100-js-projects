@@ -6,10 +6,8 @@ const CommunitySection = () => {
     const [repoData, setRepoData] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [visitorCount, setVisitorCount] = useState(0); // Visitor count state
 
     useEffect(() => {
-        // Fetch repository data from GitHub API
         const fetchRepoData = async () => {
             try {
                 const response = await fetch(
@@ -31,32 +29,34 @@ const CommunitySection = () => {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="loading">Loading...</div>;
     }
 
     if (error) {
-        return <div>Error: {error}</div>;
+        return <div className="error">Error: {error}</div>;
     }
+
     return (
         <section>
             <div className="container">
                 <div className="community-container">
-                    <h1 className="community-title">Join the Community</h1>
+                    <h1 className="community-title">Join Our Community</h1>
                     <p className="community-description">
-                        Our GitHub repository features 100 hands-on JavaScript
-                        projects to help developers level up their skills. Star
-                        the repo, contribute, or fork it for your own use!
+                        Explore our GitHub repository with over 100 hands-on
+                        JavaScript projects to enhance your development skills.
+                        Star or fork our repository to contribute!
                     </p>
 
                     <div className="community-stats">
                         <div className="stat-box">
+                            <div className="stat-icon">🚀</div>
                             <h2 className="stat-number">100+</h2>
-                            <p className="stat-text"> Projects</p>
+                            <p className="stat-text">Projects</p>
                         </div>
 
                         <div className="stat-box">
+                            <div className="stat-icon">⭐</div>
                             <h2 className="stat-number">
-                                {" "}
                                 {repoData.stargazers_count}
                             </h2>
                             <p className="stat-text">GitHub Stars</p>
@@ -66,15 +66,13 @@ const CommunitySection = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Star us on GitHub
+                                    Star Us
                                 </a>
                             </button>
-                            <p className="small-text">
-                                Help us grow our community
-                            </p>
                         </div>
 
                         <div className="stat-box">
+                            <div className="stat-icon">🍴</div>
                             <h2 className="stat-number">
                                 {repoData.forks_count}
                             </h2>
@@ -85,25 +83,9 @@ const CommunitySection = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Fork this Repo
+                                    Fork This Repo
                                 </a>
                             </button>
-                            <p className="small-text">Start your own version</p>
-                        </div>
-
-                        <div className="stat-box">
-                            <h2 className="stat-number">500+</h2>
-                            <p className="stat-text">Contributors</p>
-                            <button className="community-button">
-                                <a
-                                    href="https://github.com/pradipchaudhary/100-js-projects/graphs/contributors"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Join as a Contributor
-                                </a>
-                            </button>
-                            <p className="small-text">Commit your projects</p>
                         </div>
                     </div>
                 </div>
