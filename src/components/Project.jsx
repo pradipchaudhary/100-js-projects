@@ -8,7 +8,7 @@ const Project = ({ project }) => {
     return (
         <div className="project-item">
             <div className="thumbnail"></div>
-            <Link to={`/projects/${project._id}`}>
+            <Link to={`/projects/${project.index}`}>
                 <h3>{project.name}</h3>
             </Link>
             <p>{truncateString(project.description, 48)}</p>
