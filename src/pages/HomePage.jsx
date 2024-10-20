@@ -2,16 +2,13 @@
 import Hero from "../components/Hero/Hero";
 import WhatYouLearn from "../components/WhatYouLearn/WhatYouLearn";
 import CommunitySection from "../components/CommunitySection/CommunitySection";
+import ProjectList from "../components/ProjectList/ProjectList";
 
 const Home = () => {
     return (
         <main id="content" className="main-content" role="main">
             <Hero />
-            {/* <section className="category-section">
-                <div className="container">
-                    <h2 className="category-level">Top Projects </h2>
-                </div>
-            </section> */}
+            <ProjectList />
             <WhatYouLearn />
             <CommunitySection />
         </main>

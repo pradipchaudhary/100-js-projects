@@ -10,7 +10,7 @@
         "status": "Completed",
         "startDate": "2023-01-07T00:00:00.000Z",
         "endDate": "2023-01-08T00:00:00.000Z",
-        "thumbnail": "https://example.com/images/tip-calculator-thumbnail.jpg",
+        "thumbnail": "https://github.com/pradipchaudhary/100-javascript-projects/01-tip-calculator/images/tip-calculator-thumbnail.jpg",
         "codeLink": "https://github.com/pradipchaudhary/100-javascript-projects/tip-calculator",
         "liveDemoLink": "https://pradipchaudhary.github.io/100-javascript-projects/tip-calculator/",
         "tags": ["Calculator", "JavaScript", "Beginner"],
