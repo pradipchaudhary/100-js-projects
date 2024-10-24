@@ -1,14 +1,23 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./ProjectList.css"; // For styling
 
 const ProjectList = () => {
     const [projects, setProjects] = useState([]);
 
+    console.log(projects);
+
     // Fetch JSON data from the public folder
     useEffect(() => {
         fetch("/api.json")
-            .then((response) => response.json())
-            .then((data) => setProjects(data))
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Failed to fetch data");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setProjects(data.projects);
+            })
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
 
