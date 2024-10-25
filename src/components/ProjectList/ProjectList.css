@@ -34,10 +34,13 @@
 
 .project-thumbnail {
     width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     height: 200px;
     background: #efefef;
+    background-size: cover; /* Ensures the image covers the area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .project-content {
@@ -66,15 +69,16 @@
     display: inline-block;
     margin-right: 10px;
     text-decoration: none;
-    padding: 10px 15px;
-    background-color: #3498db;
-    color: white;
+    padding: 6px 8px;
+    background-color: #ffe400;
+    color: #000000;
     border-radius: 5px;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .project-link:hover {
-    background-color: #2980b9;
+    background-color: #000000;
+    color: #ffff;
 }
 
 .project-link.live {

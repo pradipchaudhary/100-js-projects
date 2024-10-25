@@ -33,8 +33,10 @@
 body {
     background-color: var(--body-bg); /* Background uses primary color */
     color: var(--primary-color); /* Text uses accent color */
-    font-family: "Raleway", Helvetica, sans-serif;
+    /* font-family: "Raleway", Helvetica, sans-serif; */
     /* overflow: hidden; */
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1,

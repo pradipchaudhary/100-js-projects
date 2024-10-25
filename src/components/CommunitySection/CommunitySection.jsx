@@ -1,6 +1,7 @@
 // src/components/CommunitySection.js
 import { useEffect, useState } from "react";
 import "./CommunitySection.css";
+import { RiGitForkLine, RiStarLine } from "@remixicon/react";
 
 const CommunitySection = () => {
     const [repoData, setRepoData] = useState({});
@@ -42,9 +43,10 @@ const CommunitySection = () => {
                 <div className="community-container">
                     <h1 className="community-title">Join Our Community</h1>
                     <p className="community-description">
-                        Explore our GitHub repository with over 100 hands-on
-                        JavaScript projects to enhance your development skills.
-                        Star or fork our repository to contribute!
+                        Explore our GitHub repository with over{" "}
+                        <a href="">100 hands-on JavaScript projects</a> to
+                        enhance your development skills. Star or fork our
+                        repository to contribute!
                     </p>
 
                     <div className="community-stats">
@@ -52,10 +54,21 @@ const CommunitySection = () => {
                             <div className="stat-icon">🚀</div>
                             <h2 className="stat-number">100+</h2>
                             <p className="stat-text">Projects</p>
+                            <button className="community-button">
+                                <a
+                                    href="https://github.com/pradipchaudhary/100-js-projects"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Contribute
+                                </a>
+                            </button>
                         </div>
 
                         <div className="stat-box">
-                            <div className="stat-icon">⭐</div>
+                            <div className="stat-icon">
+                                <RiStarLine />
+                            </div>
                             <h2 className="stat-number">
                                 {repoData.stargazers_count}
                             </h2>
@@ -72,7 +85,9 @@ const CommunitySection = () => {
                         </div>
 
                         <div className="stat-box">
-                            <div className="stat-icon">🍴</div>
+                            <div className="stat-icon">
+                                <RiGitForkLine />
+                            </div>
                             <h2 className="stat-number">
                                 {repoData.forks_count}
                             </h2>

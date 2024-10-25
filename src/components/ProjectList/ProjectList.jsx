@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./ProjectList.css"; // For styling
+import { RiArrowRightUpLine } from "@remixicon/react";
 
 const ProjectList = () => {
     const [projects, setProjects] = useState([]);
@@ -49,15 +50,7 @@ const ProjectList = () => {
                                 rel="noopener noreferrer"
                                 className="project-link"
                             >
-                                Code
-                            </a>
-                            <a
-                                href={project.liveDemoLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="project-link live"
-                            >
-                                Live Demo
+                                <RiArrowRightUpLine />
                             </a>
                         </div>
                     </div>

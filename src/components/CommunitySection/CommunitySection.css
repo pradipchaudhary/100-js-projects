@@ -1,39 +1,34 @@
-/* src/components/CommunitySection.css */
-
-:root {
-    --primary-color: #28a745;
-    --primary-hover-color: #218838;
-    --text-color: #333;
-    --subtext-color: #777;
-    --background-color: #f8f9fa;
-    --card-background: #ffffff;
-    --box-shadow: rgba(0, 0, 0, 0.2);
-    --gradient-bg: linear-gradient(135deg, #f0f4c3, #c8e6c9);
-    --transition-speed: 0.3s;
-}
+/* Community Section Styles */
 
 .community-container {
     text-align: center;
-    overflow: hidden; /* Prevent overflow of elements */
+    overflow: hidden;
     padding: 5rem 0;
 }
 
 .community-title {
-    font-size: 2.8rem;
-    color: var(--text-color);
+    font-size: 3rem;
+    line-height: 1;
+    color: #333;
     margin-bottom: 30px;
-    transition: color var(--transition-speed);
+    transition: color 0.3s ease;
 }
 
 .community-description {
-    font-size: 1.1rem;
-    color: var(--subtext-color);
-    max-width: 700px;
-    line-height: 1.8rem;
-    margin: 0 auto 40px;
-    margin-bottom: 4rem;
+    color: #777;
+    max-width: 75%;
+    margin: 0 auto 4rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
+.community-description a {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Community Stats */
 .community-stats {
     display: flex;
     justify-content: space-around;
@@ -41,7 +36,7 @@
     gap: 20px;
 }
 
-/* Media query for smaller screens */
+/* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
     .community-stats {
         flex-direction: column;
@@ -50,20 +45,13 @@
 }
 
 .stat-box {
-    background-color: var(--card-background);
+    background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 8px 16px var(--box-shadow);
+    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 220px;
+    width: 230px;
     text-align: center;
-    transition: transform var(--transition-speed),
-        box-shadow var(--transition-speed);
-    position: relative; /* For icon positioning */
-}
-
-.stat-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px var(--box-shadow);
+    position: relative;
 }
 
 .stat-icon {
@@ -73,45 +61,44 @@
 
 .stat-number {
     font-size: 3rem;
-    color: var(--text-color);
+    color: #333;
     margin: 0;
     animation: fadeIn 0.5s ease-in-out;
 }
 
 .stat-text {
     font-size: 1rem;
-    color: var(--subtext-color);
+    color: #777;
     margin-top: 10px;
 }
 
+/* Button Styles */
 .community-button {
-    margin-top: 15px;
-    padding: 8px 15px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color var(--transition-speed), transform 0.2s;
-    font-size: 0.9rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.community-button a {
-    color: white;
+    border: 1px solid #333;
+    padding: 0.6rem 1rem;
+    margin-top: 3rem;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-bottom: 1.2rem;
     text-decoration: none;
+    display: inline-block;
 }
 
 .community-button:hover {
-    background-color: var(--primary-hover-color);
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
     transform: translateY(-2px);
 }
-
-.community-button:hover a {
+.community-button s {
     color: #fff;
 }
 
+/* Small Text and Status Styles */
 .small-text {
     font-size: 0.8rem;
     color: #999;
@@ -121,11 +108,11 @@
 .loading,
 .error {
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: #000;
     margin-top: 20px;
 }
 
-/* Animation keyframes */
+/* Animation Keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -134,21 +121,5 @@
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
     }
 }
