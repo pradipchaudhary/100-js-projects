@@ -2,13 +2,13 @@
 
 /* Container Styling */
 #learn {
-    background: var(--accent-color);
+    /* background: var(--accent-color);
     background-image: linear-gradient(
         to top,
         #f3e7e9 0%,
         #e3eeff 99%,
         #e3eeff 100%
-    );
+    ); */
     padding: 5rem;
 }
 
