@@ -1,3 +1,5 @@
+
+
 # Logs
 logs
 *.log
@@ -22,4 +24,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vscode/
 .vite

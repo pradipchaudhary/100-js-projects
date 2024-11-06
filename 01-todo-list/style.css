@@ -1,0 +1,111 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 300px;
+    text-align: center;
+}
+
+/* Title styles */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+/* Input form styles */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task list styles */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Style for buttons to remove or mark task as completed */
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-buttons button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-buttons button.complete-btn {
+    background-color: #2ecc71;
+}
+
+.task-buttons button:hover {
+    opacity: 0.8;
+}
+
+.delete-btn {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    background-color: red;
+}
+.delete-btn:hover {
+    background-color: red;
+}
