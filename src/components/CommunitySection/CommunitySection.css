@@ -45,9 +45,9 @@
 }
 
 .stat-box {
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 12px;
-    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2); */
     padding: 20px;
     width: 230px;
     text-align: center;
@@ -70,22 +70,6 @@
     font-size: 1rem;
     color: #777;
     margin-top: 10px;
-}
-
-/* Button Styles */
-.community-button {
-    border: 1px solid #333;
-    padding: 0.6rem 1rem;
-    margin-top: 3rem;
-    background-color: #333;
-    color: #ffffff;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    width: 100%;
-    transition: all 0.3s ease;
-    margin-bottom: 1.2rem;
-    text-decoration: none;
-    display: inline-block;
 }
 
 .community-button:hover {

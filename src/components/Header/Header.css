@@ -1,9 +1,7 @@
 /* === Header CSS === */
 header {
-    background-color: var(--accent-color);
     padding: 4rem 0;
     width: 100%;
-    /* height: 450px; */
 }
 header .container {
     height: 100%;
@@ -23,11 +21,12 @@ header .header {
 .header ul {
     display: flex;
     list-style: none;
-    gap: 16px;
+    gap: 18px;
+    justify-content: center;
 }
 .header ul li a {
     text-transform: lowercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #464646;
     transition: all 0.3s ease;
 }

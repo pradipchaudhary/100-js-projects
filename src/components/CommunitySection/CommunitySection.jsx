@@ -1,7 +1,7 @@
 // src/components/CommunitySection.js
 import { useEffect, useState } from "react";
 import "./CommunitySection.css";
-import { RiGitForkLine, RiStarLine } from "@remixicon/react";
+import { GitFork, Star } from "lucide-react";
 
 const CommunitySection = () => {
     const [repoData, setRepoData] = useState({});
@@ -67,7 +67,7 @@ const CommunitySection = () => {
 
                         <div className="stat-box">
                             <div className="stat-icon">
-                                <RiStarLine />
+                                <Star />
                             </div>
                             <h2 className="stat-number">
                                 {repoData.stargazers_count}
@@ -86,7 +86,7 @@ const CommunitySection = () => {
 
                         <div className="stat-box">
                             <div className="stat-icon">
-                                <RiGitForkLine />
+                                <GitFork />
                             </div>
                             <h2 className="stat-number">
                                 {repoData.forks_count}
