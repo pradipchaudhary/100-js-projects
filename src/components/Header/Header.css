@@ -21,19 +21,15 @@ header .header {
 .header ul {
     display: flex;
     list-style: none;
-    gap: 18px;
+    gap: 20px;
     justify-content: center;
 }
 .header ul li a {
     text-transform: lowercase;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #464646;
     transition: all 0.3s ease;
 }
 .header ul li a:hover {
     color: #000000;
-}
-.header ul li a.buy-coffee-button {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #000000;
 }

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
-import { Coffee, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const Header = () => {
     return (
