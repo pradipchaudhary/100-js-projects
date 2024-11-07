@@ -36,9 +36,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: var(--primary-color); /* Text uses accent color */
+    font-family: Roboto, sans-serif;
 }
 
 /* Apply the overlay styles */
@@ -74,22 +73,6 @@ a {
     padding-right: 1rem;
 }
 
-button {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-}
-
 a {
     text-decoration: none;
 }
@@ -118,6 +101,71 @@ a:hover {
     align-items: center;
     text-align: center;
 }
+/* code snippets */
+.snippets {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    display: inline-flex;
+}
+
+.outer-span {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 9999px;
+    padding: 1px;
+}
+
+.background-spin {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(
+        from 90deg at 50% 50%,
+        #a9a9a9 0%,
+        #0c0c0c 50%,
+        #a9a9a9 100%
+    );
+}
+
+.button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: white;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #64748b;
+    backdrop-filter: blur(20px);
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    color: black;
+}
+
+.arrow-icon {
+    padding-left: 0.125rem;
+    color: black;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .home_hero h1 {
     font-size: 3.75rem;
     line-height: 1.2;
@@ -127,14 +175,32 @@ a:hover {
     width: 75%;
     margin: 0 auto;
 }
+.text-gradient {
+    display: inline-flex;
+    background-image: linear-gradient(to right, #171717, #64748b, #737373);
+    background-size: 200% auto;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.25;
+    animation: animate-gradient 9s linear infinite;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes animate-gradient {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
 .home_hero p {
-    color: #4b5563;
+    color: #7f848b;
     font-size: 1.2rem;
     width: 65%;
     margin: 0 auto;
-    /* font-family: "BroetownSignature", sans-serif; */
-    font-weight: 600;
-    word-spacing: 4px;
+    word-spacing: 1px;
+    line-height: 1.4;
 }
 .home_hero .hero-btn {
     margin-top: 0rem;
@@ -144,15 +210,23 @@ a:hover {
 }
 .home_hero a button {
     border: 1px solid #171717;
-    padding: 0.6rem 1rem;
+    /* padding: 0.6rem 1rem; */
     margin-top: 3rem;
     background: #171717;
     color: #fafafa;
     border-radius: 10px;
-    font-size: 1rem;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s;
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    max-width: 12rem;
+}
+.arrow-right-icon {
+    padding-left: 0.125rem;
 }
 .home_hero button:hover {
     color: #ffffff;
