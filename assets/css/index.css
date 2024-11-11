@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* General Styling for Body and HTML */
 body,
 html {
     margin: 0;
@@ -8,7 +10,7 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
-/* Custom background overlay */
+/* Background Overlay Styling */
 .background-overlay {
     position: absolute;
     inset: 0;
@@ -21,7 +23,7 @@ html {
     background-size: 14px 24px;
 }
 
-/* Circle overlay styling */
+/* Circle Overlay Styling */
 .circle-overlay {
     position: absolute;
     left: 0;
@@ -32,12 +34,12 @@ html {
     height: 310px;
     width: 310px;
     border-radius: 50%;
-    background-color: #d9007b; /* Fuchsia color */
+    background-color: #d9007b; /* Fuchsia Color */
     opacity: 0.1;
     filter: blur(100px);
 }
 
-/* General container styling */
+/* Container Styling */
 .container {
     width: 100%;
     margin-left: auto;
@@ -47,32 +49,18 @@ html {
     padding-right: 1rem;
 }
 
-/* Content container styling */
+/* Content Container Styling */
 .content-container {
     position: relative;
-    z-index: 1; /* Ensure content appears above the background */
+    z-index: 1; /* Ensures content appears above the background */
     color: #333; /* Text color */
     width: 100%;
     height: 100%;
 }
 
-/* Example text styling */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.25rem;
-}
-a {
-    text-decoration: none;
-    color: #d9007b;
-}
-
-/* Header Styling */
+/* Header Section Styling */
 #header {
-    padding: 1.5rem 0; /* Top and bottom padding for spacing */
+    padding: 1.5rem 0;
     color: #333;
 }
 
@@ -81,15 +69,18 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 .header .brand-name {
     font-size: 1.6rem;
     font-weight: 600;
 }
+
 .header .brand-name a {
     text-decoration: none;
     color: #111827;
 }
 
+/* Header Navigation Styling */
 .header ul {
     display: flex;
     gap: 20px;
@@ -101,35 +92,38 @@ a {
     color: #555;
     font-size: 1.15rem;
 }
+
 .header ul li a:hover {
     color: #d9007b;
 }
+
 .header ul li a i {
     font-size: 1.6rem;
 }
 
-/* Hero section */
+/* Hero Section Styling */
 #hero {
     width: 100%;
-    height: 60%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
+/* Custom Snippet Button Styling */
 .custom-snippet {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 6px 12px;
-    border-radius: 9999px; /* Full rounded corners */
+    border-radius: 9999px;
     background-color: white;
     color: #64748b; /* Slate color */
     font-size: 12px;
     font-weight: 500;
     line-height: 1.25;
-    backdrop-filter: blur(8px); /* Blur effect for background */
+    backdrop-filter: blur(8px);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     border: 1px solid #797878;
@@ -140,6 +134,7 @@ a {
     background-color: #f1f5f9; /* Lighter shade on hover */
 }
 
+/* Read More Link Styling */
 .custom-snippet .read-more {
     display: inline-flex;
     align-items: center;
@@ -152,6 +147,7 @@ a {
     padding-left: 4px;
 }
 
+/* Hero Title and Description Styling */
 .hero h1.title {
     font-size: 3.75rem;
     line-height: 1.2;
@@ -162,6 +158,7 @@ a {
     margin: 0 auto;
     margin-bottom: 0.75rem;
 }
+
 .hero p.description {
     color: #787878;
     font-size: 1.2rem;
@@ -171,6 +168,7 @@ a {
     line-height: 1.4;
 }
 
+/* Hero Button Section Styling */
 .hero .btn-section {
     margin-top: 4rem;
 }
@@ -184,27 +182,47 @@ a {
     color: #dbdbdb;
 }
 
+/* GitHub Button Styling */
 .btn-section .github {
     background-color: #09090b;
 }
+
 .btn-section .github:hover {
     background-color: #3f3f46;
 }
+
+/* Project Button Styling */
 .btn-section .project {
     background-color: #fafafa;
     color: #09090b;
 }
+
 .btn-section .project:hover {
     background-color: #f4f4f5;
     color: #09090b;
 }
 
-/* Wrapper for Radial Background */
+/* Wrapper Styling for Radial Background */
 .wrapper {
+    width: 100%; /* Full width of the viewport */
+    height: 80%; /* Adjust the height as needed */
+    background-color: white;
     position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: #ffffff; /* White background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Create the transparent center effect */
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background-color: transparent;
+    z-index: 1;
+    pointer-events: none; /* Prevent the center area from blocking interaction */
 }
 
 /* Inner Overlay with Radial Pattern */
@@ -224,32 +242,39 @@ a {
 /* Project Showcase Section Styling */
 #project-showcase {
     padding: 50px 0;
-    /* background-color: white; */
     text-align: center;
-    position: relative; /* Ensures background pattern is positioned correctly */
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
+
 .showcase-container {
     padding: 0 20px;
 }
+
 .showcase-title {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #333;
     font-weight: 500;
 }
+
 .showcase-description {
     font-size: 1.2em;
     color: #666;
-    /* margin-bottom: 30px; */
     width: 75%;
     margin: 30px auto;
 }
+
+/* Grid Layout for Project Cards */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 6rem;
 }
+
+/* Individual Project Card Styling */
 .project-card {
     background-color: #fff;
     border-radius: 8px;
@@ -259,23 +284,31 @@ a {
     padding-bottom: 1.6rem;
     margin-bottom: 1rem;
 }
+
 .project-card:hover {
     transform: translateY(-5px);
 }
+
+/* Project Card Thumbnail Styling */
 .project-thumbnail {
     width: 100%;
 }
+
+/* Project Title and Description Styling */
 .project-title {
     font-size: 1.3em;
     color: #222;
     font-weight: 500;
     margin: 10px 10px 10px 16px;
 }
+
 .project-description {
     font-size: 1em;
     color: #555;
     margin: 10px 10px 16px 16px;
 }
+
+/* Project Link Styling */
 .project-link {
     text-decoration: none;
     color: #d9007b;
@@ -283,15 +316,17 @@ a {
     margin: 15px 10px 10px 16px;
     font-size: 0.95rem;
 }
+
 .project-link:hover {
     color: #0056b3;
 }
 
-/* Footer  */
+/* Footer Section Styling */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 3rem 0;
+    color: #333; /* Text color */
 }
