@@ -182,6 +182,10 @@ html {
     color: #dbdbdb;
 }
 
+.hero .repo {
+    margin-top: 3rem;
+}
+
 /* GitHub Button Styling */
 .btn-section .github {
     background-color: #09090b;
@@ -193,8 +197,8 @@ html {
 
 /* Project Button Styling */
 .btn-section .project {
-    background-color: #fafafa;
-    color: #09090b;
+    background-color: #0a4dc5;
+    color: #e2e2e2;
 }
 
 .btn-section .project:hover {
@@ -202,50 +206,11 @@ html {
     color: #09090b;
 }
 
-/* Wrapper Styling for Radial Background */
-.wrapper {
-    width: 100%; /* Full width of the viewport */
-    height: 80%; /* Adjust the height as needed */
-    background-color: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Create the transparent center effect */
-.wrapper::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    background-color: transparent;
-    z-index: 1;
-    pointer-events: none; /* Prevent the center area from blocking interaction */
-}
-
-/* Inner Overlay with Radial Pattern */
-.gradient-overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-    background-size: 16px 16px;
-    mask-image: radial-gradient(
-        ellipse 50% 50% at 50% 50%,
-        #000 70%,
-        transparent 100%
-    );
-}
-
 /* Project Showcase Section Styling */
 #project-showcase {
     padding: 50px 0;
     text-align: center;
-    position: relative;
     width: 100%;
-    height: 100%;
 }
 
 .showcase-container {
@@ -297,7 +262,7 @@ html {
 /* Project Title and Description Styling */
 .project-title {
     font-size: 1.3em;
-    color: #222;
+    color: #333;
     font-weight: 500;
     margin: 10px 10px 10px 16px;
 }
@@ -308,17 +273,50 @@ html {
     margin: 10px 10px 16px 16px;
 }
 
-/* Project Link Styling */
+/* Styling for the tech used field */
+.project-tech {
+    font-size: 0.75rem;
+    margin: 10px 15px;
+    color: #777;
+}
+
+.project-tech strong {
+    color: #555;
+}
+
+/* Styling for the estimated time field */
+.project-time {
+    font-size: 0.9rem;
+    margin: 10px 15px;
+    color: #777;
+}
+
+.project-time strong {
+    color: #555;
+}
+
+/* Link styling */
 .project-link {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 1rem;
+    color: #007bff;
     text-decoration: none;
-    color: #d9007b;
-    transition: color 0.3s;
-    margin: 15px 10px 10px 16px;
-    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
 .project-link:hover {
     color: #0056b3;
+}
+
+.project-link i {
+    margin-left: 5px;
+}
+
+/* Add some padding and space between the content inside each card */
+.project-card > p,
+.project-card > a {
+    margin-bottom: 10px;
 }
 
 /* Footer Section Styling */
