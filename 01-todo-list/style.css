@@ -1,111 +1,88 @@
-/* General styles */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Arial", sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    height: 100vh;
-    color: #333;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 10px;
 }
 
 .container {
-    /* background-color: white; */
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    width: 300px;
+}
+
+h1 {
     text-align: center;
-}
-
-/* Title styles */
-.title {
-    font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
-    color: #4caf50;
 }
 
-/* Input form styles */
 form {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
-#new-task {
+input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
     font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
     padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #3949ab;
 }
 
-/* Task list styles */
-#task-list {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-#task-list li {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Style for buttons to remove or mark task as completed */
-.task-buttons {
-    display: flex;
-    gap: 10px;
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
 }
 
-.task-buttons button {
-    background-color: #e74c3c;
+li button {
+    background-color: transparent;
     border: none;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
+    color: #e57373;
     cursor: pointer;
+    font-size: 18px;
 }
 
-.task-buttons button.complete-btn {
-    background-color: #2ecc71;
-}
-
-.task-buttons button:hover {
-    opacity: 0.8;
-}
-
-.delete-btn {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.8rem;
-    background-color: red;
-}
-.delete-btn:hover {
-    background-color: red;
+li button:hover {
+    color: #d32f2f;
 }
