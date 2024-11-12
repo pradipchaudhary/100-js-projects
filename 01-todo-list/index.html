@@ -5,53 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="A simple and effective to-do list app to help you manage your tasks and stay organized."
+            content="A simple and effective to-do list app to help you manage tasks and stay organized."
         />
         <meta
             name="keywords"
-            content="to-do, task manager, productivity, list, app, JavaScript, web app"
+            content="to-do, task manager, productivity, task list, app, JavaScript, web app"
         />
         <meta name="author" content="Pradip Chaudhary" />
 
-        <!-- Open Graph Meta Tags for better social media sharing -->
-        <meta property="og:title" content="To-Do List App" />
-        <meta
-            property="og:description"
-            content="A simple and effective to-do list app to help you manage your tasks and stay organized."
-        />
-        <meta property="og:image" content="URL-to-image.jpg" />
-        <!-- Replace with actual image URL -->
-        <meta property="og:url" content="http://your-app-url.com" />
-        <!-- Replace with your app's URL -->
-        <meta property="og:type" content="website" />
-
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="To-Do List App" />
-        <meta
-            name="twitter:description"
-            content="A simple and effective to-do list app to help you manage your tasks and stay organized."
-        />
-        <meta name="twitter:image" content="URL-to-image.jpg" />
-        <!-- Replace with actual image URL -->
-
-        <title>To-Do App || 100 JavaScript Projects</title>
+        <title>To-Do App | 100 JavaScript Projects</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-
     <body>
         <div class="container">
             <h1 class="title">Todo List</h1>
-            <form id="todo-form">
+            <form id="todo-form" autocomplete="off">
                 <input
                     type="text"
                     id="new-task"
+                    name="task"
                     placeholder="Add a new task..."
+                    aria-label="Add a new task"
+                    required
                 />
                 <button type="submit">Add</button>
             </form>
-            <ul id="task-list"></ul>
+            <ul id="task-list" aria-live="polite"></ul>
         </div>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </body>
 </html>
