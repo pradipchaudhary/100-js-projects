@@ -14,8 +14,8 @@ const projects = [
         description:
             "Organize tasks with a dynamic To-Do list. Add, edit, and delete tasks with local storage support.",
         image: "./assets/images/open-ai.avif",
-        liveLink: `https://github.com/pradipchaudhary/100-javascript-projects/01-to-do-list`, // Dynamic live link
-        codeLink: `https://github.com/pradipchaudhary/100-javascript-projects/tree/master/01-to-do-list`, // Dynamic code link
+        liveLink: `https://github.com/pradipchaudhary/100-javascript-projects/01-todo-list`, // Dynamic live link
+        codeLink: `https://github.com/pradipchaudhary/100-javascript-projects/tree/master/01-todo-list`, // Dynamic code link
         alt: "To-Do List Project Image", // Alt text for image
         tech_used: ["HTML", "CSS", "JavaScript", "Local Storage"], // Technologies used
         estimated_time: "2-3 hours", // Estimated time to complete the project
