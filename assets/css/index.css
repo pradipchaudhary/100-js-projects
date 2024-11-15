@@ -44,7 +44,7 @@ html {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px !important;
+    max-width: 1080px !important;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -71,13 +71,21 @@ html {
 }
 
 .header .brand-name {
-    font-size: 1.6rem;
     font-weight: 600;
 }
-
-.header .brand-name a {
+.brand-name a {
+    font-size: 1.6rem; /* Adjust size as needed */
+    font-weight: bold;
     text-decoration: none;
-    color: #111827;
+    background: linear-gradient(
+        to right,
+        #d9007b,
+        #ff4e8c
+    ); /* Gradient using #d9007b and a complementary pink */
+    -webkit-background-clip: text; /* Clip background to text for Webkit browsers */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent for Webkit browsers */
+    background-clip: text; /* Standard property for other browsers */
+    text-fill-color: transparent; /* Ensure transparency works in modern browsers */
 }
 
 /* Header Navigation Styling */
@@ -101,10 +109,14 @@ html {
     font-size: 1.6rem;
 }
 
+.repo a.gh-btn {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
 /* Hero Section Styling */
 #hero {
     width: 100%;
-    height: 85%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,6 +170,9 @@ html {
     margin: 0 auto;
     margin-bottom: 0.75rem;
 }
+.hero h1.title span {
+    color: #3d4860;
+}
 
 .hero p.description {
     color: #787878;
@@ -171,39 +186,35 @@ html {
 /* Hero Button Section Styling */
 .hero .btn-section {
     margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero .btn {
-    border: 1px solid #efefef;
-    padding: 0.8rem 1.6rem;
+    border: 1px solid #cccaca;
+    padding: 0.8rem 1.2rem;
     margin: 10px;
     text-decoration: none;
-    border-radius: 26px;
-    color: #dbdbdb;
-}
-
-.hero .repo {
-    margin-top: 3rem;
+    border-radius: 8px;
+    color: #242323;
+    min-width: 100px;
 }
 
 /* GitHub Button Styling */
-.btn-section .github {
-    background-color: #09090b;
-}
-
-.btn-section .github:hover {
-    background-color: #3f3f46;
+.btn-section {
+    display: flex;
+    gap: 10;
 }
 
 /* Project Button Styling */
 .btn-section .project {
-    background-color: #0a4dc5;
+    background-color: #09090b;
     color: #e2e2e2;
 }
 
 .btn-section .project:hover {
-    background-color: #f4f4f5;
-    color: #09090b;
+    background-color: #1d1d22;
+    /* color: #09090b; */
 }
 
 /* Project Showcase Section Styling */
@@ -234,7 +245,7 @@ html {
 /* Grid Layout for Project Cards */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 6rem;
 }
