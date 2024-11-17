@@ -238,8 +238,9 @@ html {
 .showcase-description {
     font-size: 1.2em;
     color: #666;
-    width: 75%;
+    width: 60%;
     margin: 30px auto;
+    line-height: 1.5;
 }
 
 /* Grid Layout for Project Cards */
@@ -279,20 +280,26 @@ html {
 }
 
 .project-description {
-    font-size: 1em;
-    color: #555;
+    font-size: 16px;
+    color: #6b6b6b;
     margin: 10px 10px 16px 16px;
+    line-height: 20px;
 }
 
 /* Styling for the tech used field */
 .project-tech {
     font-size: 0.75rem;
-    margin: 10px 15px;
+    margin: 15px;
     color: #777;
 }
 
-.project-tech strong {
-    color: #555;
+.project-tech span.tech-item {
+    border: 1px solid #efefef;
+    margin: 2px;
+    padding: 2px 7px;
+    font-size: 0.68rem;
+    background-color: #f2f2f2; /* Fuchsia Color */
+    color: #242424;
 }
 
 /* Styling for the estimated time field */
@@ -338,4 +345,5 @@ footer {
     width: 100%;
     padding: 3rem 0;
     color: #333; /* Text color */
+    background-color: #111827;
 }

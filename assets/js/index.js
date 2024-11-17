@@ -91,25 +91,22 @@ function renderProjects() {
         // Create the project card element
         const projectCard = document.createElement("div");
         projectCard.classList.add("project-card");
-        console.log(project);
+        // Generate the tech used HTML manually
+        const techUsedHTML = project.tech_used
+            .map((item) => `<span class="tech-item">${item}</span>`)
+            .join(" ");
+
         // Set the inner HTML for each card
         projectCard.innerHTML = `
-            <img class="project-thumbnail" src="${project.image}" alt="${
-            project.alt
-        }" />
+            <img class="project-thumbnail" src="${project.image}" alt="${project.alt}" />
             <h3 class="project-title">${project.title}</h3>
             <p class="project-description">${project.description}</p>
-            <p class="project-tech"><strong><i class="ri-stack-line"></i></strong> ${project.tech_used.join(
-                ", "
-            )}</p>
-            <p class="project-time"><strong><i class="ri-time-line"></i></strong> ${
-                project.estimated_time
-            }</p>
-            <a href="${project.liveLink}" class="project-link">
-                Demo <i class="ri-external-link-line"></i>
-            </a>
+           
+          <div class="project-tech"> ${techUsedHTML}</div>
+            <p class="project-time"><strong><i class="ri-time-line"></i></strong> ${project.estimated_time}</p>
+           
             <a href="${project.codeLink}" class="project-link">
-                Code <i class="ri-code-s-slash-line"></i>
+                code <i class="ri-code-s-slash-line"></i>
             </a>
 `;
 
